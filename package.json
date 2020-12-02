@@ -1,11 +1,14 @@
 {
-  "name": "jsInMp",
+  "name": "js-in-mp",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "gen-tpl": "node tpl/index.js"
+    "gen-tpl": "node template/index.js",
+    "transform": "node transform/index.js",
+    "copy": "cp -r mcore /Users/bytedance/Desktop/test_repositories/testWeapp",
+    "dev": "npm run gen-tpl && npm run transform && npm run copy"
   },
   "repository": {
     "type": "git",
@@ -17,5 +20,16 @@
   "bugs": {
     "url": "https://github.com/bibidu/jsInMp/issues"
   },
-  "homepage": "https://github.com/bibidu/jsInMp#readme"
+  "homepage": "https://github.com/bibidu/jsInMp#readme",
+  "dependencies": {
+  },
+  "devDependencies": {
+    "@babel/core": "^7.12.9",
+    "babel-helper-vue-jsx-merge-props": "^2.0.3",
+    "babel-plugin-syntax-jsx": "^6.18.0",
+    "babel-plugin-transform-vue-jsx": "^3.7.0",
+    "babel-preset-env": "^1.7.0",
+    "cheerio": "^1.0.0-rc.3",
+    "node-fetch": "^2.6.1"
+  }
 }

@@ -3,19 +3,17 @@ const {
     wxsLibName,
     tplDist,
     tplUtilDist,
-} = require('./tplConfig')
+} = require('../utils/config')
 const {
     base,
-    view,
-    text,
-} = require('./tpl')
+    others: otherTags,
+} = require('./tag-elements')
+const { create: createOutputUtil } = require('./utils')
 const {
-    read,
     output,
     removeNextLine,
+    createTemplateAnnotation,
 } = require('../utils')
-
-
 
 generateHtml()
 generateUtil()
@@ -24,20 +22,21 @@ function generateHtml() {
     const utilString = `<wxs module="${wxsLibName}" src="./utils.wxs" />\n`
 
     let tpls = utilString + removeNextLine(base)
-    ;[
-        view,
-        text,
-    ].forEach(tag => {
-        tpls += `\n<!-- ================== ${tag.name} start ================== -->`
+    Object.keys(otherTags).forEach(tag => {
+        const createTag = otherTags[tag]
+
+        const { startAnno, endAnno } = createTemplateAnnotation(tag)
+
+        tpls += startAnno
         Array.from({ length: maxLength }, (_, idx) => {
-            tpls += tag(idx + 1)
+            tpls += createTag(idx + 1)
         })
-        tpls += `<!-- ================== ${tag.name} start ================== -->\n`
+        tpls += endAnno
     })
     output(tplDist, tpls)
 }
 
 function generateUtil() {
-    const content = read('./tpl/utils.js')
+    const content = createOutputUtil()
     output(tplUtilDist, content)
 }

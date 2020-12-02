@@ -1,0 +1,4294 @@
+<wxs module="util" src="./utils.wxs" />
+
+<template name="base">
+  <block wx:for="{{root.children}}" wx:key="index">
+    <template is="{{util.tpl(item.tagName)}}" data="{{node: item}}" />
+  </block>  
+</template>
+<!-- ================== cover-image start ================== -->
+<template name="cover-image1">
+  <cover-image 
+    src="{{util.getDefaultValue(node['src'], 'undefined')}}" 
+    id="{{util.getDefaultValue(node['id'], '')}}" 
+    class="{{util.getDefaultValue(node['class'], '')}}" 
+    style="{{util.getDefaultValue(node['style'], '')}}" >
+    {{node.value}}
+    <block wx:for="{{node.children}}" wx:key="index">
+      <template is="{{util.tpl(item.tagName)}}" data="{{node: item}}" />
+    </block>
+  </cover-image>
+</template>
+
+<template name="cover-image2">
+  <cover-image src="{{util.getDefaultValue(node['src'], 'undefined')}}" id="{{util.getDefaultValue(node['id'], '')}}" class="{{util.getDefaultValue(node['class'], '')}}" style="{{util.getDefaultValue(node['style'], '')}}" >
+    {{node.value}}
+    <block wx:for="{{node.children}}" wx:key="index">
+      <template is="{{util.tpl(item.tagName)}}" data="{{node: item}}" />
+    </block>
+  </cover-image>
+</template>
+
+<template name="cover-image3">
+  <cover-image src="{{util.getDefaultValue(node['src'], 'undefined')}}" id="{{util.getDefaultValue(node['id'], '')}}" class="{{util.getDefaultValue(node['class'], '')}}" style="{{util.getDefaultValue(node['style'], '')}}" >
+    {{node.value}}
+    <block wx:for="{{node.children}}" wx:key="index">
+      <template is="{{util.tpl(item.tagName)}}" data="{{node: item}}" />
+    </block>
+  </cover-image>
+</template>
+
+<template name="cover-image4">
+  <cover-image src="{{util.getDefaultValue(node['src'], 'undefined')}}" id="{{util.getDefaultValue(node['id'], '')}}" class="{{util.getDefaultValue(node['class'], '')}}" style="{{util.getDefaultValue(node['style'], '')}}" >
+    {{node.value}}
+    <block wx:for="{{node.children}}" wx:key="index">
+      <template is="{{util.tpl(item.tagName)}}" data="{{node: item}}" />
+    </block>
+  </cover-image>
+</template>
+
+<template name="cover-image5">
+  <cover-image src="{{util.getDefaultValue(node['src'], 'undefined')}}" id="{{util.getDefaultValue(node['id'], '')}}" class="{{util.getDefaultValue(node['class'], '')}}" style="{{util.getDefaultValue(node['style'], '')}}" >
+    {{node.value}}
+    <block wx:for="{{node.children}}" wx:key="index">
+      <template is="{{util.tpl(item.tagName)}}" data="{{node: item}}" />
+    </block>
+  </cover-image>
+</template>
+
+<template name="cover-image6">
+  <cover-image src="{{util.getDefaultValue(node['src'], 'undefined')}}" id="{{util.getDefaultValue(node['id'], '')}}" class="{{util.getDefaultValue(node['class'], '')}}" style="{{util.getDefaultValue(node['style'], '')}}" >
+    {{node.value}}
+    <block wx:for="{{node.children}}" wx:key="index">
+      <template is="{{util.tpl(item.tagName)}}" data="{{node: item}}" />
+    </block>
+  </cover-image>
+</template>
+
+<template name="cover-image7">
+  <cover-image src="{{util.getDefaultValue(node['src'], 'undefined')}}" id="{{util.getDefaultValue(node['id'], '')}}" class="{{util.getDefaultValue(node['class'], '')}}" style="{{util.getDefaultValue(node['style'], '')}}" >
+    {{node.value}}
+    <block wx:for="{{node.children}}" wx:key="index">
+      <template is="{{util.tpl(item.tagName)}}" data="{{node: item}}" />
+    </block>
+  </cover-image>
+</template>
+
+<template name="cover-image8">
+  <cover-image src="{{util.getDefaultValue(node['src'], 'undefined')}}" id="{{util.getDefaultValue(node['id'], '')}}" class="{{util.getDefaultValue(node['class'], '')}}" style="{{util.getDefaultValue(node['style'], '')}}" >
+    {{node.value}}
+    <block wx:for="{{node.children}}" wx:key="index">
+      <template is="{{util.tpl(item.tagName)}}" data="{{node: item}}" />
+    </block>
+  </cover-image>
+</template>
+
+<template name="cover-image9">
+  <cover-image src="{{util.getDefaultValue(node['src'], 'undefined')}}" id="{{util.getDefaultValue(node['id'], '')}}" class="{{util.getDefaultValue(node['class'], '')}}" style="{{util.getDefaultValue(node['style'], '')}}" >
+    {{node.value}}
+    <block wx:for="{{node.children}}" wx:key="index">
+      <template is="{{util.tpl(item.tagName)}}" data="{{node: item}}" />
+    </block>
+  </cover-image>
+</template>
+
+<template name="cover-image10">
+  <cover-image src="{{util.getDefaultValue(node['src'], 'undefined')}}" id="{{util.getDefaultValue(node['id'], '')}}" class="{{util.getDefaultValue(node['class'], '')}}" style="{{util.getDefaultValue(node['style'], '')}}" >
+    {{node.value}}
+    <block wx:for="{{node.children}}" wx:key="index">
+      <template is="{{util.tpl(item.tagName)}}" data="{{node: item}}" />
+    </block>
+  </cover-image>
+</template>
+
+<!-- ================== cover-image end ================== -->
+<!-- ================== cover-view start ================== -->
+<template name="cover-view1">
+  <cover-view 
+    id="{{util.getDefaultValue(node['id'], '')}}" 
+    class="{{util.getDefaultValue(node['class'], '')}}" 
+    style="{{util.getDefaultValue(node['style'], '')}}" >
+    {{node.value}}
+    <block wx:for="{{node.children}}" wx:key="index">
+      <template is="{{util.tpl(item.tagName)}}" data="{{node: item}}" />
+    </block>
+  </cover-view>
+</template>
+
+<template name="cover-view2">
+  <cover-view id="{{util.getDefaultValue(node['id'], '')}}" class="{{util.getDefaultValue(node['class'], '')}}" style="{{util.getDefaultValue(node['style'], '')}}" >
+    {{node.value}}
+    <block wx:for="{{node.children}}" wx:key="index">
+      <template is="{{util.tpl(item.tagName)}}" data="{{node: item}}" />
+    </block>
+  </cover-view>
+</template>
+
+<template name="cover-view3">
+  <cover-view id="{{util.getDefaultValue(node['id'], '')}}" class="{{util.getDefaultValue(node['class'], '')}}" style="{{util.getDefaultValue(node['style'], '')}}" >
+    {{node.value}}
+    <block wx:for="{{node.children}}" wx:key="index">
+      <template is="{{util.tpl(item.tagName)}}" data="{{node: item}}" />
+    </block>
+  </cover-view>
+</template>
+
+<template name="cover-view4">
+  <cover-view id="{{util.getDefaultValue(node['id'], '')}}" class="{{util.getDefaultValue(node['class'], '')}}" style="{{util.getDefaultValue(node['style'], '')}}" >
+    {{node.value}}
+    <block wx:for="{{node.children}}" wx:key="index">
+      <template is="{{util.tpl(item.tagName)}}" data="{{node: item}}" />
+    </block>
+  </cover-view>
+</template>
+
+<template name="cover-view5">
+  <cover-view id="{{util.getDefaultValue(node['id'], '')}}" class="{{util.getDefaultValue(node['class'], '')}}" style="{{util.getDefaultValue(node['style'], '')}}" >
+    {{node.value}}
+    <block wx:for="{{node.children}}" wx:key="index">
+      <template is="{{util.tpl(item.tagName)}}" data="{{node: item}}" />
+    </block>
+  </cover-view>
+</template>
+
+<template name="cover-view6">
+  <cover-view id="{{util.getDefaultValue(node['id'], '')}}" class="{{util.getDefaultValue(node['class'], '')}}" style="{{util.getDefaultValue(node['style'], '')}}" >
+    {{node.value}}
+    <block wx:for="{{node.children}}" wx:key="index">
+      <template is="{{util.tpl(item.tagName)}}" data="{{node: item}}" />
+    </block>
+  </cover-view>
+</template>
+
+<template name="cover-view7">
+  <cover-view id="{{util.getDefaultValue(node['id'], '')}}" class="{{util.getDefaultValue(node['class'], '')}}" style="{{util.getDefaultValue(node['style'], '')}}" >
+    {{node.value}}
+    <block wx:for="{{node.children}}" wx:key="index">
+      <template is="{{util.tpl(item.tagName)}}" data="{{node: item}}" />
+    </block>
+  </cover-view>
+</template>
+
+<template name="cover-view8">
+  <cover-view id="{{util.getDefaultValue(node['id'], '')}}" class="{{util.getDefaultValue(node['class'], '')}}" style="{{util.getDefaultValue(node['style'], '')}}" >
+    {{node.value}}
+    <block wx:for="{{node.children}}" wx:key="index">
+      <template is="{{util.tpl(item.tagName)}}" data="{{node: item}}" />
+    </block>
+  </cover-view>
+</template>
+
+<template name="cover-view9">
+  <cover-view id="{{util.getDefaultValue(node['id'], '')}}" class="{{util.getDefaultValue(node['class'], '')}}" style="{{util.getDefaultValue(node['style'], '')}}" >
+    {{node.value}}
+    <block wx:for="{{node.children}}" wx:key="index">
+      <template is="{{util.tpl(item.tagName)}}" data="{{node: item}}" />
+    </block>
+  </cover-view>
+</template>
+
+<template name="cover-view10">
+  <cover-view id="{{util.getDefaultValue(node['id'], '')}}" class="{{util.getDefaultValue(node['class'], '')}}" style="{{util.getDefaultValue(node['style'], '')}}" >
+    {{node.value}}
+    <block wx:for="{{node.children}}" wx:key="index">
+      <template is="{{util.tpl(item.tagName)}}" data="{{node: item}}" />
+    </block>
+  </cover-view>
+</template>
+
+<!-- ================== cover-view end ================== -->
+<!-- ================== match-media start ================== -->
+<template name="match-media1">
+  <match-media 
+    id="{{util.getDefaultValue(node['id'], '')}}" 
+    class="{{util.getDefaultValue(node['class'], '')}}" 
+    style="{{util.getDefaultValue(node['style'], '')}}" >
+    {{node.value}}
+    <block wx:for="{{node.children}}" wx:key="index">
+      <template is="{{util.tpl(item.tagName)}}" data="{{node: item}}" />
+    </block>
+  </match-media>
+</template>
+
+<template name="match-media2">
+  <match-media id="{{util.getDefaultValue(node['id'], '')}}" class="{{util.getDefaultValue(node['class'], '')}}" style="{{util.getDefaultValue(node['style'], '')}}" >
+    {{node.value}}
+    <block wx:for="{{node.children}}" wx:key="index">
+      <template is="{{util.tpl(item.tagName)}}" data="{{node: item}}" />
+    </block>
+  </match-media>
+</template>
+
+<template name="match-media3">
+  <match-media id="{{util.getDefaultValue(node['id'], '')}}" class="{{util.getDefaultValue(node['class'], '')}}" style="{{util.getDefaultValue(node['style'], '')}}" >
+    {{node.value}}
+    <block wx:for="{{node.children}}" wx:key="index">
+      <template is="{{util.tpl(item.tagName)}}" data="{{node: item}}" />
+    </block>
+  </match-media>
+</template>
+
+<template name="match-media4">
+  <match-media id="{{util.getDefaultValue(node['id'], '')}}" class="{{util.getDefaultValue(node['class'], '')}}" style="{{util.getDefaultValue(node['style'], '')}}" >
+    {{node.value}}
+    <block wx:for="{{node.children}}" wx:key="index">
+      <template is="{{util.tpl(item.tagName)}}" data="{{node: item}}" />
+    </block>
+  </match-media>
+</template>
+
+<template name="match-media5">
+  <match-media id="{{util.getDefaultValue(node['id'], '')}}" class="{{util.getDefaultValue(node['class'], '')}}" style="{{util.getDefaultValue(node['style'], '')}}" >
+    {{node.value}}
+    <block wx:for="{{node.children}}" wx:key="index">
+      <template is="{{util.tpl(item.tagName)}}" data="{{node: item}}" />
+    </block>
+  </match-media>
+</template>
+
+<template name="match-media6">
+  <match-media id="{{util.getDefaultValue(node['id'], '')}}" class="{{util.getDefaultValue(node['class'], '')}}" style="{{util.getDefaultValue(node['style'], '')}}" >
+    {{node.value}}
+    <block wx:for="{{node.children}}" wx:key="index">
+      <template is="{{util.tpl(item.tagName)}}" data="{{node: item}}" />
+    </block>
+  </match-media>
+</template>
+
+<template name="match-media7">
+  <match-media id="{{util.getDefaultValue(node['id'], '')}}" class="{{util.getDefaultValue(node['class'], '')}}" style="{{util.getDefaultValue(node['style'], '')}}" >
+    {{node.value}}
+    <block wx:for="{{node.children}}" wx:key="index">
+      <template is="{{util.tpl(item.tagName)}}" data="{{node: item}}" />
+    </block>
+  </match-media>
+</template>
+
+<template name="match-media8">
+  <match-media id="{{util.getDefaultValue(node['id'], '')}}" class="{{util.getDefaultValue(node['class'], '')}}" style="{{util.getDefaultValue(node['style'], '')}}" >
+    {{node.value}}
+    <block wx:for="{{node.children}}" wx:key="index">
+      <template is="{{util.tpl(item.tagName)}}" data="{{node: item}}" />
+    </block>
+  </match-media>
+</template>
+
+<template name="match-media9">
+  <match-media id="{{util.getDefaultValue(node['id'], '')}}" class="{{util.getDefaultValue(node['class'], '')}}" style="{{util.getDefaultValue(node['style'], '')}}" >
+    {{node.value}}
+    <block wx:for="{{node.children}}" wx:key="index">
+      <template is="{{util.tpl(item.tagName)}}" data="{{node: item}}" />
+    </block>
+  </match-media>
+</template>
+
+<template name="match-media10">
+  <match-media id="{{util.getDefaultValue(node['id'], '')}}" class="{{util.getDefaultValue(node['class'], '')}}" style="{{util.getDefaultValue(node['style'], '')}}" >
+    {{node.value}}
+    <block wx:for="{{node.children}}" wx:key="index">
+      <template is="{{util.tpl(item.tagName)}}" data="{{node: item}}" />
+    </block>
+  </match-media>
+</template>
+
+<!-- ================== match-media end ================== -->
+<!-- ================== movable-area start ================== -->
+<template name="movable-area1">
+  <movable-area 
+    id="{{util.getDefaultValue(node['id'], '')}}" 
+    class="{{util.getDefaultValue(node['class'], '')}}" 
+    style="{{util.getDefaultValue(node['style'], '')}}" >
+    {{node.value}}
+    <block wx:for="{{node.children}}" wx:key="index">
+      <template is="{{util.tpl(item.tagName)}}" data="{{node: item}}" />
+    </block>
+  </movable-area>
+</template>
+
+<template name="movable-area2">
+  <movable-area id="{{util.getDefaultValue(node['id'], '')}}" class="{{util.getDefaultValue(node['class'], '')}}" style="{{util.getDefaultValue(node['style'], '')}}" >
+    {{node.value}}
+    <block wx:for="{{node.children}}" wx:key="index">
+      <template is="{{util.tpl(item.tagName)}}" data="{{node: item}}" />
+    </block>
+  </movable-area>
+</template>
+
+<template name="movable-area3">
+  <movable-area id="{{util.getDefaultValue(node['id'], '')}}" class="{{util.getDefaultValue(node['class'], '')}}" style="{{util.getDefaultValue(node['style'], '')}}" >
+    {{node.value}}
+    <block wx:for="{{node.children}}" wx:key="index">
+      <template is="{{util.tpl(item.tagName)}}" data="{{node: item}}" />
+    </block>
+  </movable-area>
+</template>
+
+<template name="movable-area4">
+  <movable-area id="{{util.getDefaultValue(node['id'], '')}}" class="{{util.getDefaultValue(node['class'], '')}}" style="{{util.getDefaultValue(node['style'], '')}}" >
+    {{node.value}}
+    <block wx:for="{{node.children}}" wx:key="index">
+      <template is="{{util.tpl(item.tagName)}}" data="{{node: item}}" />
+    </block>
+  </movable-area>
+</template>
+
+<template name="movable-area5">
+  <movable-area id="{{util.getDefaultValue(node['id'], '')}}" class="{{util.getDefaultValue(node['class'], '')}}" style="{{util.getDefaultValue(node['style'], '')}}" >
+    {{node.value}}
+    <block wx:for="{{node.children}}" wx:key="index">
+      <template is="{{util.tpl(item.tagName)}}" data="{{node: item}}" />
+    </block>
+  </movable-area>
+</template>
+
+<template name="movable-area6">
+  <movable-area id="{{util.getDefaultValue(node['id'], '')}}" class="{{util.getDefaultValue(node['class'], '')}}" style="{{util.getDefaultValue(node['style'], '')}}" >
+    {{node.value}}
+    <block wx:for="{{node.children}}" wx:key="index">
+      <template is="{{util.tpl(item.tagName)}}" data="{{node: item}}" />
+    </block>
+  </movable-area>
+</template>
+
+<template name="movable-area7">
+  <movable-area id="{{util.getDefaultValue(node['id'], '')}}" class="{{util.getDefaultValue(node['class'], '')}}" style="{{util.getDefaultValue(node['style'], '')}}" >
+    {{node.value}}
+    <block wx:for="{{node.children}}" wx:key="index">
+      <template is="{{util.tpl(item.tagName)}}" data="{{node: item}}" />
+    </block>
+  </movable-area>
+</template>
+
+<template name="movable-area8">
+  <movable-area id="{{util.getDefaultValue(node['id'], '')}}" class="{{util.getDefaultValue(node['class'], '')}}" style="{{util.getDefaultValue(node['style'], '')}}" >
+    {{node.value}}
+    <block wx:for="{{node.children}}" wx:key="index">
+      <template is="{{util.tpl(item.tagName)}}" data="{{node: item}}" />
+    </block>
+  </movable-area>
+</template>
+
+<template name="movable-area9">
+  <movable-area id="{{util.getDefaultValue(node['id'], '')}}" class="{{util.getDefaultValue(node['class'], '')}}" style="{{util.getDefaultValue(node['style'], '')}}" >
+    {{node.value}}
+    <block wx:for="{{node.children}}" wx:key="index">
+      <template is="{{util.tpl(item.tagName)}}" data="{{node: item}}" />
+    </block>
+  </movable-area>
+</template>
+
+<template name="movable-area10">
+  <movable-area id="{{util.getDefaultValue(node['id'], '')}}" class="{{util.getDefaultValue(node['class'], '')}}" style="{{util.getDefaultValue(node['style'], '')}}" >
+    {{node.value}}
+    <block wx:for="{{node.children}}" wx:key="index">
+      <template is="{{util.tpl(item.tagName)}}" data="{{node: item}}" />
+    </block>
+  </movable-area>
+</template>
+
+<!-- ================== movable-area end ================== -->
+<!-- ================== movable-view start ================== -->
+<template name="movable-view1">
+  <movable-view 
+    id="{{util.getDefaultValue(node['id'], '')}}" 
+    class="{{util.getDefaultValue(node['class'], '')}}" 
+    style="{{util.getDefaultValue(node['style'], '')}}" >
+    {{node.value}}
+    <block wx:for="{{node.children}}" wx:key="index">
+      <template is="{{util.tpl(item.tagName)}}" data="{{node: item}}" />
+    </block>
+  </movable-view>
+</template>
+
+<template name="movable-view2">
+  <movable-view id="{{util.getDefaultValue(node['id'], '')}}" class="{{util.getDefaultValue(node['class'], '')}}" style="{{util.getDefaultValue(node['style'], '')}}" >
+    {{node.value}}
+    <block wx:for="{{node.children}}" wx:key="index">
+      <template is="{{util.tpl(item.tagName)}}" data="{{node: item}}" />
+    </block>
+  </movable-view>
+</template>
+
+<template name="movable-view3">
+  <movable-view id="{{util.getDefaultValue(node['id'], '')}}" class="{{util.getDefaultValue(node['class'], '')}}" style="{{util.getDefaultValue(node['style'], '')}}" >
+    {{node.value}}
+    <block wx:for="{{node.children}}" wx:key="index">
+      <template is="{{util.tpl(item.tagName)}}" data="{{node: item}}" />
+    </block>
+  </movable-view>
+</template>
+
+<template name="movable-view4">
+  <movable-view id="{{util.getDefaultValue(node['id'], '')}}" class="{{util.getDefaultValue(node['class'], '')}}" style="{{util.getDefaultValue(node['style'], '')}}" >
+    {{node.value}}
+    <block wx:for="{{node.children}}" wx:key="index">
+      <template is="{{util.tpl(item.tagName)}}" data="{{node: item}}" />
+    </block>
+  </movable-view>
+</template>
+
+<template name="movable-view5">
+  <movable-view id="{{util.getDefaultValue(node['id'], '')}}" class="{{util.getDefaultValue(node['class'], '')}}" style="{{util.getDefaultValue(node['style'], '')}}" >
+    {{node.value}}
+    <block wx:for="{{node.children}}" wx:key="index">
+      <template is="{{util.tpl(item.tagName)}}" data="{{node: item}}" />
+    </block>
+  </movable-view>
+</template>
+
+<template name="movable-view6">
+  <movable-view id="{{util.getDefaultValue(node['id'], '')}}" class="{{util.getDefaultValue(node['class'], '')}}" style="{{util.getDefaultValue(node['style'], '')}}" >
+    {{node.value}}
+    <block wx:for="{{node.children}}" wx:key="index">
+      <template is="{{util.tpl(item.tagName)}}" data="{{node: item}}" />
+    </block>
+  </movable-view>
+</template>
+
+<template name="movable-view7">
+  <movable-view id="{{util.getDefaultValue(node['id'], '')}}" class="{{util.getDefaultValue(node['class'], '')}}" style="{{util.getDefaultValue(node['style'], '')}}" >
+    {{node.value}}
+    <block wx:for="{{node.children}}" wx:key="index">
+      <template is="{{util.tpl(item.tagName)}}" data="{{node: item}}" />
+    </block>
+  </movable-view>
+</template>
+
+<template name="movable-view8">
+  <movable-view id="{{util.getDefaultValue(node['id'], '')}}" class="{{util.getDefaultValue(node['class'], '')}}" style="{{util.getDefaultValue(node['style'], '')}}" >
+    {{node.value}}
+    <block wx:for="{{node.children}}" wx:key="index">
+      <template is="{{util.tpl(item.tagName)}}" data="{{node: item}}" />
+    </block>
+  </movable-view>
+</template>
+
+<template name="movable-view9">
+  <movable-view id="{{util.getDefaultValue(node['id'], '')}}" class="{{util.getDefaultValue(node['class'], '')}}" style="{{util.getDefaultValue(node['style'], '')}}" >
+    {{node.value}}
+    <block wx:for="{{node.children}}" wx:key="index">
+      <template is="{{util.tpl(item.tagName)}}" data="{{node: item}}" />
+    </block>
+  </movable-view>
+</template>
+
+<template name="movable-view10">
+  <movable-view id="{{util.getDefaultValue(node['id'], '')}}" class="{{util.getDefaultValue(node['class'], '')}}" style="{{util.getDefaultValue(node['style'], '')}}" >
+    {{node.value}}
+    <block wx:for="{{node.children}}" wx:key="index">
+      <template is="{{util.tpl(item.tagName)}}" data="{{node: item}}" />
+    </block>
+  </movable-view>
+</template>
+
+<!-- ================== movable-view end ================== -->
+<!-- ================== scroll-view start ================== -->
+<template name="scroll-view1">
+  <scroll-view 
+    id="{{util.getDefaultValue(node['id'], '')}}" 
+    class="{{util.getDefaultValue(node['class'], '')}}" 
+    style="{{util.getDefaultValue(node['style'], '')}}" >
+    {{node.value}}
+    <block wx:for="{{node.children}}" wx:key="index">
+      <template is="{{util.tpl(item.tagName)}}" data="{{node: item}}" />
+    </block>
+  </scroll-view>
+</template>
+
+<template name="scroll-view2">
+  <scroll-view id="{{util.getDefaultValue(node['id'], '')}}" class="{{util.getDefaultValue(node['class'], '')}}" style="{{util.getDefaultValue(node['style'], '')}}" >
+    {{node.value}}
+    <block wx:for="{{node.children}}" wx:key="index">
+      <template is="{{util.tpl(item.tagName)}}" data="{{node: item}}" />
+    </block>
+  </scroll-view>
+</template>
+
+<template name="scroll-view3">
+  <scroll-view id="{{util.getDefaultValue(node['id'], '')}}" class="{{util.getDefaultValue(node['class'], '')}}" style="{{util.getDefaultValue(node['style'], '')}}" >
+    {{node.value}}
+    <block wx:for="{{node.children}}" wx:key="index">
+      <template is="{{util.tpl(item.tagName)}}" data="{{node: item}}" />
+    </block>
+  </scroll-view>
+</template>
+
+<template name="scroll-view4">
+  <scroll-view id="{{util.getDefaultValue(node['id'], '')}}" class="{{util.getDefaultValue(node['class'], '')}}" style="{{util.getDefaultValue(node['style'], '')}}" >
+    {{node.value}}
+    <block wx:for="{{node.children}}" wx:key="index">
+      <template is="{{util.tpl(item.tagName)}}" data="{{node: item}}" />
+    </block>
+  </scroll-view>
+</template>
+
+<template name="scroll-view5">
+  <scroll-view id="{{util.getDefaultValue(node['id'], '')}}" class="{{util.getDefaultValue(node['class'], '')}}" style="{{util.getDefaultValue(node['style'], '')}}" >
+    {{node.value}}
+    <block wx:for="{{node.children}}" wx:key="index">
+      <template is="{{util.tpl(item.tagName)}}" data="{{node: item}}" />
+    </block>
+  </scroll-view>
+</template>
+
+<template name="scroll-view6">
+  <scroll-view id="{{util.getDefaultValue(node['id'], '')}}" class="{{util.getDefaultValue(node['class'], '')}}" style="{{util.getDefaultValue(node['style'], '')}}" >
+    {{node.value}}
+    <block wx:for="{{node.children}}" wx:key="index">
+      <template is="{{util.tpl(item.tagName)}}" data="{{node: item}}" />
+    </block>
+  </scroll-view>
+</template>
+
+<template name="scroll-view7">
+  <scroll-view id="{{util.getDefaultValue(node['id'], '')}}" class="{{util.getDefaultValue(node['class'], '')}}" style="{{util.getDefaultValue(node['style'], '')}}" >
+    {{node.value}}
+    <block wx:for="{{node.children}}" wx:key="index">
+      <template is="{{util.tpl(item.tagName)}}" data="{{node: item}}" />
+    </block>
+  </scroll-view>
+</template>
+
+<template name="scroll-view8">
+  <scroll-view id="{{util.getDefaultValue(node['id'], '')}}" class="{{util.getDefaultValue(node['class'], '')}}" style="{{util.getDefaultValue(node['style'], '')}}" >
+    {{node.value}}
+    <block wx:for="{{node.children}}" wx:key="index">
+      <template is="{{util.tpl(item.tagName)}}" data="{{node: item}}" />
+    </block>
+  </scroll-view>
+</template>
+
+<template name="scroll-view9">
+  <scroll-view id="{{util.getDefaultValue(node['id'], '')}}" class="{{util.getDefaultValue(node['class'], '')}}" style="{{util.getDefaultValue(node['style'], '')}}" >
+    {{node.value}}
+    <block wx:for="{{node.children}}" wx:key="index">
+      <template is="{{util.tpl(item.tagName)}}" data="{{node: item}}" />
+    </block>
+  </scroll-view>
+</template>
+
+<template name="scroll-view10">
+  <scroll-view id="{{util.getDefaultValue(node['id'], '')}}" class="{{util.getDefaultValue(node['class'], '')}}" style="{{util.getDefaultValue(node['style'], '')}}" >
+    {{node.value}}
+    <block wx:for="{{node.children}}" wx:key="index">
+      <template is="{{util.tpl(item.tagName)}}" data="{{node: item}}" />
+    </block>
+  </scroll-view>
+</template>
+
+<!-- ================== scroll-view end ================== -->
+<!-- ================== swiper start ================== -->
+<template name="swiper1">
+  <swiper 
+    id="{{util.getDefaultValue(node['id'], '')}}" 
+    class="{{util.getDefaultValue(node['class'], '')}}" 
+    style="{{util.getDefaultValue(node['style'], '')}}" >
+    {{node.value}}
+    <block wx:for="{{node.children}}" wx:key="index">
+      <template is="{{util.tpl(item.tagName)}}" data="{{node: item}}" />
+    </block>
+  </swiper>
+</template>
+
+<template name="swiper2">
+  <swiper id="{{util.getDefaultValue(node['id'], '')}}" class="{{util.getDefaultValue(node['class'], '')}}" style="{{util.getDefaultValue(node['style'], '')}}" >
+    {{node.value}}
+    <block wx:for="{{node.children}}" wx:key="index">
+      <template is="{{util.tpl(item.tagName)}}" data="{{node: item}}" />
+    </block>
+  </swiper>
+</template>
+
+<template name="swiper3">
+  <swiper id="{{util.getDefaultValue(node['id'], '')}}" class="{{util.getDefaultValue(node['class'], '')}}" style="{{util.getDefaultValue(node['style'], '')}}" >
+    {{node.value}}
+    <block wx:for="{{node.children}}" wx:key="index">
+      <template is="{{util.tpl(item.tagName)}}" data="{{node: item}}" />
+    </block>
+  </swiper>
+</template>
+
+<template name="swiper4">
+  <swiper id="{{util.getDefaultValue(node['id'], '')}}" class="{{util.getDefaultValue(node['class'], '')}}" style="{{util.getDefaultValue(node['style'], '')}}" >
+    {{node.value}}
+    <block wx:for="{{node.children}}" wx:key="index">
+      <template is="{{util.tpl(item.tagName)}}" data="{{node: item}}" />
+    </block>
+  </swiper>
+</template>
+
+<template name="swiper5">
+  <swiper id="{{util.getDefaultValue(node['id'], '')}}" class="{{util.getDefaultValue(node['class'], '')}}" style="{{util.getDefaultValue(node['style'], '')}}" >
+    {{node.value}}
+    <block wx:for="{{node.children}}" wx:key="index">
+      <template is="{{util.tpl(item.tagName)}}" data="{{node: item}}" />
+    </block>
+  </swiper>
+</template>
+
+<template name="swiper6">
+  <swiper id="{{util.getDefaultValue(node['id'], '')}}" class="{{util.getDefaultValue(node['class'], '')}}" style="{{util.getDefaultValue(node['style'], '')}}" >
+    {{node.value}}
+    <block wx:for="{{node.children}}" wx:key="index">
+      <template is="{{util.tpl(item.tagName)}}" data="{{node: item}}" />
+    </block>
+  </swiper>
+</template>
+
+<template name="swiper7">
+  <swiper id="{{util.getDefaultValue(node['id'], '')}}" class="{{util.getDefaultValue(node['class'], '')}}" style="{{util.getDefaultValue(node['style'], '')}}" >
+    {{node.value}}
+    <block wx:for="{{node.children}}" wx:key="index">
+      <template is="{{util.tpl(item.tagName)}}" data="{{node: item}}" />
+    </block>
+  </swiper>
+</template>
+
+<template name="swiper8">
+  <swiper id="{{util.getDefaultValue(node['id'], '')}}" class="{{util.getDefaultValue(node['class'], '')}}" style="{{util.getDefaultValue(node['style'], '')}}" >
+    {{node.value}}
+    <block wx:for="{{node.children}}" wx:key="index">
+      <template is="{{util.tpl(item.tagName)}}" data="{{node: item}}" />
+    </block>
+  </swiper>
+</template>
+
+<template name="swiper9">
+  <swiper id="{{util.getDefaultValue(node['id'], '')}}" class="{{util.getDefaultValue(node['class'], '')}}" style="{{util.getDefaultValue(node['style'], '')}}" >
+    {{node.value}}
+    <block wx:for="{{node.children}}" wx:key="index">
+      <template is="{{util.tpl(item.tagName)}}" data="{{node: item}}" />
+    </block>
+  </swiper>
+</template>
+
+<template name="swiper10">
+  <swiper id="{{util.getDefaultValue(node['id'], '')}}" class="{{util.getDefaultValue(node['class'], '')}}" style="{{util.getDefaultValue(node['style'], '')}}" >
+    {{node.value}}
+    <block wx:for="{{node.children}}" wx:key="index">
+      <template is="{{util.tpl(item.tagName)}}" data="{{node: item}}" />
+    </block>
+  </swiper>
+</template>
+
+<!-- ================== swiper end ================== -->
+<!-- ================== swiper-item start ================== -->
+<template name="swiper-item1">
+  <swiper-item 
+    id="{{util.getDefaultValue(node['id'], '')}}" 
+    class="{{util.getDefaultValue(node['class'], '')}}" 
+    style="{{util.getDefaultValue(node['style'], '')}}" >
+    {{node.value}}
+    <block wx:for="{{node.children}}" wx:key="index">
+      <template is="{{util.tpl(item.tagName)}}" data="{{node: item}}" />
+    </block>
+  </swiper-item>
+</template>
+
+<template name="swiper-item2">
+  <swiper-item id="{{util.getDefaultValue(node['id'], '')}}" class="{{util.getDefaultValue(node['class'], '')}}" style="{{util.getDefaultValue(node['style'], '')}}" >
+    {{node.value}}
+    <block wx:for="{{node.children}}" wx:key="index">
+      <template is="{{util.tpl(item.tagName)}}" data="{{node: item}}" />
+    </block>
+  </swiper-item>
+</template>
+
+<template name="swiper-item3">
+  <swiper-item id="{{util.getDefaultValue(node['id'], '')}}" class="{{util.getDefaultValue(node['class'], '')}}" style="{{util.getDefaultValue(node['style'], '')}}" >
+    {{node.value}}
+    <block wx:for="{{node.children}}" wx:key="index">
+      <template is="{{util.tpl(item.tagName)}}" data="{{node: item}}" />
+    </block>
+  </swiper-item>
+</template>
+
+<template name="swiper-item4">
+  <swiper-item id="{{util.getDefaultValue(node['id'], '')}}" class="{{util.getDefaultValue(node['class'], '')}}" style="{{util.getDefaultValue(node['style'], '')}}" >
+    {{node.value}}
+    <block wx:for="{{node.children}}" wx:key="index">
+      <template is="{{util.tpl(item.tagName)}}" data="{{node: item}}" />
+    </block>
+  </swiper-item>
+</template>
+
+<template name="swiper-item5">
+  <swiper-item id="{{util.getDefaultValue(node['id'], '')}}" class="{{util.getDefaultValue(node['class'], '')}}" style="{{util.getDefaultValue(node['style'], '')}}" >
+    {{node.value}}
+    <block wx:for="{{node.children}}" wx:key="index">
+      <template is="{{util.tpl(item.tagName)}}" data="{{node: item}}" />
+    </block>
+  </swiper-item>
+</template>
+
+<template name="swiper-item6">
+  <swiper-item id="{{util.getDefaultValue(node['id'], '')}}" class="{{util.getDefaultValue(node['class'], '')}}" style="{{util.getDefaultValue(node['style'], '')}}" >
+    {{node.value}}
+    <block wx:for="{{node.children}}" wx:key="index">
+      <template is="{{util.tpl(item.tagName)}}" data="{{node: item}}" />
+    </block>
+  </swiper-item>
+</template>
+
+<template name="swiper-item7">
+  <swiper-item id="{{util.getDefaultValue(node['id'], '')}}" class="{{util.getDefaultValue(node['class'], '')}}" style="{{util.getDefaultValue(node['style'], '')}}" >
+    {{node.value}}
+    <block wx:for="{{node.children}}" wx:key="index">
+      <template is="{{util.tpl(item.tagName)}}" data="{{node: item}}" />
+    </block>
+  </swiper-item>
+</template>
+
+<template name="swiper-item8">
+  <swiper-item id="{{util.getDefaultValue(node['id'], '')}}" class="{{util.getDefaultValue(node['class'], '')}}" style="{{util.getDefaultValue(node['style'], '')}}" >
+    {{node.value}}
+    <block wx:for="{{node.children}}" wx:key="index">
+      <template is="{{util.tpl(item.tagName)}}" data="{{node: item}}" />
+    </block>
+  </swiper-item>
+</template>
+
+<template name="swiper-item9">
+  <swiper-item id="{{util.getDefaultValue(node['id'], '')}}" class="{{util.getDefaultValue(node['class'], '')}}" style="{{util.getDefaultValue(node['style'], '')}}" >
+    {{node.value}}
+    <block wx:for="{{node.children}}" wx:key="index">
+      <template is="{{util.tpl(item.tagName)}}" data="{{node: item}}" />
+    </block>
+  </swiper-item>
+</template>
+
+<template name="swiper-item10">
+  <swiper-item id="{{util.getDefaultValue(node['id'], '')}}" class="{{util.getDefaultValue(node['class'], '')}}" style="{{util.getDefaultValue(node['style'], '')}}" >
+    {{node.value}}
+    <block wx:for="{{node.children}}" wx:key="index">
+      <template is="{{util.tpl(item.tagName)}}" data="{{node: item}}" />
+    </block>
+  </swiper-item>
+</template>
+
+<!-- ================== swiper-item end ================== -->
+<!-- ================== view start ================== -->
+<template name="view1">
+  <view 
+    id="{{util.getDefaultValue(node['id'], '')}}" 
+    class="{{util.getDefaultValue(node['class'], '')}}" 
+    style="{{util.getDefaultValue(node['style'], '')}}" >
+    {{node.value}}
+    <block wx:for="{{node.children}}" wx:key="index">
+      <template is="{{util.tpl(item.tagName)}}" data="{{node: item}}" />
+    </block>
+  </view>
+</template>
+
+<template name="view2">
+  <view id="{{util.getDefaultValue(node['id'], '')}}" class="{{util.getDefaultValue(node['class'], '')}}" style="{{util.getDefaultValue(node['style'], '')}}" >
+    {{node.value}}
+    <block wx:for="{{node.children}}" wx:key="index">
+      <template is="{{util.tpl(item.tagName)}}" data="{{node: item}}" />
+    </block>
+  </view>
+</template>
+
+<template name="view3">
+  <view id="{{util.getDefaultValue(node['id'], '')}}" class="{{util.getDefaultValue(node['class'], '')}}" style="{{util.getDefaultValue(node['style'], '')}}" >
+    {{node.value}}
+    <block wx:for="{{node.children}}" wx:key="index">
+      <template is="{{util.tpl(item.tagName)}}" data="{{node: item}}" />
+    </block>
+  </view>
+</template>
+
+<template name="view4">
+  <view id="{{util.getDefaultValue(node['id'], '')}}" class="{{util.getDefaultValue(node['class'], '')}}" style="{{util.getDefaultValue(node['style'], '')}}" >
+    {{node.value}}
+    <block wx:for="{{node.children}}" wx:key="index">
+      <template is="{{util.tpl(item.tagName)}}" data="{{node: item}}" />
+    </block>
+  </view>
+</template>
+
+<template name="view5">
+  <view id="{{util.getDefaultValue(node['id'], '')}}" class="{{util.getDefaultValue(node['class'], '')}}" style="{{util.getDefaultValue(node['style'], '')}}" >
+    {{node.value}}
+    <block wx:for="{{node.children}}" wx:key="index">
+      <template is="{{util.tpl(item.tagName)}}" data="{{node: item}}" />
+    </block>
+  </view>
+</template>
+
+<template name="view6">
+  <view id="{{util.getDefaultValue(node['id'], '')}}" class="{{util.getDefaultValue(node['class'], '')}}" style="{{util.getDefaultValue(node['style'], '')}}" >
+    {{node.value}}
+    <block wx:for="{{node.children}}" wx:key="index">
+      <template is="{{util.tpl(item.tagName)}}" data="{{node: item}}" />
+    </block>
+  </view>
+</template>
+
+<template name="view7">
+  <view id="{{util.getDefaultValue(node['id'], '')}}" class="{{util.getDefaultValue(node['class'], '')}}" style="{{util.getDefaultValue(node['style'], '')}}" >
+    {{node.value}}
+    <block wx:for="{{node.children}}" wx:key="index">
+      <template is="{{util.tpl(item.tagName)}}" data="{{node: item}}" />
+    </block>
+  </view>
+</template>
+
+<template name="view8">
+  <view id="{{util.getDefaultValue(node['id'], '')}}" class="{{util.getDefaultValue(node['class'], '')}}" style="{{util.getDefaultValue(node['style'], '')}}" >
+    {{node.value}}
+    <block wx:for="{{node.children}}" wx:key="index">
+      <template is="{{util.tpl(item.tagName)}}" data="{{node: item}}" />
+    </block>
+  </view>
+</template>
+
+<template name="view9">
+  <view id="{{util.getDefaultValue(node['id'], '')}}" class="{{util.getDefaultValue(node['class'], '')}}" style="{{util.getDefaultValue(node['style'], '')}}" >
+    {{node.value}}
+    <block wx:for="{{node.children}}" wx:key="index">
+      <template is="{{util.tpl(item.tagName)}}" data="{{node: item}}" />
+    </block>
+  </view>
+</template>
+
+<template name="view10">
+  <view id="{{util.getDefaultValue(node['id'], '')}}" class="{{util.getDefaultValue(node['class'], '')}}" style="{{util.getDefaultValue(node['style'], '')}}" >
+    {{node.value}}
+    <block wx:for="{{node.children}}" wx:key="index">
+      <template is="{{util.tpl(item.tagName)}}" data="{{node: item}}" />
+    </block>
+  </view>
+</template>
+
+<!-- ================== view end ================== -->
+<!-- ================== icon start ================== -->
+<template name="icon1">
+  <icon 
+    id="{{util.getDefaultValue(node['id'], '')}}" 
+    class="{{util.getDefaultValue(node['class'], '')}}" 
+    style="{{util.getDefaultValue(node['style'], '')}}" >
+    {{node.value}}
+    <block wx:for="{{node.children}}" wx:key="index">
+      <template is="{{util.tpl(item.tagName)}}" data="{{node: item}}" />
+    </block>
+  </icon>
+</template>
+
+<template name="icon2">
+  <icon id="{{util.getDefaultValue(node['id'], '')}}" class="{{util.getDefaultValue(node['class'], '')}}" style="{{util.getDefaultValue(node['style'], '')}}" >
+    {{node.value}}
+    <block wx:for="{{node.children}}" wx:key="index">
+      <template is="{{util.tpl(item.tagName)}}" data="{{node: item}}" />
+    </block>
+  </icon>
+</template>
+
+<template name="icon3">
+  <icon id="{{util.getDefaultValue(node['id'], '')}}" class="{{util.getDefaultValue(node['class'], '')}}" style="{{util.getDefaultValue(node['style'], '')}}" >
+    {{node.value}}
+    <block wx:for="{{node.children}}" wx:key="index">
+      <template is="{{util.tpl(item.tagName)}}" data="{{node: item}}" />
+    </block>
+  </icon>
+</template>
+
+<template name="icon4">
+  <icon id="{{util.getDefaultValue(node['id'], '')}}" class="{{util.getDefaultValue(node['class'], '')}}" style="{{util.getDefaultValue(node['style'], '')}}" >
+    {{node.value}}
+    <block wx:for="{{node.children}}" wx:key="index">
+      <template is="{{util.tpl(item.tagName)}}" data="{{node: item}}" />
+    </block>
+  </icon>
+</template>
+
+<template name="icon5">
+  <icon id="{{util.getDefaultValue(node['id'], '')}}" class="{{util.getDefaultValue(node['class'], '')}}" style="{{util.getDefaultValue(node['style'], '')}}" >
+    {{node.value}}
+    <block wx:for="{{node.children}}" wx:key="index">
+      <template is="{{util.tpl(item.tagName)}}" data="{{node: item}}" />
+    </block>
+  </icon>
+</template>
+
+<template name="icon6">
+  <icon id="{{util.getDefaultValue(node['id'], '')}}" class="{{util.getDefaultValue(node['class'], '')}}" style="{{util.getDefaultValue(node['style'], '')}}" >
+    {{node.value}}
+    <block wx:for="{{node.children}}" wx:key="index">
+      <template is="{{util.tpl(item.tagName)}}" data="{{node: item}}" />
+    </block>
+  </icon>
+</template>
+
+<template name="icon7">
+  <icon id="{{util.getDefaultValue(node['id'], '')}}" class="{{util.getDefaultValue(node['class'], '')}}" style="{{util.getDefaultValue(node['style'], '')}}" >
+    {{node.value}}
+    <block wx:for="{{node.children}}" wx:key="index">
+      <template is="{{util.tpl(item.tagName)}}" data="{{node: item}}" />
+    </block>
+  </icon>
+</template>
+
+<template name="icon8">
+  <icon id="{{util.getDefaultValue(node['id'], '')}}" class="{{util.getDefaultValue(node['class'], '')}}" style="{{util.getDefaultValue(node['style'], '')}}" >
+    {{node.value}}
+    <block wx:for="{{node.children}}" wx:key="index">
+      <template is="{{util.tpl(item.tagName)}}" data="{{node: item}}" />
+    </block>
+  </icon>
+</template>
+
+<template name="icon9">
+  <icon id="{{util.getDefaultValue(node['id'], '')}}" class="{{util.getDefaultValue(node['class'], '')}}" style="{{util.getDefaultValue(node['style'], '')}}" >
+    {{node.value}}
+    <block wx:for="{{node.children}}" wx:key="index">
+      <template is="{{util.tpl(item.tagName)}}" data="{{node: item}}" />
+    </block>
+  </icon>
+</template>
+
+<template name="icon10">
+  <icon id="{{util.getDefaultValue(node['id'], '')}}" class="{{util.getDefaultValue(node['class'], '')}}" style="{{util.getDefaultValue(node['style'], '')}}" >
+    {{node.value}}
+    <block wx:for="{{node.children}}" wx:key="index">
+      <template is="{{util.tpl(item.tagName)}}" data="{{node: item}}" />
+    </block>
+  </icon>
+</template>
+
+<!-- ================== icon end ================== -->
+<!-- ================== progress start ================== -->
+<template name="progress1">
+  <progress 
+    id="{{util.getDefaultValue(node['id'], '')}}" 
+    class="{{util.getDefaultValue(node['class'], '')}}" 
+    style="{{util.getDefaultValue(node['style'], '')}}" >
+    {{node.value}}
+    <block wx:for="{{node.children}}" wx:key="index">
+      <template is="{{util.tpl(item.tagName)}}" data="{{node: item}}" />
+    </block>
+  </progress>
+</template>
+
+<template name="progress2">
+  <progress id="{{util.getDefaultValue(node['id'], '')}}" class="{{util.getDefaultValue(node['class'], '')}}" style="{{util.getDefaultValue(node['style'], '')}}" >
+    {{node.value}}
+    <block wx:for="{{node.children}}" wx:key="index">
+      <template is="{{util.tpl(item.tagName)}}" data="{{node: item}}" />
+    </block>
+  </progress>
+</template>
+
+<template name="progress3">
+  <progress id="{{util.getDefaultValue(node['id'], '')}}" class="{{util.getDefaultValue(node['class'], '')}}" style="{{util.getDefaultValue(node['style'], '')}}" >
+    {{node.value}}
+    <block wx:for="{{node.children}}" wx:key="index">
+      <template is="{{util.tpl(item.tagName)}}" data="{{node: item}}" />
+    </block>
+  </progress>
+</template>
+
+<template name="progress4">
+  <progress id="{{util.getDefaultValue(node['id'], '')}}" class="{{util.getDefaultValue(node['class'], '')}}" style="{{util.getDefaultValue(node['style'], '')}}" >
+    {{node.value}}
+    <block wx:for="{{node.children}}" wx:key="index">
+      <template is="{{util.tpl(item.tagName)}}" data="{{node: item}}" />
+    </block>
+  </progress>
+</template>
+
+<template name="progress5">
+  <progress id="{{util.getDefaultValue(node['id'], '')}}" class="{{util.getDefaultValue(node['class'], '')}}" style="{{util.getDefaultValue(node['style'], '')}}" >
+    {{node.value}}
+    <block wx:for="{{node.children}}" wx:key="index">
+      <template is="{{util.tpl(item.tagName)}}" data="{{node: item}}" />
+    </block>
+  </progress>
+</template>
+
+<template name="progress6">
+  <progress id="{{util.getDefaultValue(node['id'], '')}}" class="{{util.getDefaultValue(node['class'], '')}}" style="{{util.getDefaultValue(node['style'], '')}}" >
+    {{node.value}}
+    <block wx:for="{{node.children}}" wx:key="index">
+      <template is="{{util.tpl(item.tagName)}}" data="{{node: item}}" />
+    </block>
+  </progress>
+</template>
+
+<template name="progress7">
+  <progress id="{{util.getDefaultValue(node['id'], '')}}" class="{{util.getDefaultValue(node['class'], '')}}" style="{{util.getDefaultValue(node['style'], '')}}" >
+    {{node.value}}
+    <block wx:for="{{node.children}}" wx:key="index">
+      <template is="{{util.tpl(item.tagName)}}" data="{{node: item}}" />
+    </block>
+  </progress>
+</template>
+
+<template name="progress8">
+  <progress id="{{util.getDefaultValue(node['id'], '')}}" class="{{util.getDefaultValue(node['class'], '')}}" style="{{util.getDefaultValue(node['style'], '')}}" >
+    {{node.value}}
+    <block wx:for="{{node.children}}" wx:key="index">
+      <template is="{{util.tpl(item.tagName)}}" data="{{node: item}}" />
+    </block>
+  </progress>
+</template>
+
+<template name="progress9">
+  <progress id="{{util.getDefaultValue(node['id'], '')}}" class="{{util.getDefaultValue(node['class'], '')}}" style="{{util.getDefaultValue(node['style'], '')}}" >
+    {{node.value}}
+    <block wx:for="{{node.children}}" wx:key="index">
+      <template is="{{util.tpl(item.tagName)}}" data="{{node: item}}" />
+    </block>
+  </progress>
+</template>
+
+<template name="progress10">
+  <progress id="{{util.getDefaultValue(node['id'], '')}}" class="{{util.getDefaultValue(node['class'], '')}}" style="{{util.getDefaultValue(node['style'], '')}}" >
+    {{node.value}}
+    <block wx:for="{{node.children}}" wx:key="index">
+      <template is="{{util.tpl(item.tagName)}}" data="{{node: item}}" />
+    </block>
+  </progress>
+</template>
+
+<!-- ================== progress end ================== -->
+<!-- ================== rich-text start ================== -->
+<template name="rich-text1">
+  <rich-text 
+    id="{{util.getDefaultValue(node['id'], '')}}" 
+    class="{{util.getDefaultValue(node['class'], '')}}" 
+    style="{{util.getDefaultValue(node['style'], '')}}" >
+    {{node.value}}
+    <block wx:for="{{node.children}}" wx:key="index">
+      <template is="{{util.tpl(item.tagName)}}" data="{{node: item}}" />
+    </block>
+  </rich-text>
+</template>
+
+<template name="rich-text2">
+  <rich-text id="{{util.getDefaultValue(node['id'], '')}}" class="{{util.getDefaultValue(node['class'], '')}}" style="{{util.getDefaultValue(node['style'], '')}}" >
+    {{node.value}}
+    <block wx:for="{{node.children}}" wx:key="index">
+      <template is="{{util.tpl(item.tagName)}}" data="{{node: item}}" />
+    </block>
+  </rich-text>
+</template>
+
+<template name="rich-text3">
+  <rich-text id="{{util.getDefaultValue(node['id'], '')}}" class="{{util.getDefaultValue(node['class'], '')}}" style="{{util.getDefaultValue(node['style'], '')}}" >
+    {{node.value}}
+    <block wx:for="{{node.children}}" wx:key="index">
+      <template is="{{util.tpl(item.tagName)}}" data="{{node: item}}" />
+    </block>
+  </rich-text>
+</template>
+
+<template name="rich-text4">
+  <rich-text id="{{util.getDefaultValue(node['id'], '')}}" class="{{util.getDefaultValue(node['class'], '')}}" style="{{util.getDefaultValue(node['style'], '')}}" >
+    {{node.value}}
+    <block wx:for="{{node.children}}" wx:key="index">
+      <template is="{{util.tpl(item.tagName)}}" data="{{node: item}}" />
+    </block>
+  </rich-text>
+</template>
+
+<template name="rich-text5">
+  <rich-text id="{{util.getDefaultValue(node['id'], '')}}" class="{{util.getDefaultValue(node['class'], '')}}" style="{{util.getDefaultValue(node['style'], '')}}" >
+    {{node.value}}
+    <block wx:for="{{node.children}}" wx:key="index">
+      <template is="{{util.tpl(item.tagName)}}" data="{{node: item}}" />
+    </block>
+  </rich-text>
+</template>
+
+<template name="rich-text6">
+  <rich-text id="{{util.getDefaultValue(node['id'], '')}}" class="{{util.getDefaultValue(node['class'], '')}}" style="{{util.getDefaultValue(node['style'], '')}}" >
+    {{node.value}}
+    <block wx:for="{{node.children}}" wx:key="index">
+      <template is="{{util.tpl(item.tagName)}}" data="{{node: item}}" />
+    </block>
+  </rich-text>
+</template>
+
+<template name="rich-text7">
+  <rich-text id="{{util.getDefaultValue(node['id'], '')}}" class="{{util.getDefaultValue(node['class'], '')}}" style="{{util.getDefaultValue(node['style'], '')}}" >
+    {{node.value}}
+    <block wx:for="{{node.children}}" wx:key="index">
+      <template is="{{util.tpl(item.tagName)}}" data="{{node: item}}" />
+    </block>
+  </rich-text>
+</template>
+
+<template name="rich-text8">
+  <rich-text id="{{util.getDefaultValue(node['id'], '')}}" class="{{util.getDefaultValue(node['class'], '')}}" style="{{util.getDefaultValue(node['style'], '')}}" >
+    {{node.value}}
+    <block wx:for="{{node.children}}" wx:key="index">
+      <template is="{{util.tpl(item.tagName)}}" data="{{node: item}}" />
+    </block>
+  </rich-text>
+</template>
+
+<template name="rich-text9">
+  <rich-text id="{{util.getDefaultValue(node['id'], '')}}" class="{{util.getDefaultValue(node['class'], '')}}" style="{{util.getDefaultValue(node['style'], '')}}" >
+    {{node.value}}
+    <block wx:for="{{node.children}}" wx:key="index">
+      <template is="{{util.tpl(item.tagName)}}" data="{{node: item}}" />
+    </block>
+  </rich-text>
+</template>
+
+<template name="rich-text10">
+  <rich-text id="{{util.getDefaultValue(node['id'], '')}}" class="{{util.getDefaultValue(node['class'], '')}}" style="{{util.getDefaultValue(node['style'], '')}}" >
+    {{node.value}}
+    <block wx:for="{{node.children}}" wx:key="index">
+      <template is="{{util.tpl(item.tagName)}}" data="{{node: item}}" />
+    </block>
+  </rich-text>
+</template>
+
+<!-- ================== rich-text end ================== -->
+<!-- ================== text start ================== -->
+<template name="text1">
+  <text 
+    id="{{util.getDefaultValue(node['id'], '')}}" 
+    class="{{util.getDefaultValue(node['class'], '')}}" 
+    style="{{util.getDefaultValue(node['style'], '')}}" >
+    {{node.value}}
+    <block wx:for="{{node.children}}" wx:key="index">
+      <template is="{{util.tpl(item.tagName)}}" data="{{node: item}}" />
+    </block>
+  </text>
+</template>
+
+<template name="text2">
+  <text id="{{util.getDefaultValue(node['id'], '')}}" class="{{util.getDefaultValue(node['class'], '')}}" style="{{util.getDefaultValue(node['style'], '')}}" >
+    {{node.value}}
+    <block wx:for="{{node.children}}" wx:key="index">
+      <template is="{{util.tpl(item.tagName)}}" data="{{node: item}}" />
+    </block>
+  </text>
+</template>
+
+<template name="text3">
+  <text id="{{util.getDefaultValue(node['id'], '')}}" class="{{util.getDefaultValue(node['class'], '')}}" style="{{util.getDefaultValue(node['style'], '')}}" >
+    {{node.value}}
+    <block wx:for="{{node.children}}" wx:key="index">
+      <template is="{{util.tpl(item.tagName)}}" data="{{node: item}}" />
+    </block>
+  </text>
+</template>
+
+<template name="text4">
+  <text id="{{util.getDefaultValue(node['id'], '')}}" class="{{util.getDefaultValue(node['class'], '')}}" style="{{util.getDefaultValue(node['style'], '')}}" >
+    {{node.value}}
+    <block wx:for="{{node.children}}" wx:key="index">
+      <template is="{{util.tpl(item.tagName)}}" data="{{node: item}}" />
+    </block>
+  </text>
+</template>
+
+<template name="text5">
+  <text id="{{util.getDefaultValue(node['id'], '')}}" class="{{util.getDefaultValue(node['class'], '')}}" style="{{util.getDefaultValue(node['style'], '')}}" >
+    {{node.value}}
+    <block wx:for="{{node.children}}" wx:key="index">
+      <template is="{{util.tpl(item.tagName)}}" data="{{node: item}}" />
+    </block>
+  </text>
+</template>
+
+<template name="text6">
+  <text id="{{util.getDefaultValue(node['id'], '')}}" class="{{util.getDefaultValue(node['class'], '')}}" style="{{util.getDefaultValue(node['style'], '')}}" >
+    {{node.value}}
+    <block wx:for="{{node.children}}" wx:key="index">
+      <template is="{{util.tpl(item.tagName)}}" data="{{node: item}}" />
+    </block>
+  </text>
+</template>
+
+<template name="text7">
+  <text id="{{util.getDefaultValue(node['id'], '')}}" class="{{util.getDefaultValue(node['class'], '')}}" style="{{util.getDefaultValue(node['style'], '')}}" >
+    {{node.value}}
+    <block wx:for="{{node.children}}" wx:key="index">
+      <template is="{{util.tpl(item.tagName)}}" data="{{node: item}}" />
+    </block>
+  </text>
+</template>
+
+<template name="text8">
+  <text id="{{util.getDefaultValue(node['id'], '')}}" class="{{util.getDefaultValue(node['class'], '')}}" style="{{util.getDefaultValue(node['style'], '')}}" >
+    {{node.value}}
+    <block wx:for="{{node.children}}" wx:key="index">
+      <template is="{{util.tpl(item.tagName)}}" data="{{node: item}}" />
+    </block>
+  </text>
+</template>
+
+<template name="text9">
+  <text id="{{util.getDefaultValue(node['id'], '')}}" class="{{util.getDefaultValue(node['class'], '')}}" style="{{util.getDefaultValue(node['style'], '')}}" >
+    {{node.value}}
+    <block wx:for="{{node.children}}" wx:key="index">
+      <template is="{{util.tpl(item.tagName)}}" data="{{node: item}}" />
+    </block>
+  </text>
+</template>
+
+<template name="text10">
+  <text id="{{util.getDefaultValue(node['id'], '')}}" class="{{util.getDefaultValue(node['class'], '')}}" style="{{util.getDefaultValue(node['style'], '')}}" >
+    {{node.value}}
+    <block wx:for="{{node.children}}" wx:key="index">
+      <template is="{{util.tpl(item.tagName)}}" data="{{node: item}}" />
+    </block>
+  </text>
+</template>
+
+<!-- ================== text end ================== -->
+<!-- ================== button start ================== -->
+<template name="button1">
+  <button 
+    id="{{util.getDefaultValue(node['id'], '')}}" 
+    class="{{util.getDefaultValue(node['class'], '')}}" 
+    style="{{util.getDefaultValue(node['style'], '')}}" >
+    {{node.value}}
+    <block wx:for="{{node.children}}" wx:key="index">
+      <template is="{{util.tpl(item.tagName)}}" data="{{node: item}}" />
+    </block>
+  </button>
+</template>
+
+<template name="button2">
+  <button id="{{util.getDefaultValue(node['id'], '')}}" class="{{util.getDefaultValue(node['class'], '')}}" style="{{util.getDefaultValue(node['style'], '')}}" >
+    {{node.value}}
+    <block wx:for="{{node.children}}" wx:key="index">
+      <template is="{{util.tpl(item.tagName)}}" data="{{node: item}}" />
+    </block>
+  </button>
+</template>
+
+<template name="button3">
+  <button id="{{util.getDefaultValue(node['id'], '')}}" class="{{util.getDefaultValue(node['class'], '')}}" style="{{util.getDefaultValue(node['style'], '')}}" >
+    {{node.value}}
+    <block wx:for="{{node.children}}" wx:key="index">
+      <template is="{{util.tpl(item.tagName)}}" data="{{node: item}}" />
+    </block>
+  </button>
+</template>
+
+<template name="button4">
+  <button id="{{util.getDefaultValue(node['id'], '')}}" class="{{util.getDefaultValue(node['class'], '')}}" style="{{util.getDefaultValue(node['style'], '')}}" >
+    {{node.value}}
+    <block wx:for="{{node.children}}" wx:key="index">
+      <template is="{{util.tpl(item.tagName)}}" data="{{node: item}}" />
+    </block>
+  </button>
+</template>
+
+<template name="button5">
+  <button id="{{util.getDefaultValue(node['id'], '')}}" class="{{util.getDefaultValue(node['class'], '')}}" style="{{util.getDefaultValue(node['style'], '')}}" >
+    {{node.value}}
+    <block wx:for="{{node.children}}" wx:key="index">
+      <template is="{{util.tpl(item.tagName)}}" data="{{node: item}}" />
+    </block>
+  </button>
+</template>
+
+<template name="button6">
+  <button id="{{util.getDefaultValue(node['id'], '')}}" class="{{util.getDefaultValue(node['class'], '')}}" style="{{util.getDefaultValue(node['style'], '')}}" >
+    {{node.value}}
+    <block wx:for="{{node.children}}" wx:key="index">
+      <template is="{{util.tpl(item.tagName)}}" data="{{node: item}}" />
+    </block>
+  </button>
+</template>
+
+<template name="button7">
+  <button id="{{util.getDefaultValue(node['id'], '')}}" class="{{util.getDefaultValue(node['class'], '')}}" style="{{util.getDefaultValue(node['style'], '')}}" >
+    {{node.value}}
+    <block wx:for="{{node.children}}" wx:key="index">
+      <template is="{{util.tpl(item.tagName)}}" data="{{node: item}}" />
+    </block>
+  </button>
+</template>
+
+<template name="button8">
+  <button id="{{util.getDefaultValue(node['id'], '')}}" class="{{util.getDefaultValue(node['class'], '')}}" style="{{util.getDefaultValue(node['style'], '')}}" >
+    {{node.value}}
+    <block wx:for="{{node.children}}" wx:key="index">
+      <template is="{{util.tpl(item.tagName)}}" data="{{node: item}}" />
+    </block>
+  </button>
+</template>
+
+<template name="button9">
+  <button id="{{util.getDefaultValue(node['id'], '')}}" class="{{util.getDefaultValue(node['class'], '')}}" style="{{util.getDefaultValue(node['style'], '')}}" >
+    {{node.value}}
+    <block wx:for="{{node.children}}" wx:key="index">
+      <template is="{{util.tpl(item.tagName)}}" data="{{node: item}}" />
+    </block>
+  </button>
+</template>
+
+<template name="button10">
+  <button id="{{util.getDefaultValue(node['id'], '')}}" class="{{util.getDefaultValue(node['class'], '')}}" style="{{util.getDefaultValue(node['style'], '')}}" >
+    {{node.value}}
+    <block wx:for="{{node.children}}" wx:key="index">
+      <template is="{{util.tpl(item.tagName)}}" data="{{node: item}}" />
+    </block>
+  </button>
+</template>
+
+<!-- ================== button end ================== -->
+<!-- ================== checkbox start ================== -->
+<template name="checkbox1">
+  <checkbox 
+    value="{{util.getDefaultValue(node['value'], 'undefined')}}" 
+    id="{{util.getDefaultValue(node['id'], '')}}" 
+    class="{{util.getDefaultValue(node['class'], '')}}" 
+    style="{{util.getDefaultValue(node['style'], '')}}" >
+    {{node.value}}
+    <block wx:for="{{node.children}}" wx:key="index">
+      <template is="{{util.tpl(item.tagName)}}" data="{{node: item}}" />
+    </block>
+  </checkbox>
+</template>
+
+<template name="checkbox2">
+  <checkbox value="{{util.getDefaultValue(node['value'], 'undefined')}}" id="{{util.getDefaultValue(node['id'], '')}}" class="{{util.getDefaultValue(node['class'], '')}}" style="{{util.getDefaultValue(node['style'], '')}}" >
+    {{node.value}}
+    <block wx:for="{{node.children}}" wx:key="index">
+      <template is="{{util.tpl(item.tagName)}}" data="{{node: item}}" />
+    </block>
+  </checkbox>
+</template>
+
+<template name="checkbox3">
+  <checkbox value="{{util.getDefaultValue(node['value'], 'undefined')}}" id="{{util.getDefaultValue(node['id'], '')}}" class="{{util.getDefaultValue(node['class'], '')}}" style="{{util.getDefaultValue(node['style'], '')}}" >
+    {{node.value}}
+    <block wx:for="{{node.children}}" wx:key="index">
+      <template is="{{util.tpl(item.tagName)}}" data="{{node: item}}" />
+    </block>
+  </checkbox>
+</template>
+
+<template name="checkbox4">
+  <checkbox value="{{util.getDefaultValue(node['value'], 'undefined')}}" id="{{util.getDefaultValue(node['id'], '')}}" class="{{util.getDefaultValue(node['class'], '')}}" style="{{util.getDefaultValue(node['style'], '')}}" >
+    {{node.value}}
+    <block wx:for="{{node.children}}" wx:key="index">
+      <template is="{{util.tpl(item.tagName)}}" data="{{node: item}}" />
+    </block>
+  </checkbox>
+</template>
+
+<template name="checkbox5">
+  <checkbox value="{{util.getDefaultValue(node['value'], 'undefined')}}" id="{{util.getDefaultValue(node['id'], '')}}" class="{{util.getDefaultValue(node['class'], '')}}" style="{{util.getDefaultValue(node['style'], '')}}" >
+    {{node.value}}
+    <block wx:for="{{node.children}}" wx:key="index">
+      <template is="{{util.tpl(item.tagName)}}" data="{{node: item}}" />
+    </block>
+  </checkbox>
+</template>
+
+<template name="checkbox6">
+  <checkbox value="{{util.getDefaultValue(node['value'], 'undefined')}}" id="{{util.getDefaultValue(node['id'], '')}}" class="{{util.getDefaultValue(node['class'], '')}}" style="{{util.getDefaultValue(node['style'], '')}}" >
+    {{node.value}}
+    <block wx:for="{{node.children}}" wx:key="index">
+      <template is="{{util.tpl(item.tagName)}}" data="{{node: item}}" />
+    </block>
+  </checkbox>
+</template>
+
+<template name="checkbox7">
+  <checkbox value="{{util.getDefaultValue(node['value'], 'undefined')}}" id="{{util.getDefaultValue(node['id'], '')}}" class="{{util.getDefaultValue(node['class'], '')}}" style="{{util.getDefaultValue(node['style'], '')}}" >
+    {{node.value}}
+    <block wx:for="{{node.children}}" wx:key="index">
+      <template is="{{util.tpl(item.tagName)}}" data="{{node: item}}" />
+    </block>
+  </checkbox>
+</template>
+
+<template name="checkbox8">
+  <checkbox value="{{util.getDefaultValue(node['value'], 'undefined')}}" id="{{util.getDefaultValue(node['id'], '')}}" class="{{util.getDefaultValue(node['class'], '')}}" style="{{util.getDefaultValue(node['style'], '')}}" >
+    {{node.value}}
+    <block wx:for="{{node.children}}" wx:key="index">
+      <template is="{{util.tpl(item.tagName)}}" data="{{node: item}}" />
+    </block>
+  </checkbox>
+</template>
+
+<template name="checkbox9">
+  <checkbox value="{{util.getDefaultValue(node['value'], 'undefined')}}" id="{{util.getDefaultValue(node['id'], '')}}" class="{{util.getDefaultValue(node['class'], '')}}" style="{{util.getDefaultValue(node['style'], '')}}" >
+    {{node.value}}
+    <block wx:for="{{node.children}}" wx:key="index">
+      <template is="{{util.tpl(item.tagName)}}" data="{{node: item}}" />
+    </block>
+  </checkbox>
+</template>
+
+<template name="checkbox10">
+  <checkbox value="{{util.getDefaultValue(node['value'], 'undefined')}}" id="{{util.getDefaultValue(node['id'], '')}}" class="{{util.getDefaultValue(node['class'], '')}}" style="{{util.getDefaultValue(node['style'], '')}}" >
+    {{node.value}}
+    <block wx:for="{{node.children}}" wx:key="index">
+      <template is="{{util.tpl(item.tagName)}}" data="{{node: item}}" />
+    </block>
+  </checkbox>
+</template>
+
+<!-- ================== checkbox end ================== -->
+<!-- ================== checkbox-group start ================== -->
+<template name="checkbox-group1">
+  <checkbox-group 
+    id="{{util.getDefaultValue(node['id'], '')}}" 
+    class="{{util.getDefaultValue(node['class'], '')}}" 
+    style="{{util.getDefaultValue(node['style'], '')}}" >
+    {{node.value}}
+    <block wx:for="{{node.children}}" wx:key="index">
+      <template is="{{util.tpl(item.tagName)}}" data="{{node: item}}" />
+    </block>
+  </checkbox-group>
+</template>
+
+<template name="checkbox-group2">
+  <checkbox-group id="{{util.getDefaultValue(node['id'], '')}}" class="{{util.getDefaultValue(node['class'], '')}}" style="{{util.getDefaultValue(node['style'], '')}}" >
+    {{node.value}}
+    <block wx:for="{{node.children}}" wx:key="index">
+      <template is="{{util.tpl(item.tagName)}}" data="{{node: item}}" />
+    </block>
+  </checkbox-group>
+</template>
+
+<template name="checkbox-group3">
+  <checkbox-group id="{{util.getDefaultValue(node['id'], '')}}" class="{{util.getDefaultValue(node['class'], '')}}" style="{{util.getDefaultValue(node['style'], '')}}" >
+    {{node.value}}
+    <block wx:for="{{node.children}}" wx:key="index">
+      <template is="{{util.tpl(item.tagName)}}" data="{{node: item}}" />
+    </block>
+  </checkbox-group>
+</template>
+
+<template name="checkbox-group4">
+  <checkbox-group id="{{util.getDefaultValue(node['id'], '')}}" class="{{util.getDefaultValue(node['class'], '')}}" style="{{util.getDefaultValue(node['style'], '')}}" >
+    {{node.value}}
+    <block wx:for="{{node.children}}" wx:key="index">
+      <template is="{{util.tpl(item.tagName)}}" data="{{node: item}}" />
+    </block>
+  </checkbox-group>
+</template>
+
+<template name="checkbox-group5">
+  <checkbox-group id="{{util.getDefaultValue(node['id'], '')}}" class="{{util.getDefaultValue(node['class'], '')}}" style="{{util.getDefaultValue(node['style'], '')}}" >
+    {{node.value}}
+    <block wx:for="{{node.children}}" wx:key="index">
+      <template is="{{util.tpl(item.tagName)}}" data="{{node: item}}" />
+    </block>
+  </checkbox-group>
+</template>
+
+<template name="checkbox-group6">
+  <checkbox-group id="{{util.getDefaultValue(node['id'], '')}}" class="{{util.getDefaultValue(node['class'], '')}}" style="{{util.getDefaultValue(node['style'], '')}}" >
+    {{node.value}}
+    <block wx:for="{{node.children}}" wx:key="index">
+      <template is="{{util.tpl(item.tagName)}}" data="{{node: item}}" />
+    </block>
+  </checkbox-group>
+</template>
+
+<template name="checkbox-group7">
+  <checkbox-group id="{{util.getDefaultValue(node['id'], '')}}" class="{{util.getDefaultValue(node['class'], '')}}" style="{{util.getDefaultValue(node['style'], '')}}" >
+    {{node.value}}
+    <block wx:for="{{node.children}}" wx:key="index">
+      <template is="{{util.tpl(item.tagName)}}" data="{{node: item}}" />
+    </block>
+  </checkbox-group>
+</template>
+
+<template name="checkbox-group8">
+  <checkbox-group id="{{util.getDefaultValue(node['id'], '')}}" class="{{util.getDefaultValue(node['class'], '')}}" style="{{util.getDefaultValue(node['style'], '')}}" >
+    {{node.value}}
+    <block wx:for="{{node.children}}" wx:key="index">
+      <template is="{{util.tpl(item.tagName)}}" data="{{node: item}}" />
+    </block>
+  </checkbox-group>
+</template>
+
+<template name="checkbox-group9">
+  <checkbox-group id="{{util.getDefaultValue(node['id'], '')}}" class="{{util.getDefaultValue(node['class'], '')}}" style="{{util.getDefaultValue(node['style'], '')}}" >
+    {{node.value}}
+    <block wx:for="{{node.children}}" wx:key="index">
+      <template is="{{util.tpl(item.tagName)}}" data="{{node: item}}" />
+    </block>
+  </checkbox-group>
+</template>
+
+<template name="checkbox-group10">
+  <checkbox-group id="{{util.getDefaultValue(node['id'], '')}}" class="{{util.getDefaultValue(node['class'], '')}}" style="{{util.getDefaultValue(node['style'], '')}}" >
+    {{node.value}}
+    <block wx:for="{{node.children}}" wx:key="index">
+      <template is="{{util.tpl(item.tagName)}}" data="{{node: item}}" />
+    </block>
+  </checkbox-group>
+</template>
+
+<!-- ================== checkbox-group end ================== -->
+<!-- ================== editor start ================== -->
+<template name="editor1">
+  <editor 
+    id="{{util.getDefaultValue(node['id'], '')}}" 
+    class="{{util.getDefaultValue(node['class'], '')}}" 
+    style="{{util.getDefaultValue(node['style'], '')}}" >
+    {{node.value}}
+    <block wx:for="{{node.children}}" wx:key="index">
+      <template is="{{util.tpl(item.tagName)}}" data="{{node: item}}" />
+    </block>
+  </editor>
+</template>
+
+<template name="editor2">
+  <editor id="{{util.getDefaultValue(node['id'], '')}}" class="{{util.getDefaultValue(node['class'], '')}}" style="{{util.getDefaultValue(node['style'], '')}}" >
+    {{node.value}}
+    <block wx:for="{{node.children}}" wx:key="index">
+      <template is="{{util.tpl(item.tagName)}}" data="{{node: item}}" />
+    </block>
+  </editor>
+</template>
+
+<template name="editor3">
+  <editor id="{{util.getDefaultValue(node['id'], '')}}" class="{{util.getDefaultValue(node['class'], '')}}" style="{{util.getDefaultValue(node['style'], '')}}" >
+    {{node.value}}
+    <block wx:for="{{node.children}}" wx:key="index">
+      <template is="{{util.tpl(item.tagName)}}" data="{{node: item}}" />
+    </block>
+  </editor>
+</template>
+
+<template name="editor4">
+  <editor id="{{util.getDefaultValue(node['id'], '')}}" class="{{util.getDefaultValue(node['class'], '')}}" style="{{util.getDefaultValue(node['style'], '')}}" >
+    {{node.value}}
+    <block wx:for="{{node.children}}" wx:key="index">
+      <template is="{{util.tpl(item.tagName)}}" data="{{node: item}}" />
+    </block>
+  </editor>
+</template>
+
+<template name="editor5">
+  <editor id="{{util.getDefaultValue(node['id'], '')}}" class="{{util.getDefaultValue(node['class'], '')}}" style="{{util.getDefaultValue(node['style'], '')}}" >
+    {{node.value}}
+    <block wx:for="{{node.children}}" wx:key="index">
+      <template is="{{util.tpl(item.tagName)}}" data="{{node: item}}" />
+    </block>
+  </editor>
+</template>
+
+<template name="editor6">
+  <editor id="{{util.getDefaultValue(node['id'], '')}}" class="{{util.getDefaultValue(node['class'], '')}}" style="{{util.getDefaultValue(node['style'], '')}}" >
+    {{node.value}}
+    <block wx:for="{{node.children}}" wx:key="index">
+      <template is="{{util.tpl(item.tagName)}}" data="{{node: item}}" />
+    </block>
+  </editor>
+</template>
+
+<template name="editor7">
+  <editor id="{{util.getDefaultValue(node['id'], '')}}" class="{{util.getDefaultValue(node['class'], '')}}" style="{{util.getDefaultValue(node['style'], '')}}" >
+    {{node.value}}
+    <block wx:for="{{node.children}}" wx:key="index">
+      <template is="{{util.tpl(item.tagName)}}" data="{{node: item}}" />
+    </block>
+  </editor>
+</template>
+
+<template name="editor8">
+  <editor id="{{util.getDefaultValue(node['id'], '')}}" class="{{util.getDefaultValue(node['class'], '')}}" style="{{util.getDefaultValue(node['style'], '')}}" >
+    {{node.value}}
+    <block wx:for="{{node.children}}" wx:key="index">
+      <template is="{{util.tpl(item.tagName)}}" data="{{node: item}}" />
+    </block>
+  </editor>
+</template>
+
+<template name="editor9">
+  <editor id="{{util.getDefaultValue(node['id'], '')}}" class="{{util.getDefaultValue(node['class'], '')}}" style="{{util.getDefaultValue(node['style'], '')}}" >
+    {{node.value}}
+    <block wx:for="{{node.children}}" wx:key="index">
+      <template is="{{util.tpl(item.tagName)}}" data="{{node: item}}" />
+    </block>
+  </editor>
+</template>
+
+<template name="editor10">
+  <editor id="{{util.getDefaultValue(node['id'], '')}}" class="{{util.getDefaultValue(node['class'], '')}}" style="{{util.getDefaultValue(node['style'], '')}}" >
+    {{node.value}}
+    <block wx:for="{{node.children}}" wx:key="index">
+      <template is="{{util.tpl(item.tagName)}}" data="{{node: item}}" />
+    </block>
+  </editor>
+</template>
+
+<!-- ================== editor end ================== -->
+<!-- ================== form start ================== -->
+<template name="form1">
+  <form 
+    id="{{util.getDefaultValue(node['id'], '')}}" 
+    class="{{util.getDefaultValue(node['class'], '')}}" 
+    style="{{util.getDefaultValue(node['style'], '')}}" >
+    {{node.value}}
+    <block wx:for="{{node.children}}" wx:key="index">
+      <template is="{{util.tpl(item.tagName)}}" data="{{node: item}}" />
+    </block>
+  </form>
+</template>
+
+<template name="form2">
+  <form id="{{util.getDefaultValue(node['id'], '')}}" class="{{util.getDefaultValue(node['class'], '')}}" style="{{util.getDefaultValue(node['style'], '')}}" >
+    {{node.value}}
+    <block wx:for="{{node.children}}" wx:key="index">
+      <template is="{{util.tpl(item.tagName)}}" data="{{node: item}}" />
+    </block>
+  </form>
+</template>
+
+<template name="form3">
+  <form id="{{util.getDefaultValue(node['id'], '')}}" class="{{util.getDefaultValue(node['class'], '')}}" style="{{util.getDefaultValue(node['style'], '')}}" >
+    {{node.value}}
+    <block wx:for="{{node.children}}" wx:key="index">
+      <template is="{{util.tpl(item.tagName)}}" data="{{node: item}}" />
+    </block>
+  </form>
+</template>
+
+<template name="form4">
+  <form id="{{util.getDefaultValue(node['id'], '')}}" class="{{util.getDefaultValue(node['class'], '')}}" style="{{util.getDefaultValue(node['style'], '')}}" >
+    {{node.value}}
+    <block wx:for="{{node.children}}" wx:key="index">
+      <template is="{{util.tpl(item.tagName)}}" data="{{node: item}}" />
+    </block>
+  </form>
+</template>
+
+<template name="form5">
+  <form id="{{util.getDefaultValue(node['id'], '')}}" class="{{util.getDefaultValue(node['class'], '')}}" style="{{util.getDefaultValue(node['style'], '')}}" >
+    {{node.value}}
+    <block wx:for="{{node.children}}" wx:key="index">
+      <template is="{{util.tpl(item.tagName)}}" data="{{node: item}}" />
+    </block>
+  </form>
+</template>
+
+<template name="form6">
+  <form id="{{util.getDefaultValue(node['id'], '')}}" class="{{util.getDefaultValue(node['class'], '')}}" style="{{util.getDefaultValue(node['style'], '')}}" >
+    {{node.value}}
+    <block wx:for="{{node.children}}" wx:key="index">
+      <template is="{{util.tpl(item.tagName)}}" data="{{node: item}}" />
+    </block>
+  </form>
+</template>
+
+<template name="form7">
+  <form id="{{util.getDefaultValue(node['id'], '')}}" class="{{util.getDefaultValue(node['class'], '')}}" style="{{util.getDefaultValue(node['style'], '')}}" >
+    {{node.value}}
+    <block wx:for="{{node.children}}" wx:key="index">
+      <template is="{{util.tpl(item.tagName)}}" data="{{node: item}}" />
+    </block>
+  </form>
+</template>
+
+<template name="form8">
+  <form id="{{util.getDefaultValue(node['id'], '')}}" class="{{util.getDefaultValue(node['class'], '')}}" style="{{util.getDefaultValue(node['style'], '')}}" >
+    {{node.value}}
+    <block wx:for="{{node.children}}" wx:key="index">
+      <template is="{{util.tpl(item.tagName)}}" data="{{node: item}}" />
+    </block>
+  </form>
+</template>
+
+<template name="form9">
+  <form id="{{util.getDefaultValue(node['id'], '')}}" class="{{util.getDefaultValue(node['class'], '')}}" style="{{util.getDefaultValue(node['style'], '')}}" >
+    {{node.value}}
+    <block wx:for="{{node.children}}" wx:key="index">
+      <template is="{{util.tpl(item.tagName)}}" data="{{node: item}}" />
+    </block>
+  </form>
+</template>
+
+<template name="form10">
+  <form id="{{util.getDefaultValue(node['id'], '')}}" class="{{util.getDefaultValue(node['class'], '')}}" style="{{util.getDefaultValue(node['style'], '')}}" >
+    {{node.value}}
+    <block wx:for="{{node.children}}" wx:key="index">
+      <template is="{{util.tpl(item.tagName)}}" data="{{node: item}}" />
+    </block>
+  </form>
+</template>
+
+<!-- ================== form end ================== -->
+<!-- ================== input start ================== -->
+<template name="input1">
+  <input 
+    value="{{util.getDefaultValue(node['value'], 'undefined')}}" 
+    id="{{util.getDefaultValue(node['id'], '')}}" 
+    class="{{util.getDefaultValue(node['class'], '')}}" 
+    style="{{util.getDefaultValue(node['style'], '')}}" >
+    {{node.value}}
+    <block wx:for="{{node.children}}" wx:key="index">
+      <template is="{{util.tpl(item.tagName)}}" data="{{node: item}}" />
+    </block>
+  </input>
+</template>
+
+<template name="input2">
+  <input value="{{util.getDefaultValue(node['value'], 'undefined')}}" id="{{util.getDefaultValue(node['id'], '')}}" class="{{util.getDefaultValue(node['class'], '')}}" style="{{util.getDefaultValue(node['style'], '')}}" >
+    {{node.value}}
+    <block wx:for="{{node.children}}" wx:key="index">
+      <template is="{{util.tpl(item.tagName)}}" data="{{node: item}}" />
+    </block>
+  </input>
+</template>
+
+<template name="input3">
+  <input value="{{util.getDefaultValue(node['value'], 'undefined')}}" id="{{util.getDefaultValue(node['id'], '')}}" class="{{util.getDefaultValue(node['class'], '')}}" style="{{util.getDefaultValue(node['style'], '')}}" >
+    {{node.value}}
+    <block wx:for="{{node.children}}" wx:key="index">
+      <template is="{{util.tpl(item.tagName)}}" data="{{node: item}}" />
+    </block>
+  </input>
+</template>
+
+<template name="input4">
+  <input value="{{util.getDefaultValue(node['value'], 'undefined')}}" id="{{util.getDefaultValue(node['id'], '')}}" class="{{util.getDefaultValue(node['class'], '')}}" style="{{util.getDefaultValue(node['style'], '')}}" >
+    {{node.value}}
+    <block wx:for="{{node.children}}" wx:key="index">
+      <template is="{{util.tpl(item.tagName)}}" data="{{node: item}}" />
+    </block>
+  </input>
+</template>
+
+<template name="input5">
+  <input value="{{util.getDefaultValue(node['value'], 'undefined')}}" id="{{util.getDefaultValue(node['id'], '')}}" class="{{util.getDefaultValue(node['class'], '')}}" style="{{util.getDefaultValue(node['style'], '')}}" >
+    {{node.value}}
+    <block wx:for="{{node.children}}" wx:key="index">
+      <template is="{{util.tpl(item.tagName)}}" data="{{node: item}}" />
+    </block>
+  </input>
+</template>
+
+<template name="input6">
+  <input value="{{util.getDefaultValue(node['value'], 'undefined')}}" id="{{util.getDefaultValue(node['id'], '')}}" class="{{util.getDefaultValue(node['class'], '')}}" style="{{util.getDefaultValue(node['style'], '')}}" >
+    {{node.value}}
+    <block wx:for="{{node.children}}" wx:key="index">
+      <template is="{{util.tpl(item.tagName)}}" data="{{node: item}}" />
+    </block>
+  </input>
+</template>
+
+<template name="input7">
+  <input value="{{util.getDefaultValue(node['value'], 'undefined')}}" id="{{util.getDefaultValue(node['id'], '')}}" class="{{util.getDefaultValue(node['class'], '')}}" style="{{util.getDefaultValue(node['style'], '')}}" >
+    {{node.value}}
+    <block wx:for="{{node.children}}" wx:key="index">
+      <template is="{{util.tpl(item.tagName)}}" data="{{node: item}}" />
+    </block>
+  </input>
+</template>
+
+<template name="input8">
+  <input value="{{util.getDefaultValue(node['value'], 'undefined')}}" id="{{util.getDefaultValue(node['id'], '')}}" class="{{util.getDefaultValue(node['class'], '')}}" style="{{util.getDefaultValue(node['style'], '')}}" >
+    {{node.value}}
+    <block wx:for="{{node.children}}" wx:key="index">
+      <template is="{{util.tpl(item.tagName)}}" data="{{node: item}}" />
+    </block>
+  </input>
+</template>
+
+<template name="input9">
+  <input value="{{util.getDefaultValue(node['value'], 'undefined')}}" id="{{util.getDefaultValue(node['id'], '')}}" class="{{util.getDefaultValue(node['class'], '')}}" style="{{util.getDefaultValue(node['style'], '')}}" >
+    {{node.value}}
+    <block wx:for="{{node.children}}" wx:key="index">
+      <template is="{{util.tpl(item.tagName)}}" data="{{node: item}}" />
+    </block>
+  </input>
+</template>
+
+<template name="input10">
+  <input value="{{util.getDefaultValue(node['value'], 'undefined')}}" id="{{util.getDefaultValue(node['id'], '')}}" class="{{util.getDefaultValue(node['class'], '')}}" style="{{util.getDefaultValue(node['style'], '')}}" >
+    {{node.value}}
+    <block wx:for="{{node.children}}" wx:key="index">
+      <template is="{{util.tpl(item.tagName)}}" data="{{node: item}}" />
+    </block>
+  </input>
+</template>
+
+<!-- ================== input end ================== -->
+<!-- ================== label start ================== -->
+<template name="label1">
+  <label 
+    id="{{util.getDefaultValue(node['id'], '')}}" 
+    class="{{util.getDefaultValue(node['class'], '')}}" 
+    style="{{util.getDefaultValue(node['style'], '')}}" >
+    {{node.value}}
+    <block wx:for="{{node.children}}" wx:key="index">
+      <template is="{{util.tpl(item.tagName)}}" data="{{node: item}}" />
+    </block>
+  </label>
+</template>
+
+<template name="label2">
+  <label id="{{util.getDefaultValue(node['id'], '')}}" class="{{util.getDefaultValue(node['class'], '')}}" style="{{util.getDefaultValue(node['style'], '')}}" >
+    {{node.value}}
+    <block wx:for="{{node.children}}" wx:key="index">
+      <template is="{{util.tpl(item.tagName)}}" data="{{node: item}}" />
+    </block>
+  </label>
+</template>
+
+<template name="label3">
+  <label id="{{util.getDefaultValue(node['id'], '')}}" class="{{util.getDefaultValue(node['class'], '')}}" style="{{util.getDefaultValue(node['style'], '')}}" >
+    {{node.value}}
+    <block wx:for="{{node.children}}" wx:key="index">
+      <template is="{{util.tpl(item.tagName)}}" data="{{node: item}}" />
+    </block>
+  </label>
+</template>
+
+<template name="label4">
+  <label id="{{util.getDefaultValue(node['id'], '')}}" class="{{util.getDefaultValue(node['class'], '')}}" style="{{util.getDefaultValue(node['style'], '')}}" >
+    {{node.value}}
+    <block wx:for="{{node.children}}" wx:key="index">
+      <template is="{{util.tpl(item.tagName)}}" data="{{node: item}}" />
+    </block>
+  </label>
+</template>
+
+<template name="label5">
+  <label id="{{util.getDefaultValue(node['id'], '')}}" class="{{util.getDefaultValue(node['class'], '')}}" style="{{util.getDefaultValue(node['style'], '')}}" >
+    {{node.value}}
+    <block wx:for="{{node.children}}" wx:key="index">
+      <template is="{{util.tpl(item.tagName)}}" data="{{node: item}}" />
+    </block>
+  </label>
+</template>
+
+<template name="label6">
+  <label id="{{util.getDefaultValue(node['id'], '')}}" class="{{util.getDefaultValue(node['class'], '')}}" style="{{util.getDefaultValue(node['style'], '')}}" >
+    {{node.value}}
+    <block wx:for="{{node.children}}" wx:key="index">
+      <template is="{{util.tpl(item.tagName)}}" data="{{node: item}}" />
+    </block>
+  </label>
+</template>
+
+<template name="label7">
+  <label id="{{util.getDefaultValue(node['id'], '')}}" class="{{util.getDefaultValue(node['class'], '')}}" style="{{util.getDefaultValue(node['style'], '')}}" >
+    {{node.value}}
+    <block wx:for="{{node.children}}" wx:key="index">
+      <template is="{{util.tpl(item.tagName)}}" data="{{node: item}}" />
+    </block>
+  </label>
+</template>
+
+<template name="label8">
+  <label id="{{util.getDefaultValue(node['id'], '')}}" class="{{util.getDefaultValue(node['class'], '')}}" style="{{util.getDefaultValue(node['style'], '')}}" >
+    {{node.value}}
+    <block wx:for="{{node.children}}" wx:key="index">
+      <template is="{{util.tpl(item.tagName)}}" data="{{node: item}}" />
+    </block>
+  </label>
+</template>
+
+<template name="label9">
+  <label id="{{util.getDefaultValue(node['id'], '')}}" class="{{util.getDefaultValue(node['class'], '')}}" style="{{util.getDefaultValue(node['style'], '')}}" >
+    {{node.value}}
+    <block wx:for="{{node.children}}" wx:key="index">
+      <template is="{{util.tpl(item.tagName)}}" data="{{node: item}}" />
+    </block>
+  </label>
+</template>
+
+<template name="label10">
+  <label id="{{util.getDefaultValue(node['id'], '')}}" class="{{util.getDefaultValue(node['class'], '')}}" style="{{util.getDefaultValue(node['style'], '')}}" >
+    {{node.value}}
+    <block wx:for="{{node.children}}" wx:key="index">
+      <template is="{{util.tpl(item.tagName)}}" data="{{node: item}}" />
+    </block>
+  </label>
+</template>
+
+<!-- ================== label end ================== -->
+<!-- ================== picker start ================== -->
+<template name="picker1">
+  <picker 
+    id="{{util.getDefaultValue(node['id'], '')}}" 
+    class="{{util.getDefaultValue(node['class'], '')}}" 
+    style="{{util.getDefaultValue(node['style'], '')}}" >
+    {{node.value}}
+    <block wx:for="{{node.children}}" wx:key="index">
+      <template is="{{util.tpl(item.tagName)}}" data="{{node: item}}" />
+    </block>
+  </picker>
+</template>
+
+<template name="picker2">
+  <picker id="{{util.getDefaultValue(node['id'], '')}}" class="{{util.getDefaultValue(node['class'], '')}}" style="{{util.getDefaultValue(node['style'], '')}}" >
+    {{node.value}}
+    <block wx:for="{{node.children}}" wx:key="index">
+      <template is="{{util.tpl(item.tagName)}}" data="{{node: item}}" />
+    </block>
+  </picker>
+</template>
+
+<template name="picker3">
+  <picker id="{{util.getDefaultValue(node['id'], '')}}" class="{{util.getDefaultValue(node['class'], '')}}" style="{{util.getDefaultValue(node['style'], '')}}" >
+    {{node.value}}
+    <block wx:for="{{node.children}}" wx:key="index">
+      <template is="{{util.tpl(item.tagName)}}" data="{{node: item}}" />
+    </block>
+  </picker>
+</template>
+
+<template name="picker4">
+  <picker id="{{util.getDefaultValue(node['id'], '')}}" class="{{util.getDefaultValue(node['class'], '')}}" style="{{util.getDefaultValue(node['style'], '')}}" >
+    {{node.value}}
+    <block wx:for="{{node.children}}" wx:key="index">
+      <template is="{{util.tpl(item.tagName)}}" data="{{node: item}}" />
+    </block>
+  </picker>
+</template>
+
+<template name="picker5">
+  <picker id="{{util.getDefaultValue(node['id'], '')}}" class="{{util.getDefaultValue(node['class'], '')}}" style="{{util.getDefaultValue(node['style'], '')}}" >
+    {{node.value}}
+    <block wx:for="{{node.children}}" wx:key="index">
+      <template is="{{util.tpl(item.tagName)}}" data="{{node: item}}" />
+    </block>
+  </picker>
+</template>
+
+<template name="picker6">
+  <picker id="{{util.getDefaultValue(node['id'], '')}}" class="{{util.getDefaultValue(node['class'], '')}}" style="{{util.getDefaultValue(node['style'], '')}}" >
+    {{node.value}}
+    <block wx:for="{{node.children}}" wx:key="index">
+      <template is="{{util.tpl(item.tagName)}}" data="{{node: item}}" />
+    </block>
+  </picker>
+</template>
+
+<template name="picker7">
+  <picker id="{{util.getDefaultValue(node['id'], '')}}" class="{{util.getDefaultValue(node['class'], '')}}" style="{{util.getDefaultValue(node['style'], '')}}" >
+    {{node.value}}
+    <block wx:for="{{node.children}}" wx:key="index">
+      <template is="{{util.tpl(item.tagName)}}" data="{{node: item}}" />
+    </block>
+  </picker>
+</template>
+
+<template name="picker8">
+  <picker id="{{util.getDefaultValue(node['id'], '')}}" class="{{util.getDefaultValue(node['class'], '')}}" style="{{util.getDefaultValue(node['style'], '')}}" >
+    {{node.value}}
+    <block wx:for="{{node.children}}" wx:key="index">
+      <template is="{{util.tpl(item.tagName)}}" data="{{node: item}}" />
+    </block>
+  </picker>
+</template>
+
+<template name="picker9">
+  <picker id="{{util.getDefaultValue(node['id'], '')}}" class="{{util.getDefaultValue(node['class'], '')}}" style="{{util.getDefaultValue(node['style'], '')}}" >
+    {{node.value}}
+    <block wx:for="{{node.children}}" wx:key="index">
+      <template is="{{util.tpl(item.tagName)}}" data="{{node: item}}" />
+    </block>
+  </picker>
+</template>
+
+<template name="picker10">
+  <picker id="{{util.getDefaultValue(node['id'], '')}}" class="{{util.getDefaultValue(node['class'], '')}}" style="{{util.getDefaultValue(node['style'], '')}}" >
+    {{node.value}}
+    <block wx:for="{{node.children}}" wx:key="index">
+      <template is="{{util.tpl(item.tagName)}}" data="{{node: item}}" />
+    </block>
+  </picker>
+</template>
+
+<!-- ================== picker end ================== -->
+<!-- ================== picker-view start ================== -->
+<template name="picker-view1">
+  <picker-view 
+    value="{{util.getDefaultValue(node['value'], 'undefined')}}" 
+    id="{{util.getDefaultValue(node['id'], '')}}" 
+    class="{{util.getDefaultValue(node['class'], '')}}" 
+    style="{{util.getDefaultValue(node['style'], '')}}" >
+    {{node.value}}
+    <block wx:for="{{node.children}}" wx:key="index">
+      <template is="{{util.tpl(item.tagName)}}" data="{{node: item}}" />
+    </block>
+  </picker-view>
+</template>
+
+<template name="picker-view2">
+  <picker-view value="{{util.getDefaultValue(node['value'], 'undefined')}}" id="{{util.getDefaultValue(node['id'], '')}}" class="{{util.getDefaultValue(node['class'], '')}}" style="{{util.getDefaultValue(node['style'], '')}}" >
+    {{node.value}}
+    <block wx:for="{{node.children}}" wx:key="index">
+      <template is="{{util.tpl(item.tagName)}}" data="{{node: item}}" />
+    </block>
+  </picker-view>
+</template>
+
+<template name="picker-view3">
+  <picker-view value="{{util.getDefaultValue(node['value'], 'undefined')}}" id="{{util.getDefaultValue(node['id'], '')}}" class="{{util.getDefaultValue(node['class'], '')}}" style="{{util.getDefaultValue(node['style'], '')}}" >
+    {{node.value}}
+    <block wx:for="{{node.children}}" wx:key="index">
+      <template is="{{util.tpl(item.tagName)}}" data="{{node: item}}" />
+    </block>
+  </picker-view>
+</template>
+
+<template name="picker-view4">
+  <picker-view value="{{util.getDefaultValue(node['value'], 'undefined')}}" id="{{util.getDefaultValue(node['id'], '')}}" class="{{util.getDefaultValue(node['class'], '')}}" style="{{util.getDefaultValue(node['style'], '')}}" >
+    {{node.value}}
+    <block wx:for="{{node.children}}" wx:key="index">
+      <template is="{{util.tpl(item.tagName)}}" data="{{node: item}}" />
+    </block>
+  </picker-view>
+</template>
+
+<template name="picker-view5">
+  <picker-view value="{{util.getDefaultValue(node['value'], 'undefined')}}" id="{{util.getDefaultValue(node['id'], '')}}" class="{{util.getDefaultValue(node['class'], '')}}" style="{{util.getDefaultValue(node['style'], '')}}" >
+    {{node.value}}
+    <block wx:for="{{node.children}}" wx:key="index">
+      <template is="{{util.tpl(item.tagName)}}" data="{{node: item}}" />
+    </block>
+  </picker-view>
+</template>
+
+<template name="picker-view6">
+  <picker-view value="{{util.getDefaultValue(node['value'], 'undefined')}}" id="{{util.getDefaultValue(node['id'], '')}}" class="{{util.getDefaultValue(node['class'], '')}}" style="{{util.getDefaultValue(node['style'], '')}}" >
+    {{node.value}}
+    <block wx:for="{{node.children}}" wx:key="index">
+      <template is="{{util.tpl(item.tagName)}}" data="{{node: item}}" />
+    </block>
+  </picker-view>
+</template>
+
+<template name="picker-view7">
+  <picker-view value="{{util.getDefaultValue(node['value'], 'undefined')}}" id="{{util.getDefaultValue(node['id'], '')}}" class="{{util.getDefaultValue(node['class'], '')}}" style="{{util.getDefaultValue(node['style'], '')}}" >
+    {{node.value}}
+    <block wx:for="{{node.children}}" wx:key="index">
+      <template is="{{util.tpl(item.tagName)}}" data="{{node: item}}" />
+    </block>
+  </picker-view>
+</template>
+
+<template name="picker-view8">
+  <picker-view value="{{util.getDefaultValue(node['value'], 'undefined')}}" id="{{util.getDefaultValue(node['id'], '')}}" class="{{util.getDefaultValue(node['class'], '')}}" style="{{util.getDefaultValue(node['style'], '')}}" >
+    {{node.value}}
+    <block wx:for="{{node.children}}" wx:key="index">
+      <template is="{{util.tpl(item.tagName)}}" data="{{node: item}}" />
+    </block>
+  </picker-view>
+</template>
+
+<template name="picker-view9">
+  <picker-view value="{{util.getDefaultValue(node['value'], 'undefined')}}" id="{{util.getDefaultValue(node['id'], '')}}" class="{{util.getDefaultValue(node['class'], '')}}" style="{{util.getDefaultValue(node['style'], '')}}" >
+    {{node.value}}
+    <block wx:for="{{node.children}}" wx:key="index">
+      <template is="{{util.tpl(item.tagName)}}" data="{{node: item}}" />
+    </block>
+  </picker-view>
+</template>
+
+<template name="picker-view10">
+  <picker-view value="{{util.getDefaultValue(node['value'], 'undefined')}}" id="{{util.getDefaultValue(node['id'], '')}}" class="{{util.getDefaultValue(node['class'], '')}}" style="{{util.getDefaultValue(node['style'], '')}}" >
+    {{node.value}}
+    <block wx:for="{{node.children}}" wx:key="index">
+      <template is="{{util.tpl(item.tagName)}}" data="{{node: item}}" />
+    </block>
+  </picker-view>
+</template>
+
+<!-- ================== picker-view end ================== -->
+<!-- ================== picker-view-column start ================== -->
+<template name="picker-view-column1">
+  <picker-view-column 
+    id="{{util.getDefaultValue(node['id'], '')}}" 
+    class="{{util.getDefaultValue(node['class'], '')}}" 
+    style="{{util.getDefaultValue(node['style'], '')}}" >
+    {{node.value}}
+    <block wx:for="{{node.children}}" wx:key="index">
+      <template is="{{util.tpl(item.tagName)}}" data="{{node: item}}" />
+    </block>
+  </picker-view-column>
+</template>
+
+<template name="picker-view-column2">
+  <picker-view-column id="{{util.getDefaultValue(node['id'], '')}}" class="{{util.getDefaultValue(node['class'], '')}}" style="{{util.getDefaultValue(node['style'], '')}}" >
+    {{node.value}}
+    <block wx:for="{{node.children}}" wx:key="index">
+      <template is="{{util.tpl(item.tagName)}}" data="{{node: item}}" />
+    </block>
+  </picker-view-column>
+</template>
+
+<template name="picker-view-column3">
+  <picker-view-column id="{{util.getDefaultValue(node['id'], '')}}" class="{{util.getDefaultValue(node['class'], '')}}" style="{{util.getDefaultValue(node['style'], '')}}" >
+    {{node.value}}
+    <block wx:for="{{node.children}}" wx:key="index">
+      <template is="{{util.tpl(item.tagName)}}" data="{{node: item}}" />
+    </block>
+  </picker-view-column>
+</template>
+
+<template name="picker-view-column4">
+  <picker-view-column id="{{util.getDefaultValue(node['id'], '')}}" class="{{util.getDefaultValue(node['class'], '')}}" style="{{util.getDefaultValue(node['style'], '')}}" >
+    {{node.value}}
+    <block wx:for="{{node.children}}" wx:key="index">
+      <template is="{{util.tpl(item.tagName)}}" data="{{node: item}}" />
+    </block>
+  </picker-view-column>
+</template>
+
+<template name="picker-view-column5">
+  <picker-view-column id="{{util.getDefaultValue(node['id'], '')}}" class="{{util.getDefaultValue(node['class'], '')}}" style="{{util.getDefaultValue(node['style'], '')}}" >
+    {{node.value}}
+    <block wx:for="{{node.children}}" wx:key="index">
+      <template is="{{util.tpl(item.tagName)}}" data="{{node: item}}" />
+    </block>
+  </picker-view-column>
+</template>
+
+<template name="picker-view-column6">
+  <picker-view-column id="{{util.getDefaultValue(node['id'], '')}}" class="{{util.getDefaultValue(node['class'], '')}}" style="{{util.getDefaultValue(node['style'], '')}}" >
+    {{node.value}}
+    <block wx:for="{{node.children}}" wx:key="index">
+      <template is="{{util.tpl(item.tagName)}}" data="{{node: item}}" />
+    </block>
+  </picker-view-column>
+</template>
+
+<template name="picker-view-column7">
+  <picker-view-column id="{{util.getDefaultValue(node['id'], '')}}" class="{{util.getDefaultValue(node['class'], '')}}" style="{{util.getDefaultValue(node['style'], '')}}" >
+    {{node.value}}
+    <block wx:for="{{node.children}}" wx:key="index">
+      <template is="{{util.tpl(item.tagName)}}" data="{{node: item}}" />
+    </block>
+  </picker-view-column>
+</template>
+
+<template name="picker-view-column8">
+  <picker-view-column id="{{util.getDefaultValue(node['id'], '')}}" class="{{util.getDefaultValue(node['class'], '')}}" style="{{util.getDefaultValue(node['style'], '')}}" >
+    {{node.value}}
+    <block wx:for="{{node.children}}" wx:key="index">
+      <template is="{{util.tpl(item.tagName)}}" data="{{node: item}}" />
+    </block>
+  </picker-view-column>
+</template>
+
+<template name="picker-view-column9">
+  <picker-view-column id="{{util.getDefaultValue(node['id'], '')}}" class="{{util.getDefaultValue(node['class'], '')}}" style="{{util.getDefaultValue(node['style'], '')}}" >
+    {{node.value}}
+    <block wx:for="{{node.children}}" wx:key="index">
+      <template is="{{util.tpl(item.tagName)}}" data="{{node: item}}" />
+    </block>
+  </picker-view-column>
+</template>
+
+<template name="picker-view-column10">
+  <picker-view-column id="{{util.getDefaultValue(node['id'], '')}}" class="{{util.getDefaultValue(node['class'], '')}}" style="{{util.getDefaultValue(node['style'], '')}}" >
+    {{node.value}}
+    <block wx:for="{{node.children}}" wx:key="index">
+      <template is="{{util.tpl(item.tagName)}}" data="{{node: item}}" />
+    </block>
+  </picker-view-column>
+</template>
+
+<!-- ================== picker-view-column end ================== -->
+<!-- ================== radio start ================== -->
+<template name="radio1">
+  <radio 
+    value="{{util.getDefaultValue(node['value'], 'undefined')}}" 
+    id="{{util.getDefaultValue(node['id'], '')}}" 
+    class="{{util.getDefaultValue(node['class'], '')}}" 
+    style="{{util.getDefaultValue(node['style'], '')}}" >
+    {{node.value}}
+    <block wx:for="{{node.children}}" wx:key="index">
+      <template is="{{util.tpl(item.tagName)}}" data="{{node: item}}" />
+    </block>
+  </radio>
+</template>
+
+<template name="radio2">
+  <radio value="{{util.getDefaultValue(node['value'], 'undefined')}}" id="{{util.getDefaultValue(node['id'], '')}}" class="{{util.getDefaultValue(node['class'], '')}}" style="{{util.getDefaultValue(node['style'], '')}}" >
+    {{node.value}}
+    <block wx:for="{{node.children}}" wx:key="index">
+      <template is="{{util.tpl(item.tagName)}}" data="{{node: item}}" />
+    </block>
+  </radio>
+</template>
+
+<template name="radio3">
+  <radio value="{{util.getDefaultValue(node['value'], 'undefined')}}" id="{{util.getDefaultValue(node['id'], '')}}" class="{{util.getDefaultValue(node['class'], '')}}" style="{{util.getDefaultValue(node['style'], '')}}" >
+    {{node.value}}
+    <block wx:for="{{node.children}}" wx:key="index">
+      <template is="{{util.tpl(item.tagName)}}" data="{{node: item}}" />
+    </block>
+  </radio>
+</template>
+
+<template name="radio4">
+  <radio value="{{util.getDefaultValue(node['value'], 'undefined')}}" id="{{util.getDefaultValue(node['id'], '')}}" class="{{util.getDefaultValue(node['class'], '')}}" style="{{util.getDefaultValue(node['style'], '')}}" >
+    {{node.value}}
+    <block wx:for="{{node.children}}" wx:key="index">
+      <template is="{{util.tpl(item.tagName)}}" data="{{node: item}}" />
+    </block>
+  </radio>
+</template>
+
+<template name="radio5">
+  <radio value="{{util.getDefaultValue(node['value'], 'undefined')}}" id="{{util.getDefaultValue(node['id'], '')}}" class="{{util.getDefaultValue(node['class'], '')}}" style="{{util.getDefaultValue(node['style'], '')}}" >
+    {{node.value}}
+    <block wx:for="{{node.children}}" wx:key="index">
+      <template is="{{util.tpl(item.tagName)}}" data="{{node: item}}" />
+    </block>
+  </radio>
+</template>
+
+<template name="radio6">
+  <radio value="{{util.getDefaultValue(node['value'], 'undefined')}}" id="{{util.getDefaultValue(node['id'], '')}}" class="{{util.getDefaultValue(node['class'], '')}}" style="{{util.getDefaultValue(node['style'], '')}}" >
+    {{node.value}}
+    <block wx:for="{{node.children}}" wx:key="index">
+      <template is="{{util.tpl(item.tagName)}}" data="{{node: item}}" />
+    </block>
+  </radio>
+</template>
+
+<template name="radio7">
+  <radio value="{{util.getDefaultValue(node['value'], 'undefined')}}" id="{{util.getDefaultValue(node['id'], '')}}" class="{{util.getDefaultValue(node['class'], '')}}" style="{{util.getDefaultValue(node['style'], '')}}" >
+    {{node.value}}
+    <block wx:for="{{node.children}}" wx:key="index">
+      <template is="{{util.tpl(item.tagName)}}" data="{{node: item}}" />
+    </block>
+  </radio>
+</template>
+
+<template name="radio8">
+  <radio value="{{util.getDefaultValue(node['value'], 'undefined')}}" id="{{util.getDefaultValue(node['id'], '')}}" class="{{util.getDefaultValue(node['class'], '')}}" style="{{util.getDefaultValue(node['style'], '')}}" >
+    {{node.value}}
+    <block wx:for="{{node.children}}" wx:key="index">
+      <template is="{{util.tpl(item.tagName)}}" data="{{node: item}}" />
+    </block>
+  </radio>
+</template>
+
+<template name="radio9">
+  <radio value="{{util.getDefaultValue(node['value'], 'undefined')}}" id="{{util.getDefaultValue(node['id'], '')}}" class="{{util.getDefaultValue(node['class'], '')}}" style="{{util.getDefaultValue(node['style'], '')}}" >
+    {{node.value}}
+    <block wx:for="{{node.children}}" wx:key="index">
+      <template is="{{util.tpl(item.tagName)}}" data="{{node: item}}" />
+    </block>
+  </radio>
+</template>
+
+<template name="radio10">
+  <radio value="{{util.getDefaultValue(node['value'], 'undefined')}}" id="{{util.getDefaultValue(node['id'], '')}}" class="{{util.getDefaultValue(node['class'], '')}}" style="{{util.getDefaultValue(node['style'], '')}}" >
+    {{node.value}}
+    <block wx:for="{{node.children}}" wx:key="index">
+      <template is="{{util.tpl(item.tagName)}}" data="{{node: item}}" />
+    </block>
+  </radio>
+</template>
+
+<!-- ================== radio end ================== -->
+<!-- ================== radio-group start ================== -->
+<template name="radio-group1">
+  <radio-group 
+    id="{{util.getDefaultValue(node['id'], '')}}" 
+    class="{{util.getDefaultValue(node['class'], '')}}" 
+    style="{{util.getDefaultValue(node['style'], '')}}" >
+    {{node.value}}
+    <block wx:for="{{node.children}}" wx:key="index">
+      <template is="{{util.tpl(item.tagName)}}" data="{{node: item}}" />
+    </block>
+  </radio-group>
+</template>
+
+<template name="radio-group2">
+  <radio-group id="{{util.getDefaultValue(node['id'], '')}}" class="{{util.getDefaultValue(node['class'], '')}}" style="{{util.getDefaultValue(node['style'], '')}}" >
+    {{node.value}}
+    <block wx:for="{{node.children}}" wx:key="index">
+      <template is="{{util.tpl(item.tagName)}}" data="{{node: item}}" />
+    </block>
+  </radio-group>
+</template>
+
+<template name="radio-group3">
+  <radio-group id="{{util.getDefaultValue(node['id'], '')}}" class="{{util.getDefaultValue(node['class'], '')}}" style="{{util.getDefaultValue(node['style'], '')}}" >
+    {{node.value}}
+    <block wx:for="{{node.children}}" wx:key="index">
+      <template is="{{util.tpl(item.tagName)}}" data="{{node: item}}" />
+    </block>
+  </radio-group>
+</template>
+
+<template name="radio-group4">
+  <radio-group id="{{util.getDefaultValue(node['id'], '')}}" class="{{util.getDefaultValue(node['class'], '')}}" style="{{util.getDefaultValue(node['style'], '')}}" >
+    {{node.value}}
+    <block wx:for="{{node.children}}" wx:key="index">
+      <template is="{{util.tpl(item.tagName)}}" data="{{node: item}}" />
+    </block>
+  </radio-group>
+</template>
+
+<template name="radio-group5">
+  <radio-group id="{{util.getDefaultValue(node['id'], '')}}" class="{{util.getDefaultValue(node['class'], '')}}" style="{{util.getDefaultValue(node['style'], '')}}" >
+    {{node.value}}
+    <block wx:for="{{node.children}}" wx:key="index">
+      <template is="{{util.tpl(item.tagName)}}" data="{{node: item}}" />
+    </block>
+  </radio-group>
+</template>
+
+<template name="radio-group6">
+  <radio-group id="{{util.getDefaultValue(node['id'], '')}}" class="{{util.getDefaultValue(node['class'], '')}}" style="{{util.getDefaultValue(node['style'], '')}}" >
+    {{node.value}}
+    <block wx:for="{{node.children}}" wx:key="index">
+      <template is="{{util.tpl(item.tagName)}}" data="{{node: item}}" />
+    </block>
+  </radio-group>
+</template>
+
+<template name="radio-group7">
+  <radio-group id="{{util.getDefaultValue(node['id'], '')}}" class="{{util.getDefaultValue(node['class'], '')}}" style="{{util.getDefaultValue(node['style'], '')}}" >
+    {{node.value}}
+    <block wx:for="{{node.children}}" wx:key="index">
+      <template is="{{util.tpl(item.tagName)}}" data="{{node: item}}" />
+    </block>
+  </radio-group>
+</template>
+
+<template name="radio-group8">
+  <radio-group id="{{util.getDefaultValue(node['id'], '')}}" class="{{util.getDefaultValue(node['class'], '')}}" style="{{util.getDefaultValue(node['style'], '')}}" >
+    {{node.value}}
+    <block wx:for="{{node.children}}" wx:key="index">
+      <template is="{{util.tpl(item.tagName)}}" data="{{node: item}}" />
+    </block>
+  </radio-group>
+</template>
+
+<template name="radio-group9">
+  <radio-group id="{{util.getDefaultValue(node['id'], '')}}" class="{{util.getDefaultValue(node['class'], '')}}" style="{{util.getDefaultValue(node['style'], '')}}" >
+    {{node.value}}
+    <block wx:for="{{node.children}}" wx:key="index">
+      <template is="{{util.tpl(item.tagName)}}" data="{{node: item}}" />
+    </block>
+  </radio-group>
+</template>
+
+<template name="radio-group10">
+  <radio-group id="{{util.getDefaultValue(node['id'], '')}}" class="{{util.getDefaultValue(node['class'], '')}}" style="{{util.getDefaultValue(node['style'], '')}}" >
+    {{node.value}}
+    <block wx:for="{{node.children}}" wx:key="index">
+      <template is="{{util.tpl(item.tagName)}}" data="{{node: item}}" />
+    </block>
+  </radio-group>
+</template>
+
+<!-- ================== radio-group end ================== -->
+<!-- ================== slider start ================== -->
+<template name="slider1">
+  <slider 
+    value="{{util.getDefaultValue(node['value'], '0')}}" 
+    id="{{util.getDefaultValue(node['id'], '')}}" 
+    class="{{util.getDefaultValue(node['class'], '')}}" 
+    style="{{util.getDefaultValue(node['style'], '')}}" >
+    {{node.value}}
+    <block wx:for="{{node.children}}" wx:key="index">
+      <template is="{{util.tpl(item.tagName)}}" data="{{node: item}}" />
+    </block>
+  </slider>
+</template>
+
+<template name="slider2">
+  <slider value="{{util.getDefaultValue(node['value'], '0')}}" id="{{util.getDefaultValue(node['id'], '')}}" class="{{util.getDefaultValue(node['class'], '')}}" style="{{util.getDefaultValue(node['style'], '')}}" >
+    {{node.value}}
+    <block wx:for="{{node.children}}" wx:key="index">
+      <template is="{{util.tpl(item.tagName)}}" data="{{node: item}}" />
+    </block>
+  </slider>
+</template>
+
+<template name="slider3">
+  <slider value="{{util.getDefaultValue(node['value'], '0')}}" id="{{util.getDefaultValue(node['id'], '')}}" class="{{util.getDefaultValue(node['class'], '')}}" style="{{util.getDefaultValue(node['style'], '')}}" >
+    {{node.value}}
+    <block wx:for="{{node.children}}" wx:key="index">
+      <template is="{{util.tpl(item.tagName)}}" data="{{node: item}}" />
+    </block>
+  </slider>
+</template>
+
+<template name="slider4">
+  <slider value="{{util.getDefaultValue(node['value'], '0')}}" id="{{util.getDefaultValue(node['id'], '')}}" class="{{util.getDefaultValue(node['class'], '')}}" style="{{util.getDefaultValue(node['style'], '')}}" >
+    {{node.value}}
+    <block wx:for="{{node.children}}" wx:key="index">
+      <template is="{{util.tpl(item.tagName)}}" data="{{node: item}}" />
+    </block>
+  </slider>
+</template>
+
+<template name="slider5">
+  <slider value="{{util.getDefaultValue(node['value'], '0')}}" id="{{util.getDefaultValue(node['id'], '')}}" class="{{util.getDefaultValue(node['class'], '')}}" style="{{util.getDefaultValue(node['style'], '')}}" >
+    {{node.value}}
+    <block wx:for="{{node.children}}" wx:key="index">
+      <template is="{{util.tpl(item.tagName)}}" data="{{node: item}}" />
+    </block>
+  </slider>
+</template>
+
+<template name="slider6">
+  <slider value="{{util.getDefaultValue(node['value'], '0')}}" id="{{util.getDefaultValue(node['id'], '')}}" class="{{util.getDefaultValue(node['class'], '')}}" style="{{util.getDefaultValue(node['style'], '')}}" >
+    {{node.value}}
+    <block wx:for="{{node.children}}" wx:key="index">
+      <template is="{{util.tpl(item.tagName)}}" data="{{node: item}}" />
+    </block>
+  </slider>
+</template>
+
+<template name="slider7">
+  <slider value="{{util.getDefaultValue(node['value'], '0')}}" id="{{util.getDefaultValue(node['id'], '')}}" class="{{util.getDefaultValue(node['class'], '')}}" style="{{util.getDefaultValue(node['style'], '')}}" >
+    {{node.value}}
+    <block wx:for="{{node.children}}" wx:key="index">
+      <template is="{{util.tpl(item.tagName)}}" data="{{node: item}}" />
+    </block>
+  </slider>
+</template>
+
+<template name="slider8">
+  <slider value="{{util.getDefaultValue(node['value'], '0')}}" id="{{util.getDefaultValue(node['id'], '')}}" class="{{util.getDefaultValue(node['class'], '')}}" style="{{util.getDefaultValue(node['style'], '')}}" >
+    {{node.value}}
+    <block wx:for="{{node.children}}" wx:key="index">
+      <template is="{{util.tpl(item.tagName)}}" data="{{node: item}}" />
+    </block>
+  </slider>
+</template>
+
+<template name="slider9">
+  <slider value="{{util.getDefaultValue(node['value'], '0')}}" id="{{util.getDefaultValue(node['id'], '')}}" class="{{util.getDefaultValue(node['class'], '')}}" style="{{util.getDefaultValue(node['style'], '')}}" >
+    {{node.value}}
+    <block wx:for="{{node.children}}" wx:key="index">
+      <template is="{{util.tpl(item.tagName)}}" data="{{node: item}}" />
+    </block>
+  </slider>
+</template>
+
+<template name="slider10">
+  <slider value="{{util.getDefaultValue(node['value'], '0')}}" id="{{util.getDefaultValue(node['id'], '')}}" class="{{util.getDefaultValue(node['class'], '')}}" style="{{util.getDefaultValue(node['style'], '')}}" >
+    {{node.value}}
+    <block wx:for="{{node.children}}" wx:key="index">
+      <template is="{{util.tpl(item.tagName)}}" data="{{node: item}}" />
+    </block>
+  </slider>
+</template>
+
+<!-- ================== slider end ================== -->
+<!-- ================== switch start ================== -->
+<template name="switch1">
+  <switch 
+    id="{{util.getDefaultValue(node['id'], '')}}" 
+    class="{{util.getDefaultValue(node['class'], '')}}" 
+    style="{{util.getDefaultValue(node['style'], '')}}" >
+    {{node.value}}
+    <block wx:for="{{node.children}}" wx:key="index">
+      <template is="{{util.tpl(item.tagName)}}" data="{{node: item}}" />
+    </block>
+  </switch>
+</template>
+
+<template name="switch2">
+  <switch id="{{util.getDefaultValue(node['id'], '')}}" class="{{util.getDefaultValue(node['class'], '')}}" style="{{util.getDefaultValue(node['style'], '')}}" >
+    {{node.value}}
+    <block wx:for="{{node.children}}" wx:key="index">
+      <template is="{{util.tpl(item.tagName)}}" data="{{node: item}}" />
+    </block>
+  </switch>
+</template>
+
+<template name="switch3">
+  <switch id="{{util.getDefaultValue(node['id'], '')}}" class="{{util.getDefaultValue(node['class'], '')}}" style="{{util.getDefaultValue(node['style'], '')}}" >
+    {{node.value}}
+    <block wx:for="{{node.children}}" wx:key="index">
+      <template is="{{util.tpl(item.tagName)}}" data="{{node: item}}" />
+    </block>
+  </switch>
+</template>
+
+<template name="switch4">
+  <switch id="{{util.getDefaultValue(node['id'], '')}}" class="{{util.getDefaultValue(node['class'], '')}}" style="{{util.getDefaultValue(node['style'], '')}}" >
+    {{node.value}}
+    <block wx:for="{{node.children}}" wx:key="index">
+      <template is="{{util.tpl(item.tagName)}}" data="{{node: item}}" />
+    </block>
+  </switch>
+</template>
+
+<template name="switch5">
+  <switch id="{{util.getDefaultValue(node['id'], '')}}" class="{{util.getDefaultValue(node['class'], '')}}" style="{{util.getDefaultValue(node['style'], '')}}" >
+    {{node.value}}
+    <block wx:for="{{node.children}}" wx:key="index">
+      <template is="{{util.tpl(item.tagName)}}" data="{{node: item}}" />
+    </block>
+  </switch>
+</template>
+
+<template name="switch6">
+  <switch id="{{util.getDefaultValue(node['id'], '')}}" class="{{util.getDefaultValue(node['class'], '')}}" style="{{util.getDefaultValue(node['style'], '')}}" >
+    {{node.value}}
+    <block wx:for="{{node.children}}" wx:key="index">
+      <template is="{{util.tpl(item.tagName)}}" data="{{node: item}}" />
+    </block>
+  </switch>
+</template>
+
+<template name="switch7">
+  <switch id="{{util.getDefaultValue(node['id'], '')}}" class="{{util.getDefaultValue(node['class'], '')}}" style="{{util.getDefaultValue(node['style'], '')}}" >
+    {{node.value}}
+    <block wx:for="{{node.children}}" wx:key="index">
+      <template is="{{util.tpl(item.tagName)}}" data="{{node: item}}" />
+    </block>
+  </switch>
+</template>
+
+<template name="switch8">
+  <switch id="{{util.getDefaultValue(node['id'], '')}}" class="{{util.getDefaultValue(node['class'], '')}}" style="{{util.getDefaultValue(node['style'], '')}}" >
+    {{node.value}}
+    <block wx:for="{{node.children}}" wx:key="index">
+      <template is="{{util.tpl(item.tagName)}}" data="{{node: item}}" />
+    </block>
+  </switch>
+</template>
+
+<template name="switch9">
+  <switch id="{{util.getDefaultValue(node['id'], '')}}" class="{{util.getDefaultValue(node['class'], '')}}" style="{{util.getDefaultValue(node['style'], '')}}" >
+    {{node.value}}
+    <block wx:for="{{node.children}}" wx:key="index">
+      <template is="{{util.tpl(item.tagName)}}" data="{{node: item}}" />
+    </block>
+  </switch>
+</template>
+
+<template name="switch10">
+  <switch id="{{util.getDefaultValue(node['id'], '')}}" class="{{util.getDefaultValue(node['class'], '')}}" style="{{util.getDefaultValue(node['style'], '')}}" >
+    {{node.value}}
+    <block wx:for="{{node.children}}" wx:key="index">
+      <template is="{{util.tpl(item.tagName)}}" data="{{node: item}}" />
+    </block>
+  </switch>
+</template>
+
+<!-- ================== switch end ================== -->
+<!-- ================== textarea start ================== -->
+<template name="textarea1">
+  <textarea 
+    value="{{util.getDefaultValue(node['value'], 'undefined')}}" 
+    id="{{util.getDefaultValue(node['id'], '')}}" 
+    class="{{util.getDefaultValue(node['class'], '')}}" 
+    style="{{util.getDefaultValue(node['style'], '')}}" >
+    {{node.value}}
+    <block wx:for="{{node.children}}" wx:key="index">
+      <template is="{{util.tpl(item.tagName)}}" data="{{node: item}}" />
+    </block>
+  </textarea>
+</template>
+
+<template name="textarea2">
+  <textarea value="{{util.getDefaultValue(node['value'], 'undefined')}}" id="{{util.getDefaultValue(node['id'], '')}}" class="{{util.getDefaultValue(node['class'], '')}}" style="{{util.getDefaultValue(node['style'], '')}}" >
+    {{node.value}}
+    <block wx:for="{{node.children}}" wx:key="index">
+      <template is="{{util.tpl(item.tagName)}}" data="{{node: item}}" />
+    </block>
+  </textarea>
+</template>
+
+<template name="textarea3">
+  <textarea value="{{util.getDefaultValue(node['value'], 'undefined')}}" id="{{util.getDefaultValue(node['id'], '')}}" class="{{util.getDefaultValue(node['class'], '')}}" style="{{util.getDefaultValue(node['style'], '')}}" >
+    {{node.value}}
+    <block wx:for="{{node.children}}" wx:key="index">
+      <template is="{{util.tpl(item.tagName)}}" data="{{node: item}}" />
+    </block>
+  </textarea>
+</template>
+
+<template name="textarea4">
+  <textarea value="{{util.getDefaultValue(node['value'], 'undefined')}}" id="{{util.getDefaultValue(node['id'], '')}}" class="{{util.getDefaultValue(node['class'], '')}}" style="{{util.getDefaultValue(node['style'], '')}}" >
+    {{node.value}}
+    <block wx:for="{{node.children}}" wx:key="index">
+      <template is="{{util.tpl(item.tagName)}}" data="{{node: item}}" />
+    </block>
+  </textarea>
+</template>
+
+<template name="textarea5">
+  <textarea value="{{util.getDefaultValue(node['value'], 'undefined')}}" id="{{util.getDefaultValue(node['id'], '')}}" class="{{util.getDefaultValue(node['class'], '')}}" style="{{util.getDefaultValue(node['style'], '')}}" >
+    {{node.value}}
+    <block wx:for="{{node.children}}" wx:key="index">
+      <template is="{{util.tpl(item.tagName)}}" data="{{node: item}}" />
+    </block>
+  </textarea>
+</template>
+
+<template name="textarea6">
+  <textarea value="{{util.getDefaultValue(node['value'], 'undefined')}}" id="{{util.getDefaultValue(node['id'], '')}}" class="{{util.getDefaultValue(node['class'], '')}}" style="{{util.getDefaultValue(node['style'], '')}}" >
+    {{node.value}}
+    <block wx:for="{{node.children}}" wx:key="index">
+      <template is="{{util.tpl(item.tagName)}}" data="{{node: item}}" />
+    </block>
+  </textarea>
+</template>
+
+<template name="textarea7">
+  <textarea value="{{util.getDefaultValue(node['value'], 'undefined')}}" id="{{util.getDefaultValue(node['id'], '')}}" class="{{util.getDefaultValue(node['class'], '')}}" style="{{util.getDefaultValue(node['style'], '')}}" >
+    {{node.value}}
+    <block wx:for="{{node.children}}" wx:key="index">
+      <template is="{{util.tpl(item.tagName)}}" data="{{node: item}}" />
+    </block>
+  </textarea>
+</template>
+
+<template name="textarea8">
+  <textarea value="{{util.getDefaultValue(node['value'], 'undefined')}}" id="{{util.getDefaultValue(node['id'], '')}}" class="{{util.getDefaultValue(node['class'], '')}}" style="{{util.getDefaultValue(node['style'], '')}}" >
+    {{node.value}}
+    <block wx:for="{{node.children}}" wx:key="index">
+      <template is="{{util.tpl(item.tagName)}}" data="{{node: item}}" />
+    </block>
+  </textarea>
+</template>
+
+<template name="textarea9">
+  <textarea value="{{util.getDefaultValue(node['value'], 'undefined')}}" id="{{util.getDefaultValue(node['id'], '')}}" class="{{util.getDefaultValue(node['class'], '')}}" style="{{util.getDefaultValue(node['style'], '')}}" >
+    {{node.value}}
+    <block wx:for="{{node.children}}" wx:key="index">
+      <template is="{{util.tpl(item.tagName)}}" data="{{node: item}}" />
+    </block>
+  </textarea>
+</template>
+
+<template name="textarea10">
+  <textarea value="{{util.getDefaultValue(node['value'], 'undefined')}}" id="{{util.getDefaultValue(node['id'], '')}}" class="{{util.getDefaultValue(node['class'], '')}}" style="{{util.getDefaultValue(node['style'], '')}}" >
+    {{node.value}}
+    <block wx:for="{{node.children}}" wx:key="index">
+      <template is="{{util.tpl(item.tagName)}}" data="{{node: item}}" />
+    </block>
+  </textarea>
+</template>
+
+<!-- ================== textarea end ================== -->
+<!-- ================== functional-page-navigator start ================== -->
+<template name="functional-page-navigator1">
+  <functional-page-navigator 
+    id="{{util.getDefaultValue(node['id'], '')}}" 
+    class="{{util.getDefaultValue(node['class'], '')}}" 
+    style="{{util.getDefaultValue(node['style'], '')}}" >
+    {{node.value}}
+    <block wx:for="{{node.children}}" wx:key="index">
+      <template is="{{util.tpl(item.tagName)}}" data="{{node: item}}" />
+    </block>
+  </functional-page-navigator>
+</template>
+
+<template name="functional-page-navigator2">
+  <functional-page-navigator id="{{util.getDefaultValue(node['id'], '')}}" class="{{util.getDefaultValue(node['class'], '')}}" style="{{util.getDefaultValue(node['style'], '')}}" >
+    {{node.value}}
+    <block wx:for="{{node.children}}" wx:key="index">
+      <template is="{{util.tpl(item.tagName)}}" data="{{node: item}}" />
+    </block>
+  </functional-page-navigator>
+</template>
+
+<template name="functional-page-navigator3">
+  <functional-page-navigator id="{{util.getDefaultValue(node['id'], '')}}" class="{{util.getDefaultValue(node['class'], '')}}" style="{{util.getDefaultValue(node['style'], '')}}" >
+    {{node.value}}
+    <block wx:for="{{node.children}}" wx:key="index">
+      <template is="{{util.tpl(item.tagName)}}" data="{{node: item}}" />
+    </block>
+  </functional-page-navigator>
+</template>
+
+<template name="functional-page-navigator4">
+  <functional-page-navigator id="{{util.getDefaultValue(node['id'], '')}}" class="{{util.getDefaultValue(node['class'], '')}}" style="{{util.getDefaultValue(node['style'], '')}}" >
+    {{node.value}}
+    <block wx:for="{{node.children}}" wx:key="index">
+      <template is="{{util.tpl(item.tagName)}}" data="{{node: item}}" />
+    </block>
+  </functional-page-navigator>
+</template>
+
+<template name="functional-page-navigator5">
+  <functional-page-navigator id="{{util.getDefaultValue(node['id'], '')}}" class="{{util.getDefaultValue(node['class'], '')}}" style="{{util.getDefaultValue(node['style'], '')}}" >
+    {{node.value}}
+    <block wx:for="{{node.children}}" wx:key="index">
+      <template is="{{util.tpl(item.tagName)}}" data="{{node: item}}" />
+    </block>
+  </functional-page-navigator>
+</template>
+
+<template name="functional-page-navigator6">
+  <functional-page-navigator id="{{util.getDefaultValue(node['id'], '')}}" class="{{util.getDefaultValue(node['class'], '')}}" style="{{util.getDefaultValue(node['style'], '')}}" >
+    {{node.value}}
+    <block wx:for="{{node.children}}" wx:key="index">
+      <template is="{{util.tpl(item.tagName)}}" data="{{node: item}}" />
+    </block>
+  </functional-page-navigator>
+</template>
+
+<template name="functional-page-navigator7">
+  <functional-page-navigator id="{{util.getDefaultValue(node['id'], '')}}" class="{{util.getDefaultValue(node['class'], '')}}" style="{{util.getDefaultValue(node['style'], '')}}" >
+    {{node.value}}
+    <block wx:for="{{node.children}}" wx:key="index">
+      <template is="{{util.tpl(item.tagName)}}" data="{{node: item}}" />
+    </block>
+  </functional-page-navigator>
+</template>
+
+<template name="functional-page-navigator8">
+  <functional-page-navigator id="{{util.getDefaultValue(node['id'], '')}}" class="{{util.getDefaultValue(node['class'], '')}}" style="{{util.getDefaultValue(node['style'], '')}}" >
+    {{node.value}}
+    <block wx:for="{{node.children}}" wx:key="index">
+      <template is="{{util.tpl(item.tagName)}}" data="{{node: item}}" />
+    </block>
+  </functional-page-navigator>
+</template>
+
+<template name="functional-page-navigator9">
+  <functional-page-navigator id="{{util.getDefaultValue(node['id'], '')}}" class="{{util.getDefaultValue(node['class'], '')}}" style="{{util.getDefaultValue(node['style'], '')}}" >
+    {{node.value}}
+    <block wx:for="{{node.children}}" wx:key="index">
+      <template is="{{util.tpl(item.tagName)}}" data="{{node: item}}" />
+    </block>
+  </functional-page-navigator>
+</template>
+
+<template name="functional-page-navigator10">
+  <functional-page-navigator id="{{util.getDefaultValue(node['id'], '')}}" class="{{util.getDefaultValue(node['class'], '')}}" style="{{util.getDefaultValue(node['style'], '')}}" >
+    {{node.value}}
+    <block wx:for="{{node.children}}" wx:key="index">
+      <template is="{{util.tpl(item.tagName)}}" data="{{node: item}}" />
+    </block>
+  </functional-page-navigator>
+</template>
+
+<!-- ================== functional-page-navigator end ================== -->
+<!-- ================== navigator start ================== -->
+<template name="navigator1">
+  <navigator 
+    id="{{util.getDefaultValue(node['id'], '')}}" 
+    class="{{util.getDefaultValue(node['class'], '')}}" 
+    style="{{util.getDefaultValue(node['style'], '')}}" >
+    {{node.value}}
+    <block wx:for="{{node.children}}" wx:key="index">
+      <template is="{{util.tpl(item.tagName)}}" data="{{node: item}}" />
+    </block>
+  </navigator>
+</template>
+
+<template name="navigator2">
+  <navigator id="{{util.getDefaultValue(node['id'], '')}}" class="{{util.getDefaultValue(node['class'], '')}}" style="{{util.getDefaultValue(node['style'], '')}}" >
+    {{node.value}}
+    <block wx:for="{{node.children}}" wx:key="index">
+      <template is="{{util.tpl(item.tagName)}}" data="{{node: item}}" />
+    </block>
+  </navigator>
+</template>
+
+<template name="navigator3">
+  <navigator id="{{util.getDefaultValue(node['id'], '')}}" class="{{util.getDefaultValue(node['class'], '')}}" style="{{util.getDefaultValue(node['style'], '')}}" >
+    {{node.value}}
+    <block wx:for="{{node.children}}" wx:key="index">
+      <template is="{{util.tpl(item.tagName)}}" data="{{node: item}}" />
+    </block>
+  </navigator>
+</template>
+
+<template name="navigator4">
+  <navigator id="{{util.getDefaultValue(node['id'], '')}}" class="{{util.getDefaultValue(node['class'], '')}}" style="{{util.getDefaultValue(node['style'], '')}}" >
+    {{node.value}}
+    <block wx:for="{{node.children}}" wx:key="index">
+      <template is="{{util.tpl(item.tagName)}}" data="{{node: item}}" />
+    </block>
+  </navigator>
+</template>
+
+<template name="navigator5">
+  <navigator id="{{util.getDefaultValue(node['id'], '')}}" class="{{util.getDefaultValue(node['class'], '')}}" style="{{util.getDefaultValue(node['style'], '')}}" >
+    {{node.value}}
+    <block wx:for="{{node.children}}" wx:key="index">
+      <template is="{{util.tpl(item.tagName)}}" data="{{node: item}}" />
+    </block>
+  </navigator>
+</template>
+
+<template name="navigator6">
+  <navigator id="{{util.getDefaultValue(node['id'], '')}}" class="{{util.getDefaultValue(node['class'], '')}}" style="{{util.getDefaultValue(node['style'], '')}}" >
+    {{node.value}}
+    <block wx:for="{{node.children}}" wx:key="index">
+      <template is="{{util.tpl(item.tagName)}}" data="{{node: item}}" />
+    </block>
+  </navigator>
+</template>
+
+<template name="navigator7">
+  <navigator id="{{util.getDefaultValue(node['id'], '')}}" class="{{util.getDefaultValue(node['class'], '')}}" style="{{util.getDefaultValue(node['style'], '')}}" >
+    {{node.value}}
+    <block wx:for="{{node.children}}" wx:key="index">
+      <template is="{{util.tpl(item.tagName)}}" data="{{node: item}}" />
+    </block>
+  </navigator>
+</template>
+
+<template name="navigator8">
+  <navigator id="{{util.getDefaultValue(node['id'], '')}}" class="{{util.getDefaultValue(node['class'], '')}}" style="{{util.getDefaultValue(node['style'], '')}}" >
+    {{node.value}}
+    <block wx:for="{{node.children}}" wx:key="index">
+      <template is="{{util.tpl(item.tagName)}}" data="{{node: item}}" />
+    </block>
+  </navigator>
+</template>
+
+<template name="navigator9">
+  <navigator id="{{util.getDefaultValue(node['id'], '')}}" class="{{util.getDefaultValue(node['class'], '')}}" style="{{util.getDefaultValue(node['style'], '')}}" >
+    {{node.value}}
+    <block wx:for="{{node.children}}" wx:key="index">
+      <template is="{{util.tpl(item.tagName)}}" data="{{node: item}}" />
+    </block>
+  </navigator>
+</template>
+
+<template name="navigator10">
+  <navigator id="{{util.getDefaultValue(node['id'], '')}}" class="{{util.getDefaultValue(node['class'], '')}}" style="{{util.getDefaultValue(node['style'], '')}}" >
+    {{node.value}}
+    <block wx:for="{{node.children}}" wx:key="index">
+      <template is="{{util.tpl(item.tagName)}}" data="{{node: item}}" />
+    </block>
+  </navigator>
+</template>
+
+<!-- ================== navigator end ================== -->
+<!-- ================== audio start ================== -->
+<template name="audio1">
+  <audio 
+    id="{{util.getDefaultValue(node['id'], '')}}" 
+    src="{{util.getDefaultValue(node['src'], 'undefined')}}" 
+    class="{{util.getDefaultValue(node['class'], '')}}" 
+    style="{{util.getDefaultValue(node['style'], '')}}" >
+    {{node.value}}
+    <block wx:for="{{node.children}}" wx:key="index">
+      <template is="{{util.tpl(item.tagName)}}" data="{{node: item}}" />
+    </block>
+  </audio>
+</template>
+
+<template name="audio2">
+  <audio id="{{util.getDefaultValue(node['id'], '')}}" src="{{util.getDefaultValue(node['src'], 'undefined')}}" class="{{util.getDefaultValue(node['class'], '')}}" style="{{util.getDefaultValue(node['style'], '')}}" >
+    {{node.value}}
+    <block wx:for="{{node.children}}" wx:key="index">
+      <template is="{{util.tpl(item.tagName)}}" data="{{node: item}}" />
+    </block>
+  </audio>
+</template>
+
+<template name="audio3">
+  <audio id="{{util.getDefaultValue(node['id'], '')}}" src="{{util.getDefaultValue(node['src'], 'undefined')}}" class="{{util.getDefaultValue(node['class'], '')}}" style="{{util.getDefaultValue(node['style'], '')}}" >
+    {{node.value}}
+    <block wx:for="{{node.children}}" wx:key="index">
+      <template is="{{util.tpl(item.tagName)}}" data="{{node: item}}" />
+    </block>
+  </audio>
+</template>
+
+<template name="audio4">
+  <audio id="{{util.getDefaultValue(node['id'], '')}}" src="{{util.getDefaultValue(node['src'], 'undefined')}}" class="{{util.getDefaultValue(node['class'], '')}}" style="{{util.getDefaultValue(node['style'], '')}}" >
+    {{node.value}}
+    <block wx:for="{{node.children}}" wx:key="index">
+      <template is="{{util.tpl(item.tagName)}}" data="{{node: item}}" />
+    </block>
+  </audio>
+</template>
+
+<template name="audio5">
+  <audio id="{{util.getDefaultValue(node['id'], '')}}" src="{{util.getDefaultValue(node['src'], 'undefined')}}" class="{{util.getDefaultValue(node['class'], '')}}" style="{{util.getDefaultValue(node['style'], '')}}" >
+    {{node.value}}
+    <block wx:for="{{node.children}}" wx:key="index">
+      <template is="{{util.tpl(item.tagName)}}" data="{{node: item}}" />
+    </block>
+  </audio>
+</template>
+
+<template name="audio6">
+  <audio id="{{util.getDefaultValue(node['id'], '')}}" src="{{util.getDefaultValue(node['src'], 'undefined')}}" class="{{util.getDefaultValue(node['class'], '')}}" style="{{util.getDefaultValue(node['style'], '')}}" >
+    {{node.value}}
+    <block wx:for="{{node.children}}" wx:key="index">
+      <template is="{{util.tpl(item.tagName)}}" data="{{node: item}}" />
+    </block>
+  </audio>
+</template>
+
+<template name="audio7">
+  <audio id="{{util.getDefaultValue(node['id'], '')}}" src="{{util.getDefaultValue(node['src'], 'undefined')}}" class="{{util.getDefaultValue(node['class'], '')}}" style="{{util.getDefaultValue(node['style'], '')}}" >
+    {{node.value}}
+    <block wx:for="{{node.children}}" wx:key="index">
+      <template is="{{util.tpl(item.tagName)}}" data="{{node: item}}" />
+    </block>
+  </audio>
+</template>
+
+<template name="audio8">
+  <audio id="{{util.getDefaultValue(node['id'], '')}}" src="{{util.getDefaultValue(node['src'], 'undefined')}}" class="{{util.getDefaultValue(node['class'], '')}}" style="{{util.getDefaultValue(node['style'], '')}}" >
+    {{node.value}}
+    <block wx:for="{{node.children}}" wx:key="index">
+      <template is="{{util.tpl(item.tagName)}}" data="{{node: item}}" />
+    </block>
+  </audio>
+</template>
+
+<template name="audio9">
+  <audio id="{{util.getDefaultValue(node['id'], '')}}" src="{{util.getDefaultValue(node['src'], 'undefined')}}" class="{{util.getDefaultValue(node['class'], '')}}" style="{{util.getDefaultValue(node['style'], '')}}" >
+    {{node.value}}
+    <block wx:for="{{node.children}}" wx:key="index">
+      <template is="{{util.tpl(item.tagName)}}" data="{{node: item}}" />
+    </block>
+  </audio>
+</template>
+
+<template name="audio10">
+  <audio id="{{util.getDefaultValue(node['id'], '')}}" src="{{util.getDefaultValue(node['src'], 'undefined')}}" class="{{util.getDefaultValue(node['class'], '')}}" style="{{util.getDefaultValue(node['style'], '')}}" >
+    {{node.value}}
+    <block wx:for="{{node.children}}" wx:key="index">
+      <template is="{{util.tpl(item.tagName)}}" data="{{node: item}}" />
+    </block>
+  </audio>
+</template>
+
+<!-- ================== audio end ================== -->
+<!-- ================== camera start ================== -->
+<template name="camera1">
+  <camera 
+    id="{{util.getDefaultValue(node['id'], '')}}" 
+    class="{{util.getDefaultValue(node['class'], '')}}" 
+    style="{{util.getDefaultValue(node['style'], '')}}" >
+    {{node.value}}
+    <block wx:for="{{node.children}}" wx:key="index">
+      <template is="{{util.tpl(item.tagName)}}" data="{{node: item}}" />
+    </block>
+  </camera>
+</template>
+
+<template name="camera2">
+  <camera id="{{util.getDefaultValue(node['id'], '')}}" class="{{util.getDefaultValue(node['class'], '')}}" style="{{util.getDefaultValue(node['style'], '')}}" >
+    {{node.value}}
+    <block wx:for="{{node.children}}" wx:key="index">
+      <template is="{{util.tpl(item.tagName)}}" data="{{node: item}}" />
+    </block>
+  </camera>
+</template>
+
+<template name="camera3">
+  <camera id="{{util.getDefaultValue(node['id'], '')}}" class="{{util.getDefaultValue(node['class'], '')}}" style="{{util.getDefaultValue(node['style'], '')}}" >
+    {{node.value}}
+    <block wx:for="{{node.children}}" wx:key="index">
+      <template is="{{util.tpl(item.tagName)}}" data="{{node: item}}" />
+    </block>
+  </camera>
+</template>
+
+<template name="camera4">
+  <camera id="{{util.getDefaultValue(node['id'], '')}}" class="{{util.getDefaultValue(node['class'], '')}}" style="{{util.getDefaultValue(node['style'], '')}}" >
+    {{node.value}}
+    <block wx:for="{{node.children}}" wx:key="index">
+      <template is="{{util.tpl(item.tagName)}}" data="{{node: item}}" />
+    </block>
+  </camera>
+</template>
+
+<template name="camera5">
+  <camera id="{{util.getDefaultValue(node['id'], '')}}" class="{{util.getDefaultValue(node['class'], '')}}" style="{{util.getDefaultValue(node['style'], '')}}" >
+    {{node.value}}
+    <block wx:for="{{node.children}}" wx:key="index">
+      <template is="{{util.tpl(item.tagName)}}" data="{{node: item}}" />
+    </block>
+  </camera>
+</template>
+
+<template name="camera6">
+  <camera id="{{util.getDefaultValue(node['id'], '')}}" class="{{util.getDefaultValue(node['class'], '')}}" style="{{util.getDefaultValue(node['style'], '')}}" >
+    {{node.value}}
+    <block wx:for="{{node.children}}" wx:key="index">
+      <template is="{{util.tpl(item.tagName)}}" data="{{node: item}}" />
+    </block>
+  </camera>
+</template>
+
+<template name="camera7">
+  <camera id="{{util.getDefaultValue(node['id'], '')}}" class="{{util.getDefaultValue(node['class'], '')}}" style="{{util.getDefaultValue(node['style'], '')}}" >
+    {{node.value}}
+    <block wx:for="{{node.children}}" wx:key="index">
+      <template is="{{util.tpl(item.tagName)}}" data="{{node: item}}" />
+    </block>
+  </camera>
+</template>
+
+<template name="camera8">
+  <camera id="{{util.getDefaultValue(node['id'], '')}}" class="{{util.getDefaultValue(node['class'], '')}}" style="{{util.getDefaultValue(node['style'], '')}}" >
+    {{node.value}}
+    <block wx:for="{{node.children}}" wx:key="index">
+      <template is="{{util.tpl(item.tagName)}}" data="{{node: item}}" />
+    </block>
+  </camera>
+</template>
+
+<template name="camera9">
+  <camera id="{{util.getDefaultValue(node['id'], '')}}" class="{{util.getDefaultValue(node['class'], '')}}" style="{{util.getDefaultValue(node['style'], '')}}" >
+    {{node.value}}
+    <block wx:for="{{node.children}}" wx:key="index">
+      <template is="{{util.tpl(item.tagName)}}" data="{{node: item}}" />
+    </block>
+  </camera>
+</template>
+
+<template name="camera10">
+  <camera id="{{util.getDefaultValue(node['id'], '')}}" class="{{util.getDefaultValue(node['class'], '')}}" style="{{util.getDefaultValue(node['style'], '')}}" >
+    {{node.value}}
+    <block wx:for="{{node.children}}" wx:key="index">
+      <template is="{{util.tpl(item.tagName)}}" data="{{node: item}}" />
+    </block>
+  </camera>
+</template>
+
+<!-- ================== camera end ================== -->
+<!-- ================== image start ================== -->
+<template name="image1">
+  <image 
+    src="{{util.getDefaultValue(node['src'], 'undefined')}}" 
+    id="{{util.getDefaultValue(node['id'], '')}}" 
+    class="{{util.getDefaultValue(node['class'], '')}}" 
+    style="{{util.getDefaultValue(node['style'], '')}}" >
+    {{node.value}}
+    <block wx:for="{{node.children}}" wx:key="index">
+      <template is="{{util.tpl(item.tagName)}}" data="{{node: item}}" />
+    </block>
+  </image>
+</template>
+
+<template name="image2">
+  <image src="{{util.getDefaultValue(node['src'], 'undefined')}}" id="{{util.getDefaultValue(node['id'], '')}}" class="{{util.getDefaultValue(node['class'], '')}}" style="{{util.getDefaultValue(node['style'], '')}}" >
+    {{node.value}}
+    <block wx:for="{{node.children}}" wx:key="index">
+      <template is="{{util.tpl(item.tagName)}}" data="{{node: item}}" />
+    </block>
+  </image>
+</template>
+
+<template name="image3">
+  <image src="{{util.getDefaultValue(node['src'], 'undefined')}}" id="{{util.getDefaultValue(node['id'], '')}}" class="{{util.getDefaultValue(node['class'], '')}}" style="{{util.getDefaultValue(node['style'], '')}}" >
+    {{node.value}}
+    <block wx:for="{{node.children}}" wx:key="index">
+      <template is="{{util.tpl(item.tagName)}}" data="{{node: item}}" />
+    </block>
+  </image>
+</template>
+
+<template name="image4">
+  <image src="{{util.getDefaultValue(node['src'], 'undefined')}}" id="{{util.getDefaultValue(node['id'], '')}}" class="{{util.getDefaultValue(node['class'], '')}}" style="{{util.getDefaultValue(node['style'], '')}}" >
+    {{node.value}}
+    <block wx:for="{{node.children}}" wx:key="index">
+      <template is="{{util.tpl(item.tagName)}}" data="{{node: item}}" />
+    </block>
+  </image>
+</template>
+
+<template name="image5">
+  <image src="{{util.getDefaultValue(node['src'], 'undefined')}}" id="{{util.getDefaultValue(node['id'], '')}}" class="{{util.getDefaultValue(node['class'], '')}}" style="{{util.getDefaultValue(node['style'], '')}}" >
+    {{node.value}}
+    <block wx:for="{{node.children}}" wx:key="index">
+      <template is="{{util.tpl(item.tagName)}}" data="{{node: item}}" />
+    </block>
+  </image>
+</template>
+
+<template name="image6">
+  <image src="{{util.getDefaultValue(node['src'], 'undefined')}}" id="{{util.getDefaultValue(node['id'], '')}}" class="{{util.getDefaultValue(node['class'], '')}}" style="{{util.getDefaultValue(node['style'], '')}}" >
+    {{node.value}}
+    <block wx:for="{{node.children}}" wx:key="index">
+      <template is="{{util.tpl(item.tagName)}}" data="{{node: item}}" />
+    </block>
+  </image>
+</template>
+
+<template name="image7">
+  <image src="{{util.getDefaultValue(node['src'], 'undefined')}}" id="{{util.getDefaultValue(node['id'], '')}}" class="{{util.getDefaultValue(node['class'], '')}}" style="{{util.getDefaultValue(node['style'], '')}}" >
+    {{node.value}}
+    <block wx:for="{{node.children}}" wx:key="index">
+      <template is="{{util.tpl(item.tagName)}}" data="{{node: item}}" />
+    </block>
+  </image>
+</template>
+
+<template name="image8">
+  <image src="{{util.getDefaultValue(node['src'], 'undefined')}}" id="{{util.getDefaultValue(node['id'], '')}}" class="{{util.getDefaultValue(node['class'], '')}}" style="{{util.getDefaultValue(node['style'], '')}}" >
+    {{node.value}}
+    <block wx:for="{{node.children}}" wx:key="index">
+      <template is="{{util.tpl(item.tagName)}}" data="{{node: item}}" />
+    </block>
+  </image>
+</template>
+
+<template name="image9">
+  <image src="{{util.getDefaultValue(node['src'], 'undefined')}}" id="{{util.getDefaultValue(node['id'], '')}}" class="{{util.getDefaultValue(node['class'], '')}}" style="{{util.getDefaultValue(node['style'], '')}}" >
+    {{node.value}}
+    <block wx:for="{{node.children}}" wx:key="index">
+      <template is="{{util.tpl(item.tagName)}}" data="{{node: item}}" />
+    </block>
+  </image>
+</template>
+
+<template name="image10">
+  <image src="{{util.getDefaultValue(node['src'], 'undefined')}}" id="{{util.getDefaultValue(node['id'], '')}}" class="{{util.getDefaultValue(node['class'], '')}}" style="{{util.getDefaultValue(node['style'], '')}}" >
+    {{node.value}}
+    <block wx:for="{{node.children}}" wx:key="index">
+      <template is="{{util.tpl(item.tagName)}}" data="{{node: item}}" />
+    </block>
+  </image>
+</template>
+
+<!-- ================== image end ================== -->
+<!-- ================== video start ================== -->
+<template name="video1">
+  <video 
+    src="{{util.getDefaultValue(node['src'], 'undefined')}}" 
+    id="{{util.getDefaultValue(node['id'], '')}}" 
+    class="{{util.getDefaultValue(node['class'], '')}}" 
+    style="{{util.getDefaultValue(node['style'], '')}}" >
+    {{node.value}}
+    <block wx:for="{{node.children}}" wx:key="index">
+      <template is="{{util.tpl(item.tagName)}}" data="{{node: item}}" />
+    </block>
+  </video>
+</template>
+
+<template name="video2">
+  <video src="{{util.getDefaultValue(node['src'], 'undefined')}}" id="{{util.getDefaultValue(node['id'], '')}}" class="{{util.getDefaultValue(node['class'], '')}}" style="{{util.getDefaultValue(node['style'], '')}}" >
+    {{node.value}}
+    <block wx:for="{{node.children}}" wx:key="index">
+      <template is="{{util.tpl(item.tagName)}}" data="{{node: item}}" />
+    </block>
+  </video>
+</template>
+
+<template name="video3">
+  <video src="{{util.getDefaultValue(node['src'], 'undefined')}}" id="{{util.getDefaultValue(node['id'], '')}}" class="{{util.getDefaultValue(node['class'], '')}}" style="{{util.getDefaultValue(node['style'], '')}}" >
+    {{node.value}}
+    <block wx:for="{{node.children}}" wx:key="index">
+      <template is="{{util.tpl(item.tagName)}}" data="{{node: item}}" />
+    </block>
+  </video>
+</template>
+
+<template name="video4">
+  <video src="{{util.getDefaultValue(node['src'], 'undefined')}}" id="{{util.getDefaultValue(node['id'], '')}}" class="{{util.getDefaultValue(node['class'], '')}}" style="{{util.getDefaultValue(node['style'], '')}}" >
+    {{node.value}}
+    <block wx:for="{{node.children}}" wx:key="index">
+      <template is="{{util.tpl(item.tagName)}}" data="{{node: item}}" />
+    </block>
+  </video>
+</template>
+
+<template name="video5">
+  <video src="{{util.getDefaultValue(node['src'], 'undefined')}}" id="{{util.getDefaultValue(node['id'], '')}}" class="{{util.getDefaultValue(node['class'], '')}}" style="{{util.getDefaultValue(node['style'], '')}}" >
+    {{node.value}}
+    <block wx:for="{{node.children}}" wx:key="index">
+      <template is="{{util.tpl(item.tagName)}}" data="{{node: item}}" />
+    </block>
+  </video>
+</template>
+
+<template name="video6">
+  <video src="{{util.getDefaultValue(node['src'], 'undefined')}}" id="{{util.getDefaultValue(node['id'], '')}}" class="{{util.getDefaultValue(node['class'], '')}}" style="{{util.getDefaultValue(node['style'], '')}}" >
+    {{node.value}}
+    <block wx:for="{{node.children}}" wx:key="index">
+      <template is="{{util.tpl(item.tagName)}}" data="{{node: item}}" />
+    </block>
+  </video>
+</template>
+
+<template name="video7">
+  <video src="{{util.getDefaultValue(node['src'], 'undefined')}}" id="{{util.getDefaultValue(node['id'], '')}}" class="{{util.getDefaultValue(node['class'], '')}}" style="{{util.getDefaultValue(node['style'], '')}}" >
+    {{node.value}}
+    <block wx:for="{{node.children}}" wx:key="index">
+      <template is="{{util.tpl(item.tagName)}}" data="{{node: item}}" />
+    </block>
+  </video>
+</template>
+
+<template name="video8">
+  <video src="{{util.getDefaultValue(node['src'], 'undefined')}}" id="{{util.getDefaultValue(node['id'], '')}}" class="{{util.getDefaultValue(node['class'], '')}}" style="{{util.getDefaultValue(node['style'], '')}}" >
+    {{node.value}}
+    <block wx:for="{{node.children}}" wx:key="index">
+      <template is="{{util.tpl(item.tagName)}}" data="{{node: item}}" />
+    </block>
+  </video>
+</template>
+
+<template name="video9">
+  <video src="{{util.getDefaultValue(node['src'], 'undefined')}}" id="{{util.getDefaultValue(node['id'], '')}}" class="{{util.getDefaultValue(node['class'], '')}}" style="{{util.getDefaultValue(node['style'], '')}}" >
+    {{node.value}}
+    <block wx:for="{{node.children}}" wx:key="index">
+      <template is="{{util.tpl(item.tagName)}}" data="{{node: item}}" />
+    </block>
+  </video>
+</template>
+
+<template name="video10">
+  <video src="{{util.getDefaultValue(node['src'], 'undefined')}}" id="{{util.getDefaultValue(node['id'], '')}}" class="{{util.getDefaultValue(node['class'], '')}}" style="{{util.getDefaultValue(node['style'], '')}}" >
+    {{node.value}}
+    <block wx:for="{{node.children}}" wx:key="index">
+      <template is="{{util.tpl(item.tagName)}}" data="{{node: item}}" />
+    </block>
+  </video>
+</template>
+
+<!-- ================== video end ================== -->
+<!-- ================== map start ================== -->
+<template name="map1">
+  <map 
+    bindtap="{{util.getDefaultValue(node['bindtap'], 'eventHandler')}}" 
+    id="{{util.getDefaultValue(node['id'], '')}}" 
+    class="{{util.getDefaultValue(node['class'], '')}}" 
+    style="{{util.getDefaultValue(node['style'], '')}}" >
+    {{node.value}}
+    <block wx:for="{{node.children}}" wx:key="index">
+      <template is="{{util.tpl(item.tagName)}}" data="{{node: item}}" />
+    </block>
+  </map>
+</template>
+
+<template name="map2">
+  <map bindtap="{{util.getDefaultValue(node['bindtap'], 'eventHandler')}}" id="{{util.getDefaultValue(node['id'], '')}}" class="{{util.getDefaultValue(node['class'], '')}}" style="{{util.getDefaultValue(node['style'], '')}}" >
+    {{node.value}}
+    <block wx:for="{{node.children}}" wx:key="index">
+      <template is="{{util.tpl(item.tagName)}}" data="{{node: item}}" />
+    </block>
+  </map>
+</template>
+
+<template name="map3">
+  <map bindtap="{{util.getDefaultValue(node['bindtap'], 'eventHandler')}}" id="{{util.getDefaultValue(node['id'], '')}}" class="{{util.getDefaultValue(node['class'], '')}}" style="{{util.getDefaultValue(node['style'], '')}}" >
+    {{node.value}}
+    <block wx:for="{{node.children}}" wx:key="index">
+      <template is="{{util.tpl(item.tagName)}}" data="{{node: item}}" />
+    </block>
+  </map>
+</template>
+
+<template name="map4">
+  <map bindtap="{{util.getDefaultValue(node['bindtap'], 'eventHandler')}}" id="{{util.getDefaultValue(node['id'], '')}}" class="{{util.getDefaultValue(node['class'], '')}}" style="{{util.getDefaultValue(node['style'], '')}}" >
+    {{node.value}}
+    <block wx:for="{{node.children}}" wx:key="index">
+      <template is="{{util.tpl(item.tagName)}}" data="{{node: item}}" />
+    </block>
+  </map>
+</template>
+
+<template name="map5">
+  <map bindtap="{{util.getDefaultValue(node['bindtap'], 'eventHandler')}}" id="{{util.getDefaultValue(node['id'], '')}}" class="{{util.getDefaultValue(node['class'], '')}}" style="{{util.getDefaultValue(node['style'], '')}}" >
+    {{node.value}}
+    <block wx:for="{{node.children}}" wx:key="index">
+      <template is="{{util.tpl(item.tagName)}}" data="{{node: item}}" />
+    </block>
+  </map>
+</template>
+
+<template name="map6">
+  <map bindtap="{{util.getDefaultValue(node['bindtap'], 'eventHandler')}}" id="{{util.getDefaultValue(node['id'], '')}}" class="{{util.getDefaultValue(node['class'], '')}}" style="{{util.getDefaultValue(node['style'], '')}}" >
+    {{node.value}}
+    <block wx:for="{{node.children}}" wx:key="index">
+      <template is="{{util.tpl(item.tagName)}}" data="{{node: item}}" />
+    </block>
+  </map>
+</template>
+
+<template name="map7">
+  <map bindtap="{{util.getDefaultValue(node['bindtap'], 'eventHandler')}}" id="{{util.getDefaultValue(node['id'], '')}}" class="{{util.getDefaultValue(node['class'], '')}}" style="{{util.getDefaultValue(node['style'], '')}}" >
+    {{node.value}}
+    <block wx:for="{{node.children}}" wx:key="index">
+      <template is="{{util.tpl(item.tagName)}}" data="{{node: item}}" />
+    </block>
+  </map>
+</template>
+
+<template name="map8">
+  <map bindtap="{{util.getDefaultValue(node['bindtap'], 'eventHandler')}}" id="{{util.getDefaultValue(node['id'], '')}}" class="{{util.getDefaultValue(node['class'], '')}}" style="{{util.getDefaultValue(node['style'], '')}}" >
+    {{node.value}}
+    <block wx:for="{{node.children}}" wx:key="index">
+      <template is="{{util.tpl(item.tagName)}}" data="{{node: item}}" />
+    </block>
+  </map>
+</template>
+
+<template name="map9">
+  <map bindtap="{{util.getDefaultValue(node['bindtap'], 'eventHandler')}}" id="{{util.getDefaultValue(node['id'], '')}}" class="{{util.getDefaultValue(node['class'], '')}}" style="{{util.getDefaultValue(node['style'], '')}}" >
+    {{node.value}}
+    <block wx:for="{{node.children}}" wx:key="index">
+      <template is="{{util.tpl(item.tagName)}}" data="{{node: item}}" />
+    </block>
+  </map>
+</template>
+
+<template name="map10">
+  <map bindtap="{{util.getDefaultValue(node['bindtap'], 'eventHandler')}}" id="{{util.getDefaultValue(node['id'], '')}}" class="{{util.getDefaultValue(node['class'], '')}}" style="{{util.getDefaultValue(node['style'], '')}}" >
+    {{node.value}}
+    <block wx:for="{{node.children}}" wx:key="index">
+      <template is="{{util.tpl(item.tagName)}}" data="{{node: item}}" />
+    </block>
+  </map>
+</template>
+
+<!-- ================== map end ================== -->
+<!-- ================== canvas start ================== -->
+<template name="canvas1">
+  <canvas 
+    id="{{util.getDefaultValue(node['id'], '')}}" 
+    class="{{util.getDefaultValue(node['class'], '')}}" 
+    style="{{util.getDefaultValue(node['style'], '')}}" >
+    {{node.value}}
+    <block wx:for="{{node.children}}" wx:key="index">
+      <template is="{{util.tpl(item.tagName)}}" data="{{node: item}}" />
+    </block>
+  </canvas>
+</template>
+
+<template name="canvas2">
+  <canvas id="{{util.getDefaultValue(node['id'], '')}}" class="{{util.getDefaultValue(node['class'], '')}}" style="{{util.getDefaultValue(node['style'], '')}}" >
+    {{node.value}}
+    <block wx:for="{{node.children}}" wx:key="index">
+      <template is="{{util.tpl(item.tagName)}}" data="{{node: item}}" />
+    </block>
+  </canvas>
+</template>
+
+<template name="canvas3">
+  <canvas id="{{util.getDefaultValue(node['id'], '')}}" class="{{util.getDefaultValue(node['class'], '')}}" style="{{util.getDefaultValue(node['style'], '')}}" >
+    {{node.value}}
+    <block wx:for="{{node.children}}" wx:key="index">
+      <template is="{{util.tpl(item.tagName)}}" data="{{node: item}}" />
+    </block>
+  </canvas>
+</template>
+
+<template name="canvas4">
+  <canvas id="{{util.getDefaultValue(node['id'], '')}}" class="{{util.getDefaultValue(node['class'], '')}}" style="{{util.getDefaultValue(node['style'], '')}}" >
+    {{node.value}}
+    <block wx:for="{{node.children}}" wx:key="index">
+      <template is="{{util.tpl(item.tagName)}}" data="{{node: item}}" />
+    </block>
+  </canvas>
+</template>
+
+<template name="canvas5">
+  <canvas id="{{util.getDefaultValue(node['id'], '')}}" class="{{util.getDefaultValue(node['class'], '')}}" style="{{util.getDefaultValue(node['style'], '')}}" >
+    {{node.value}}
+    <block wx:for="{{node.children}}" wx:key="index">
+      <template is="{{util.tpl(item.tagName)}}" data="{{node: item}}" />
+    </block>
+  </canvas>
+</template>
+
+<template name="canvas6">
+  <canvas id="{{util.getDefaultValue(node['id'], '')}}" class="{{util.getDefaultValue(node['class'], '')}}" style="{{util.getDefaultValue(node['style'], '')}}" >
+    {{node.value}}
+    <block wx:for="{{node.children}}" wx:key="index">
+      <template is="{{util.tpl(item.tagName)}}" data="{{node: item}}" />
+    </block>
+  </canvas>
+</template>
+
+<template name="canvas7">
+  <canvas id="{{util.getDefaultValue(node['id'], '')}}" class="{{util.getDefaultValue(node['class'], '')}}" style="{{util.getDefaultValue(node['style'], '')}}" >
+    {{node.value}}
+    <block wx:for="{{node.children}}" wx:key="index">
+      <template is="{{util.tpl(item.tagName)}}" data="{{node: item}}" />
+    </block>
+  </canvas>
+</template>
+
+<template name="canvas8">
+  <canvas id="{{util.getDefaultValue(node['id'], '')}}" class="{{util.getDefaultValue(node['class'], '')}}" style="{{util.getDefaultValue(node['style'], '')}}" >
+    {{node.value}}
+    <block wx:for="{{node.children}}" wx:key="index">
+      <template is="{{util.tpl(item.tagName)}}" data="{{node: item}}" />
+    </block>
+  </canvas>
+</template>
+
+<template name="canvas9">
+  <canvas id="{{util.getDefaultValue(node['id'], '')}}" class="{{util.getDefaultValue(node['class'], '')}}" style="{{util.getDefaultValue(node['style'], '')}}" >
+    {{node.value}}
+    <block wx:for="{{node.children}}" wx:key="index">
+      <template is="{{util.tpl(item.tagName)}}" data="{{node: item}}" />
+    </block>
+  </canvas>
+</template>
+
+<template name="canvas10">
+  <canvas id="{{util.getDefaultValue(node['id'], '')}}" class="{{util.getDefaultValue(node['class'], '')}}" style="{{util.getDefaultValue(node['style'], '')}}" >
+    {{node.value}}
+    <block wx:for="{{node.children}}" wx:key="index">
+      <template is="{{util.tpl(item.tagName)}}" data="{{node: item}}" />
+    </block>
+  </canvas>
+</template>
+
+<!-- ================== canvas end ================== -->
+<!-- ================== web-view start ================== -->
+<template name="web-view1">
+  <web-view 
+    src="{{util.getDefaultValue(node['src'], 'undefined')}}" 
+    id="{{util.getDefaultValue(node['id'], '')}}" 
+    class="{{util.getDefaultValue(node['class'], '')}}" 
+    style="{{util.getDefaultValue(node['style'], '')}}" >
+    {{node.value}}
+    <block wx:for="{{node.children}}" wx:key="index">
+      <template is="{{util.tpl(item.tagName)}}" data="{{node: item}}" />
+    </block>
+  </web-view>
+</template>
+
+<template name="web-view2">
+  <web-view src="{{util.getDefaultValue(node['src'], 'undefined')}}" id="{{util.getDefaultValue(node['id'], '')}}" class="{{util.getDefaultValue(node['class'], '')}}" style="{{util.getDefaultValue(node['style'], '')}}" >
+    {{node.value}}
+    <block wx:for="{{node.children}}" wx:key="index">
+      <template is="{{util.tpl(item.tagName)}}" data="{{node: item}}" />
+    </block>
+  </web-view>
+</template>
+
+<template name="web-view3">
+  <web-view src="{{util.getDefaultValue(node['src'], 'undefined')}}" id="{{util.getDefaultValue(node['id'], '')}}" class="{{util.getDefaultValue(node['class'], '')}}" style="{{util.getDefaultValue(node['style'], '')}}" >
+    {{node.value}}
+    <block wx:for="{{node.children}}" wx:key="index">
+      <template is="{{util.tpl(item.tagName)}}" data="{{node: item}}" />
+    </block>
+  </web-view>
+</template>
+
+<template name="web-view4">
+  <web-view src="{{util.getDefaultValue(node['src'], 'undefined')}}" id="{{util.getDefaultValue(node['id'], '')}}" class="{{util.getDefaultValue(node['class'], '')}}" style="{{util.getDefaultValue(node['style'], '')}}" >
+    {{node.value}}
+    <block wx:for="{{node.children}}" wx:key="index">
+      <template is="{{util.tpl(item.tagName)}}" data="{{node: item}}" />
+    </block>
+  </web-view>
+</template>
+
+<template name="web-view5">
+  <web-view src="{{util.getDefaultValue(node['src'], 'undefined')}}" id="{{util.getDefaultValue(node['id'], '')}}" class="{{util.getDefaultValue(node['class'], '')}}" style="{{util.getDefaultValue(node['style'], '')}}" >
+    {{node.value}}
+    <block wx:for="{{node.children}}" wx:key="index">
+      <template is="{{util.tpl(item.tagName)}}" data="{{node: item}}" />
+    </block>
+  </web-view>
+</template>
+
+<template name="web-view6">
+  <web-view src="{{util.getDefaultValue(node['src'], 'undefined')}}" id="{{util.getDefaultValue(node['id'], '')}}" class="{{util.getDefaultValue(node['class'], '')}}" style="{{util.getDefaultValue(node['style'], '')}}" >
+    {{node.value}}
+    <block wx:for="{{node.children}}" wx:key="index">
+      <template is="{{util.tpl(item.tagName)}}" data="{{node: item}}" />
+    </block>
+  </web-view>
+</template>
+
+<template name="web-view7">
+  <web-view src="{{util.getDefaultValue(node['src'], 'undefined')}}" id="{{util.getDefaultValue(node['id'], '')}}" class="{{util.getDefaultValue(node['class'], '')}}" style="{{util.getDefaultValue(node['style'], '')}}" >
+    {{node.value}}
+    <block wx:for="{{node.children}}" wx:key="index">
+      <template is="{{util.tpl(item.tagName)}}" data="{{node: item}}" />
+    </block>
+  </web-view>
+</template>
+
+<template name="web-view8">
+  <web-view src="{{util.getDefaultValue(node['src'], 'undefined')}}" id="{{util.getDefaultValue(node['id'], '')}}" class="{{util.getDefaultValue(node['class'], '')}}" style="{{util.getDefaultValue(node['style'], '')}}" >
+    {{node.value}}
+    <block wx:for="{{node.children}}" wx:key="index">
+      <template is="{{util.tpl(item.tagName)}}" data="{{node: item}}" />
+    </block>
+  </web-view>
+</template>
+
+<template name="web-view9">
+  <web-view src="{{util.getDefaultValue(node['src'], 'undefined')}}" id="{{util.getDefaultValue(node['id'], '')}}" class="{{util.getDefaultValue(node['class'], '')}}" style="{{util.getDefaultValue(node['style'], '')}}" >
+    {{node.value}}
+    <block wx:for="{{node.children}}" wx:key="index">
+      <template is="{{util.tpl(item.tagName)}}" data="{{node: item}}" />
+    </block>
+  </web-view>
+</template>
+
+<template name="web-view10">
+  <web-view src="{{util.getDefaultValue(node['src'], 'undefined')}}" id="{{util.getDefaultValue(node['id'], '')}}" class="{{util.getDefaultValue(node['class'], '')}}" style="{{util.getDefaultValue(node['style'], '')}}" >
+    {{node.value}}
+    <block wx:for="{{node.children}}" wx:key="index">
+      <template is="{{util.tpl(item.tagName)}}" data="{{node: item}}" />
+    </block>
+  </web-view>
+</template>
+
+<!-- ================== web-view end ================== -->
+<!-- ================== ad start ================== -->
+<template name="ad1">
+  <ad 
+    id="{{util.getDefaultValue(node['id'], '')}}" 
+    class="{{util.getDefaultValue(node['class'], '')}}" 
+    style="{{util.getDefaultValue(node['style'], '')}}" >
+    {{node.value}}
+    <block wx:for="{{node.children}}" wx:key="index">
+      <template is="{{util.tpl(item.tagName)}}" data="{{node: item}}" />
+    </block>
+  </ad>
+</template>
+
+<template name="ad2">
+  <ad id="{{util.getDefaultValue(node['id'], '')}}" class="{{util.getDefaultValue(node['class'], '')}}" style="{{util.getDefaultValue(node['style'], '')}}" >
+    {{node.value}}
+    <block wx:for="{{node.children}}" wx:key="index">
+      <template is="{{util.tpl(item.tagName)}}" data="{{node: item}}" />
+    </block>
+  </ad>
+</template>
+
+<template name="ad3">
+  <ad id="{{util.getDefaultValue(node['id'], '')}}" class="{{util.getDefaultValue(node['class'], '')}}" style="{{util.getDefaultValue(node['style'], '')}}" >
+    {{node.value}}
+    <block wx:for="{{node.children}}" wx:key="index">
+      <template is="{{util.tpl(item.tagName)}}" data="{{node: item}}" />
+    </block>
+  </ad>
+</template>
+
+<template name="ad4">
+  <ad id="{{util.getDefaultValue(node['id'], '')}}" class="{{util.getDefaultValue(node['class'], '')}}" style="{{util.getDefaultValue(node['style'], '')}}" >
+    {{node.value}}
+    <block wx:for="{{node.children}}" wx:key="index">
+      <template is="{{util.tpl(item.tagName)}}" data="{{node: item}}" />
+    </block>
+  </ad>
+</template>
+
+<template name="ad5">
+  <ad id="{{util.getDefaultValue(node['id'], '')}}" class="{{util.getDefaultValue(node['class'], '')}}" style="{{util.getDefaultValue(node['style'], '')}}" >
+    {{node.value}}
+    <block wx:for="{{node.children}}" wx:key="index">
+      <template is="{{util.tpl(item.tagName)}}" data="{{node: item}}" />
+    </block>
+  </ad>
+</template>
+
+<template name="ad6">
+  <ad id="{{util.getDefaultValue(node['id'], '')}}" class="{{util.getDefaultValue(node['class'], '')}}" style="{{util.getDefaultValue(node['style'], '')}}" >
+    {{node.value}}
+    <block wx:for="{{node.children}}" wx:key="index">
+      <template is="{{util.tpl(item.tagName)}}" data="{{node: item}}" />
+    </block>
+  </ad>
+</template>
+
+<template name="ad7">
+  <ad id="{{util.getDefaultValue(node['id'], '')}}" class="{{util.getDefaultValue(node['class'], '')}}" style="{{util.getDefaultValue(node['style'], '')}}" >
+    {{node.value}}
+    <block wx:for="{{node.children}}" wx:key="index">
+      <template is="{{util.tpl(item.tagName)}}" data="{{node: item}}" />
+    </block>
+  </ad>
+</template>
+
+<template name="ad8">
+  <ad id="{{util.getDefaultValue(node['id'], '')}}" class="{{util.getDefaultValue(node['class'], '')}}" style="{{util.getDefaultValue(node['style'], '')}}" >
+    {{node.value}}
+    <block wx:for="{{node.children}}" wx:key="index">
+      <template is="{{util.tpl(item.tagName)}}" data="{{node: item}}" />
+    </block>
+  </ad>
+</template>
+
+<template name="ad9">
+  <ad id="{{util.getDefaultValue(node['id'], '')}}" class="{{util.getDefaultValue(node['class'], '')}}" style="{{util.getDefaultValue(node['style'], '')}}" >
+    {{node.value}}
+    <block wx:for="{{node.children}}" wx:key="index">
+      <template is="{{util.tpl(item.tagName)}}" data="{{node: item}}" />
+    </block>
+  </ad>
+</template>
+
+<template name="ad10">
+  <ad id="{{util.getDefaultValue(node['id'], '')}}" class="{{util.getDefaultValue(node['class'], '')}}" style="{{util.getDefaultValue(node['style'], '')}}" >
+    {{node.value}}
+    <block wx:for="{{node.children}}" wx:key="index">
+      <template is="{{util.tpl(item.tagName)}}" data="{{node: item}}" />
+    </block>
+  </ad>
+</template>
+
+<!-- ================== ad end ================== -->
+<!-- ================== ad-custom start ================== -->
+<template name="ad-custom1">
+  <ad-custom 
+    id="{{util.getDefaultValue(node['id'], '')}}" 
+    class="{{util.getDefaultValue(node['class'], '')}}" 
+    style="{{util.getDefaultValue(node['style'], '')}}" >
+    {{node.value}}
+    <block wx:for="{{node.children}}" wx:key="index">
+      <template is="{{util.tpl(item.tagName)}}" data="{{node: item}}" />
+    </block>
+  </ad-custom>
+</template>
+
+<template name="ad-custom2">
+  <ad-custom id="{{util.getDefaultValue(node['id'], '')}}" class="{{util.getDefaultValue(node['class'], '')}}" style="{{util.getDefaultValue(node['style'], '')}}" >
+    {{node.value}}
+    <block wx:for="{{node.children}}" wx:key="index">
+      <template is="{{util.tpl(item.tagName)}}" data="{{node: item}}" />
+    </block>
+  </ad-custom>
+</template>
+
+<template name="ad-custom3">
+  <ad-custom id="{{util.getDefaultValue(node['id'], '')}}" class="{{util.getDefaultValue(node['class'], '')}}" style="{{util.getDefaultValue(node['style'], '')}}" >
+    {{node.value}}
+    <block wx:for="{{node.children}}" wx:key="index">
+      <template is="{{util.tpl(item.tagName)}}" data="{{node: item}}" />
+    </block>
+  </ad-custom>
+</template>
+
+<template name="ad-custom4">
+  <ad-custom id="{{util.getDefaultValue(node['id'], '')}}" class="{{util.getDefaultValue(node['class'], '')}}" style="{{util.getDefaultValue(node['style'], '')}}" >
+    {{node.value}}
+    <block wx:for="{{node.children}}" wx:key="index">
+      <template is="{{util.tpl(item.tagName)}}" data="{{node: item}}" />
+    </block>
+  </ad-custom>
+</template>
+
+<template name="ad-custom5">
+  <ad-custom id="{{util.getDefaultValue(node['id'], '')}}" class="{{util.getDefaultValue(node['class'], '')}}" style="{{util.getDefaultValue(node['style'], '')}}" >
+    {{node.value}}
+    <block wx:for="{{node.children}}" wx:key="index">
+      <template is="{{util.tpl(item.tagName)}}" data="{{node: item}}" />
+    </block>
+  </ad-custom>
+</template>
+
+<template name="ad-custom6">
+  <ad-custom id="{{util.getDefaultValue(node['id'], '')}}" class="{{util.getDefaultValue(node['class'], '')}}" style="{{util.getDefaultValue(node['style'], '')}}" >
+    {{node.value}}
+    <block wx:for="{{node.children}}" wx:key="index">
+      <template is="{{util.tpl(item.tagName)}}" data="{{node: item}}" />
+    </block>
+  </ad-custom>
+</template>
+
+<template name="ad-custom7">
+  <ad-custom id="{{util.getDefaultValue(node['id'], '')}}" class="{{util.getDefaultValue(node['class'], '')}}" style="{{util.getDefaultValue(node['style'], '')}}" >
+    {{node.value}}
+    <block wx:for="{{node.children}}" wx:key="index">
+      <template is="{{util.tpl(item.tagName)}}" data="{{node: item}}" />
+    </block>
+  </ad-custom>
+</template>
+
+<template name="ad-custom8">
+  <ad-custom id="{{util.getDefaultValue(node['id'], '')}}" class="{{util.getDefaultValue(node['class'], '')}}" style="{{util.getDefaultValue(node['style'], '')}}" >
+    {{node.value}}
+    <block wx:for="{{node.children}}" wx:key="index">
+      <template is="{{util.tpl(item.tagName)}}" data="{{node: item}}" />
+    </block>
+  </ad-custom>
+</template>
+
+<template name="ad-custom9">
+  <ad-custom id="{{util.getDefaultValue(node['id'], '')}}" class="{{util.getDefaultValue(node['class'], '')}}" style="{{util.getDefaultValue(node['style'], '')}}" >
+    {{node.value}}
+    <block wx:for="{{node.children}}" wx:key="index">
+      <template is="{{util.tpl(item.tagName)}}" data="{{node: item}}" />
+    </block>
+  </ad-custom>
+</template>
+
+<template name="ad-custom10">
+  <ad-custom id="{{util.getDefaultValue(node['id'], '')}}" class="{{util.getDefaultValue(node['class'], '')}}" style="{{util.getDefaultValue(node['style'], '')}}" >
+    {{node.value}}
+    <block wx:for="{{node.children}}" wx:key="index">
+      <template is="{{util.tpl(item.tagName)}}" data="{{node: item}}" />
+    </block>
+  </ad-custom>
+</template>
+
+<!-- ================== ad-custom end ================== -->
+<!-- ================== official-account start ================== -->
+<template name="official-account1">
+  <official-account 
+    id="{{util.getDefaultValue(node['id'], '')}}" 
+    class="{{util.getDefaultValue(node['class'], '')}}" 
+    style="{{util.getDefaultValue(node['style'], '')}}" >
+    {{node.value}}
+    <block wx:for="{{node.children}}" wx:key="index">
+      <template is="{{util.tpl(item.tagName)}}" data="{{node: item}}" />
+    </block>
+  </official-account>
+</template>
+
+<template name="official-account2">
+  <official-account id="{{util.getDefaultValue(node['id'], '')}}" class="{{util.getDefaultValue(node['class'], '')}}" style="{{util.getDefaultValue(node['style'], '')}}" >
+    {{node.value}}
+    <block wx:for="{{node.children}}" wx:key="index">
+      <template is="{{util.tpl(item.tagName)}}" data="{{node: item}}" />
+    </block>
+  </official-account>
+</template>
+
+<template name="official-account3">
+  <official-account id="{{util.getDefaultValue(node['id'], '')}}" class="{{util.getDefaultValue(node['class'], '')}}" style="{{util.getDefaultValue(node['style'], '')}}" >
+    {{node.value}}
+    <block wx:for="{{node.children}}" wx:key="index">
+      <template is="{{util.tpl(item.tagName)}}" data="{{node: item}}" />
+    </block>
+  </official-account>
+</template>
+
+<template name="official-account4">
+  <official-account id="{{util.getDefaultValue(node['id'], '')}}" class="{{util.getDefaultValue(node['class'], '')}}" style="{{util.getDefaultValue(node['style'], '')}}" >
+    {{node.value}}
+    <block wx:for="{{node.children}}" wx:key="index">
+      <template is="{{util.tpl(item.tagName)}}" data="{{node: item}}" />
+    </block>
+  </official-account>
+</template>
+
+<template name="official-account5">
+  <official-account id="{{util.getDefaultValue(node['id'], '')}}" class="{{util.getDefaultValue(node['class'], '')}}" style="{{util.getDefaultValue(node['style'], '')}}" >
+    {{node.value}}
+    <block wx:for="{{node.children}}" wx:key="index">
+      <template is="{{util.tpl(item.tagName)}}" data="{{node: item}}" />
+    </block>
+  </official-account>
+</template>
+
+<template name="official-account6">
+  <official-account id="{{util.getDefaultValue(node['id'], '')}}" class="{{util.getDefaultValue(node['class'], '')}}" style="{{util.getDefaultValue(node['style'], '')}}" >
+    {{node.value}}
+    <block wx:for="{{node.children}}" wx:key="index">
+      <template is="{{util.tpl(item.tagName)}}" data="{{node: item}}" />
+    </block>
+  </official-account>
+</template>
+
+<template name="official-account7">
+  <official-account id="{{util.getDefaultValue(node['id'], '')}}" class="{{util.getDefaultValue(node['class'], '')}}" style="{{util.getDefaultValue(node['style'], '')}}" >
+    {{node.value}}
+    <block wx:for="{{node.children}}" wx:key="index">
+      <template is="{{util.tpl(item.tagName)}}" data="{{node: item}}" />
+    </block>
+  </official-account>
+</template>
+
+<template name="official-account8">
+  <official-account id="{{util.getDefaultValue(node['id'], '')}}" class="{{util.getDefaultValue(node['class'], '')}}" style="{{util.getDefaultValue(node['style'], '')}}" >
+    {{node.value}}
+    <block wx:for="{{node.children}}" wx:key="index">
+      <template is="{{util.tpl(item.tagName)}}" data="{{node: item}}" />
+    </block>
+  </official-account>
+</template>
+
+<template name="official-account9">
+  <official-account id="{{util.getDefaultValue(node['id'], '')}}" class="{{util.getDefaultValue(node['class'], '')}}" style="{{util.getDefaultValue(node['style'], '')}}" >
+    {{node.value}}
+    <block wx:for="{{node.children}}" wx:key="index">
+      <template is="{{util.tpl(item.tagName)}}" data="{{node: item}}" />
+    </block>
+  </official-account>
+</template>
+
+<template name="official-account10">
+  <official-account id="{{util.getDefaultValue(node['id'], '')}}" class="{{util.getDefaultValue(node['class'], '')}}" style="{{util.getDefaultValue(node['style'], '')}}" >
+    {{node.value}}
+    <block wx:for="{{node.children}}" wx:key="index">
+      <template is="{{util.tpl(item.tagName)}}" data="{{node: item}}" />
+    </block>
+  </official-account>
+</template>
+
+<!-- ================== official-account end ================== -->
+<!-- ================== open-data start ================== -->
+<template name="open-data1">
+  <open-data 
+    id="{{util.getDefaultValue(node['id'], '')}}" 
+    class="{{util.getDefaultValue(node['class'], '')}}" 
+    style="{{util.getDefaultValue(node['style'], '')}}" >
+    {{node.value}}
+    <block wx:for="{{node.children}}" wx:key="index">
+      <template is="{{util.tpl(item.tagName)}}" data="{{node: item}}" />
+    </block>
+  </open-data>
+</template>
+
+<template name="open-data2">
+  <open-data id="{{util.getDefaultValue(node['id'], '')}}" class="{{util.getDefaultValue(node['class'], '')}}" style="{{util.getDefaultValue(node['style'], '')}}" >
+    {{node.value}}
+    <block wx:for="{{node.children}}" wx:key="index">
+      <template is="{{util.tpl(item.tagName)}}" data="{{node: item}}" />
+    </block>
+  </open-data>
+</template>
+
+<template name="open-data3">
+  <open-data id="{{util.getDefaultValue(node['id'], '')}}" class="{{util.getDefaultValue(node['class'], '')}}" style="{{util.getDefaultValue(node['style'], '')}}" >
+    {{node.value}}
+    <block wx:for="{{node.children}}" wx:key="index">
+      <template is="{{util.tpl(item.tagName)}}" data="{{node: item}}" />
+    </block>
+  </open-data>
+</template>
+
+<template name="open-data4">
+  <open-data id="{{util.getDefaultValue(node['id'], '')}}" class="{{util.getDefaultValue(node['class'], '')}}" style="{{util.getDefaultValue(node['style'], '')}}" >
+    {{node.value}}
+    <block wx:for="{{node.children}}" wx:key="index">
+      <template is="{{util.tpl(item.tagName)}}" data="{{node: item}}" />
+    </block>
+  </open-data>
+</template>
+
+<template name="open-data5">
+  <open-data id="{{util.getDefaultValue(node['id'], '')}}" class="{{util.getDefaultValue(node['class'], '')}}" style="{{util.getDefaultValue(node['style'], '')}}" >
+    {{node.value}}
+    <block wx:for="{{node.children}}" wx:key="index">
+      <template is="{{util.tpl(item.tagName)}}" data="{{node: item}}" />
+    </block>
+  </open-data>
+</template>
+
+<template name="open-data6">
+  <open-data id="{{util.getDefaultValue(node['id'], '')}}" class="{{util.getDefaultValue(node['class'], '')}}" style="{{util.getDefaultValue(node['style'], '')}}" >
+    {{node.value}}
+    <block wx:for="{{node.children}}" wx:key="index">
+      <template is="{{util.tpl(item.tagName)}}" data="{{node: item}}" />
+    </block>
+  </open-data>
+</template>
+
+<template name="open-data7">
+  <open-data id="{{util.getDefaultValue(node['id'], '')}}" class="{{util.getDefaultValue(node['class'], '')}}" style="{{util.getDefaultValue(node['style'], '')}}" >
+    {{node.value}}
+    <block wx:for="{{node.children}}" wx:key="index">
+      <template is="{{util.tpl(item.tagName)}}" data="{{node: item}}" />
+    </block>
+  </open-data>
+</template>
+
+<template name="open-data8">
+  <open-data id="{{util.getDefaultValue(node['id'], '')}}" class="{{util.getDefaultValue(node['class'], '')}}" style="{{util.getDefaultValue(node['style'], '')}}" >
+    {{node.value}}
+    <block wx:for="{{node.children}}" wx:key="index">
+      <template is="{{util.tpl(item.tagName)}}" data="{{node: item}}" />
+    </block>
+  </open-data>
+</template>
+
+<template name="open-data9">
+  <open-data id="{{util.getDefaultValue(node['id'], '')}}" class="{{util.getDefaultValue(node['class'], '')}}" style="{{util.getDefaultValue(node['style'], '')}}" >
+    {{node.value}}
+    <block wx:for="{{node.children}}" wx:key="index">
+      <template is="{{util.tpl(item.tagName)}}" data="{{node: item}}" />
+    </block>
+  </open-data>
+</template>
+
+<template name="open-data10">
+  <open-data id="{{util.getDefaultValue(node['id'], '')}}" class="{{util.getDefaultValue(node['class'], '')}}" style="{{util.getDefaultValue(node['style'], '')}}" >
+    {{node.value}}
+    <block wx:for="{{node.children}}" wx:key="index">
+      <template is="{{util.tpl(item.tagName)}}" data="{{node: item}}" />
+    </block>
+  </open-data>
+</template>
+
+<!-- ================== open-data end ================== -->
+<!-- ================== native-component start ================== -->
+<template name="native-component1">
+  <native-component 
+    id="{{util.getDefaultValue(node['id'], '')}}" 
+    class="{{util.getDefaultValue(node['class'], '')}}" 
+    style="{{util.getDefaultValue(node['style'], '')}}" >
+    {{node.value}}
+    <block wx:for="{{node.children}}" wx:key="index">
+      <template is="{{util.tpl(item.tagName)}}" data="{{node: item}}" />
+    </block>
+  </native-component>
+</template>
+
+<template name="native-component2">
+  <native-component id="{{util.getDefaultValue(node['id'], '')}}" class="{{util.getDefaultValue(node['class'], '')}}" style="{{util.getDefaultValue(node['style'], '')}}" >
+    {{node.value}}
+    <block wx:for="{{node.children}}" wx:key="index">
+      <template is="{{util.tpl(item.tagName)}}" data="{{node: item}}" />
+    </block>
+  </native-component>
+</template>
+
+<template name="native-component3">
+  <native-component id="{{util.getDefaultValue(node['id'], '')}}" class="{{util.getDefaultValue(node['class'], '')}}" style="{{util.getDefaultValue(node['style'], '')}}" >
+    {{node.value}}
+    <block wx:for="{{node.children}}" wx:key="index">
+      <template is="{{util.tpl(item.tagName)}}" data="{{node: item}}" />
+    </block>
+  </native-component>
+</template>
+
+<template name="native-component4">
+  <native-component id="{{util.getDefaultValue(node['id'], '')}}" class="{{util.getDefaultValue(node['class'], '')}}" style="{{util.getDefaultValue(node['style'], '')}}" >
+    {{node.value}}
+    <block wx:for="{{node.children}}" wx:key="index">
+      <template is="{{util.tpl(item.tagName)}}" data="{{node: item}}" />
+    </block>
+  </native-component>
+</template>
+
+<template name="native-component5">
+  <native-component id="{{util.getDefaultValue(node['id'], '')}}" class="{{util.getDefaultValue(node['class'], '')}}" style="{{util.getDefaultValue(node['style'], '')}}" >
+    {{node.value}}
+    <block wx:for="{{node.children}}" wx:key="index">
+      <template is="{{util.tpl(item.tagName)}}" data="{{node: item}}" />
+    </block>
+  </native-component>
+</template>
+
+<template name="native-component6">
+  <native-component id="{{util.getDefaultValue(node['id'], '')}}" class="{{util.getDefaultValue(node['class'], '')}}" style="{{util.getDefaultValue(node['style'], '')}}" >
+    {{node.value}}
+    <block wx:for="{{node.children}}" wx:key="index">
+      <template is="{{util.tpl(item.tagName)}}" data="{{node: item}}" />
+    </block>
+  </native-component>
+</template>
+
+<template name="native-component7">
+  <native-component id="{{util.getDefaultValue(node['id'], '')}}" class="{{util.getDefaultValue(node['class'], '')}}" style="{{util.getDefaultValue(node['style'], '')}}" >
+    {{node.value}}
+    <block wx:for="{{node.children}}" wx:key="index">
+      <template is="{{util.tpl(item.tagName)}}" data="{{node: item}}" />
+    </block>
+  </native-component>
+</template>
+
+<template name="native-component8">
+  <native-component id="{{util.getDefaultValue(node['id'], '')}}" class="{{util.getDefaultValue(node['class'], '')}}" style="{{util.getDefaultValue(node['style'], '')}}" >
+    {{node.value}}
+    <block wx:for="{{node.children}}" wx:key="index">
+      <template is="{{util.tpl(item.tagName)}}" data="{{node: item}}" />
+    </block>
+  </native-component>
+</template>
+
+<template name="native-component9">
+  <native-component id="{{util.getDefaultValue(node['id'], '')}}" class="{{util.getDefaultValue(node['class'], '')}}" style="{{util.getDefaultValue(node['style'], '')}}" >
+    {{node.value}}
+    <block wx:for="{{node.children}}" wx:key="index">
+      <template is="{{util.tpl(item.tagName)}}" data="{{node: item}}" />
+    </block>
+  </native-component>
+</template>
+
+<template name="native-component10">
+  <native-component id="{{util.getDefaultValue(node['id'], '')}}" class="{{util.getDefaultValue(node['class'], '')}}" style="{{util.getDefaultValue(node['style'], '')}}" >
+    {{node.value}}
+    <block wx:for="{{node.children}}" wx:key="index">
+      <template is="{{util.tpl(item.tagName)}}" data="{{node: item}}" />
+    </block>
+  </native-component>
+</template>
+
+<!-- ================== native-component end ================== -->
+<!-- ================== aria-component start ================== -->
+<template name="aria-component1">
+  <aria-component 
+    id="{{util.getDefaultValue(node['id'], '')}}" 
+    class="{{util.getDefaultValue(node['class'], '')}}" 
+    style="{{util.getDefaultValue(node['style'], '')}}" >
+    {{node.value}}
+    <block wx:for="{{node.children}}" wx:key="index">
+      <template is="{{util.tpl(item.tagName)}}" data="{{node: item}}" />
+    </block>
+  </aria-component>
+</template>
+
+<template name="aria-component2">
+  <aria-component id="{{util.getDefaultValue(node['id'], '')}}" class="{{util.getDefaultValue(node['class'], '')}}" style="{{util.getDefaultValue(node['style'], '')}}" >
+    {{node.value}}
+    <block wx:for="{{node.children}}" wx:key="index">
+      <template is="{{util.tpl(item.tagName)}}" data="{{node: item}}" />
+    </block>
+  </aria-component>
+</template>
+
+<template name="aria-component3">
+  <aria-component id="{{util.getDefaultValue(node['id'], '')}}" class="{{util.getDefaultValue(node['class'], '')}}" style="{{util.getDefaultValue(node['style'], '')}}" >
+    {{node.value}}
+    <block wx:for="{{node.children}}" wx:key="index">
+      <template is="{{util.tpl(item.tagName)}}" data="{{node: item}}" />
+    </block>
+  </aria-component>
+</template>
+
+<template name="aria-component4">
+  <aria-component id="{{util.getDefaultValue(node['id'], '')}}" class="{{util.getDefaultValue(node['class'], '')}}" style="{{util.getDefaultValue(node['style'], '')}}" >
+    {{node.value}}
+    <block wx:for="{{node.children}}" wx:key="index">
+      <template is="{{util.tpl(item.tagName)}}" data="{{node: item}}" />
+    </block>
+  </aria-component>
+</template>
+
+<template name="aria-component5">
+  <aria-component id="{{util.getDefaultValue(node['id'], '')}}" class="{{util.getDefaultValue(node['class'], '')}}" style="{{util.getDefaultValue(node['style'], '')}}" >
+    {{node.value}}
+    <block wx:for="{{node.children}}" wx:key="index">
+      <template is="{{util.tpl(item.tagName)}}" data="{{node: item}}" />
+    </block>
+  </aria-component>
+</template>
+
+<template name="aria-component6">
+  <aria-component id="{{util.getDefaultValue(node['id'], '')}}" class="{{util.getDefaultValue(node['class'], '')}}" style="{{util.getDefaultValue(node['style'], '')}}" >
+    {{node.value}}
+    <block wx:for="{{node.children}}" wx:key="index">
+      <template is="{{util.tpl(item.tagName)}}" data="{{node: item}}" />
+    </block>
+  </aria-component>
+</template>
+
+<template name="aria-component7">
+  <aria-component id="{{util.getDefaultValue(node['id'], '')}}" class="{{util.getDefaultValue(node['class'], '')}}" style="{{util.getDefaultValue(node['style'], '')}}" >
+    {{node.value}}
+    <block wx:for="{{node.children}}" wx:key="index">
+      <template is="{{util.tpl(item.tagName)}}" data="{{node: item}}" />
+    </block>
+  </aria-component>
+</template>
+
+<template name="aria-component8">
+  <aria-component id="{{util.getDefaultValue(node['id'], '')}}" class="{{util.getDefaultValue(node['class'], '')}}" style="{{util.getDefaultValue(node['style'], '')}}" >
+    {{node.value}}
+    <block wx:for="{{node.children}}" wx:key="index">
+      <template is="{{util.tpl(item.tagName)}}" data="{{node: item}}" />
+    </block>
+  </aria-component>
+</template>
+
+<template name="aria-component9">
+  <aria-component id="{{util.getDefaultValue(node['id'], '')}}" class="{{util.getDefaultValue(node['class'], '')}}" style="{{util.getDefaultValue(node['style'], '')}}" >
+    {{node.value}}
+    <block wx:for="{{node.children}}" wx:key="index">
+      <template is="{{util.tpl(item.tagName)}}" data="{{node: item}}" />
+    </block>
+  </aria-component>
+</template>
+
+<template name="aria-component10">
+  <aria-component id="{{util.getDefaultValue(node['id'], '')}}" class="{{util.getDefaultValue(node['class'], '')}}" style="{{util.getDefaultValue(node['style'], '')}}" >
+    {{node.value}}
+    <block wx:for="{{node.children}}" wx:key="index">
+      <template is="{{util.tpl(item.tagName)}}" data="{{node: item}}" />
+    </block>
+  </aria-component>
+</template>
+
+<!-- ================== aria-component end ================== -->
+<!-- ================== navigation-bar start ================== -->
+<template name="navigation-bar1">
+  <navigation-bar 
+    id="{{util.getDefaultValue(node['id'], '')}}" 
+    class="{{util.getDefaultValue(node['class'], '')}}" 
+    style="{{util.getDefaultValue(node['style'], '')}}" >
+    {{node.value}}
+    <block wx:for="{{node.children}}" wx:key="index">
+      <template is="{{util.tpl(item.tagName)}}" data="{{node: item}}" />
+    </block>
+  </navigation-bar>
+</template>
+
+<template name="navigation-bar2">
+  <navigation-bar id="{{util.getDefaultValue(node['id'], '')}}" class="{{util.getDefaultValue(node['class'], '')}}" style="{{util.getDefaultValue(node['style'], '')}}" >
+    {{node.value}}
+    <block wx:for="{{node.children}}" wx:key="index">
+      <template is="{{util.tpl(item.tagName)}}" data="{{node: item}}" />
+    </block>
+  </navigation-bar>
+</template>
+
+<template name="navigation-bar3">
+  <navigation-bar id="{{util.getDefaultValue(node['id'], '')}}" class="{{util.getDefaultValue(node['class'], '')}}" style="{{util.getDefaultValue(node['style'], '')}}" >
+    {{node.value}}
+    <block wx:for="{{node.children}}" wx:key="index">
+      <template is="{{util.tpl(item.tagName)}}" data="{{node: item}}" />
+    </block>
+  </navigation-bar>
+</template>
+
+<template name="navigation-bar4">
+  <navigation-bar id="{{util.getDefaultValue(node['id'], '')}}" class="{{util.getDefaultValue(node['class'], '')}}" style="{{util.getDefaultValue(node['style'], '')}}" >
+    {{node.value}}
+    <block wx:for="{{node.children}}" wx:key="index">
+      <template is="{{util.tpl(item.tagName)}}" data="{{node: item}}" />
+    </block>
+  </navigation-bar>
+</template>
+
+<template name="navigation-bar5">
+  <navigation-bar id="{{util.getDefaultValue(node['id'], '')}}" class="{{util.getDefaultValue(node['class'], '')}}" style="{{util.getDefaultValue(node['style'], '')}}" >
+    {{node.value}}
+    <block wx:for="{{node.children}}" wx:key="index">
+      <template is="{{util.tpl(item.tagName)}}" data="{{node: item}}" />
+    </block>
+  </navigation-bar>
+</template>
+
+<template name="navigation-bar6">
+  <navigation-bar id="{{util.getDefaultValue(node['id'], '')}}" class="{{util.getDefaultValue(node['class'], '')}}" style="{{util.getDefaultValue(node['style'], '')}}" >
+    {{node.value}}
+    <block wx:for="{{node.children}}" wx:key="index">
+      <template is="{{util.tpl(item.tagName)}}" data="{{node: item}}" />
+    </block>
+  </navigation-bar>
+</template>
+
+<template name="navigation-bar7">
+  <navigation-bar id="{{util.getDefaultValue(node['id'], '')}}" class="{{util.getDefaultValue(node['class'], '')}}" style="{{util.getDefaultValue(node['style'], '')}}" >
+    {{node.value}}
+    <block wx:for="{{node.children}}" wx:key="index">
+      <template is="{{util.tpl(item.tagName)}}" data="{{node: item}}" />
+    </block>
+  </navigation-bar>
+</template>
+
+<template name="navigation-bar8">
+  <navigation-bar id="{{util.getDefaultValue(node['id'], '')}}" class="{{util.getDefaultValue(node['class'], '')}}" style="{{util.getDefaultValue(node['style'], '')}}" >
+    {{node.value}}
+    <block wx:for="{{node.children}}" wx:key="index">
+      <template is="{{util.tpl(item.tagName)}}" data="{{node: item}}" />
+    </block>
+  </navigation-bar>
+</template>
+
+<template name="navigation-bar9">
+  <navigation-bar id="{{util.getDefaultValue(node['id'], '')}}" class="{{util.getDefaultValue(node['class'], '')}}" style="{{util.getDefaultValue(node['style'], '')}}" >
+    {{node.value}}
+    <block wx:for="{{node.children}}" wx:key="index">
+      <template is="{{util.tpl(item.tagName)}}" data="{{node: item}}" />
+    </block>
+  </navigation-bar>
+</template>
+
+<template name="navigation-bar10">
+  <navigation-bar id="{{util.getDefaultValue(node['id'], '')}}" class="{{util.getDefaultValue(node['class'], '')}}" style="{{util.getDefaultValue(node['style'], '')}}" >
+    {{node.value}}
+    <block wx:for="{{node.children}}" wx:key="index">
+      <template is="{{util.tpl(item.tagName)}}" data="{{node: item}}" />
+    </block>
+  </navigation-bar>
+</template>
+
+<!-- ================== navigation-bar end ================== -->
+<!-- ================== page-meta start ================== -->
+<template name="page-meta1">
+  <page-meta 
+    id="{{util.getDefaultValue(node['id'], '')}}" 
+    class="{{util.getDefaultValue(node['class'], '')}}" 
+    style="{{util.getDefaultValue(node['style'], '')}}" >
+    {{node.value}}
+    <block wx:for="{{node.children}}" wx:key="index">
+      <template is="{{util.tpl(item.tagName)}}" data="{{node: item}}" />
+    </block>
+  </page-meta>
+</template>
+
+<template name="page-meta2">
+  <page-meta id="{{util.getDefaultValue(node['id'], '')}}" class="{{util.getDefaultValue(node['class'], '')}}" style="{{util.getDefaultValue(node['style'], '')}}" >
+    {{node.value}}
+    <block wx:for="{{node.children}}" wx:key="index">
+      <template is="{{util.tpl(item.tagName)}}" data="{{node: item}}" />
+    </block>
+  </page-meta>
+</template>
+
+<template name="page-meta3">
+  <page-meta id="{{util.getDefaultValue(node['id'], '')}}" class="{{util.getDefaultValue(node['class'], '')}}" style="{{util.getDefaultValue(node['style'], '')}}" >
+    {{node.value}}
+    <block wx:for="{{node.children}}" wx:key="index">
+      <template is="{{util.tpl(item.tagName)}}" data="{{node: item}}" />
+    </block>
+  </page-meta>
+</template>
+
+<template name="page-meta4">
+  <page-meta id="{{util.getDefaultValue(node['id'], '')}}" class="{{util.getDefaultValue(node['class'], '')}}" style="{{util.getDefaultValue(node['style'], '')}}" >
+    {{node.value}}
+    <block wx:for="{{node.children}}" wx:key="index">
+      <template is="{{util.tpl(item.tagName)}}" data="{{node: item}}" />
+    </block>
+  </page-meta>
+</template>
+
+<template name="page-meta5">
+  <page-meta id="{{util.getDefaultValue(node['id'], '')}}" class="{{util.getDefaultValue(node['class'], '')}}" style="{{util.getDefaultValue(node['style'], '')}}" >
+    {{node.value}}
+    <block wx:for="{{node.children}}" wx:key="index">
+      <template is="{{util.tpl(item.tagName)}}" data="{{node: item}}" />
+    </block>
+  </page-meta>
+</template>
+
+<template name="page-meta6">
+  <page-meta id="{{util.getDefaultValue(node['id'], '')}}" class="{{util.getDefaultValue(node['class'], '')}}" style="{{util.getDefaultValue(node['style'], '')}}" >
+    {{node.value}}
+    <block wx:for="{{node.children}}" wx:key="index">
+      <template is="{{util.tpl(item.tagName)}}" data="{{node: item}}" />
+    </block>
+  </page-meta>
+</template>
+
+<template name="page-meta7">
+  <page-meta id="{{util.getDefaultValue(node['id'], '')}}" class="{{util.getDefaultValue(node['class'], '')}}" style="{{util.getDefaultValue(node['style'], '')}}" >
+    {{node.value}}
+    <block wx:for="{{node.children}}" wx:key="index">
+      <template is="{{util.tpl(item.tagName)}}" data="{{node: item}}" />
+    </block>
+  </page-meta>
+</template>
+
+<template name="page-meta8">
+  <page-meta id="{{util.getDefaultValue(node['id'], '')}}" class="{{util.getDefaultValue(node['class'], '')}}" style="{{util.getDefaultValue(node['style'], '')}}" >
+    {{node.value}}
+    <block wx:for="{{node.children}}" wx:key="index">
+      <template is="{{util.tpl(item.tagName)}}" data="{{node: item}}" />
+    </block>
+  </page-meta>
+</template>
+
+<template name="page-meta9">
+  <page-meta id="{{util.getDefaultValue(node['id'], '')}}" class="{{util.getDefaultValue(node['class'], '')}}" style="{{util.getDefaultValue(node['style'], '')}}" >
+    {{node.value}}
+    <block wx:for="{{node.children}}" wx:key="index">
+      <template is="{{util.tpl(item.tagName)}}" data="{{node: item}}" />
+    </block>
+  </page-meta>
+</template>
+
+<template name="page-meta10">
+  <page-meta id="{{util.getDefaultValue(node['id'], '')}}" class="{{util.getDefaultValue(node['class'], '')}}" style="{{util.getDefaultValue(node['style'], '')}}" >
+    {{node.value}}
+    <block wx:for="{{node.children}}" wx:key="index">
+      <template is="{{util.tpl(item.tagName)}}" data="{{node: item}}" />
+    </block>
+  </page-meta>
+</template>
+
+<!-- ================== page-meta end ================== -->
