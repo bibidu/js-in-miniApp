@@ -20,19 +20,12 @@ const html = `
         }
     </div>
 `
-// h('div', {id: "app"}, [
-//     "123",
-//     h('div', {class: "title"}, ["title"]),
-//     h('button', {bindtap: "clickme"}, ["toggle"]),
-//     h('input', {value: "..."}),
 
-//         title ? h('div', null, ["title"]) : h('div', null, ["no title"])
-
-// ])
 const jsxHtml = transform(html)
 console.log(jsxHtml);
 const buildedTemplate = jsxToTemplateInterface(jsxHtml)
 const formatTemplate = JSON.stringify(buildedTemplate, null, 2)
 
 output(rootDist, `module.exports = ${formatTemplate}`)
+
 

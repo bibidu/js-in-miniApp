@@ -1,6 +1,7 @@
 const Null = Symbol('Null')
 
 const commonAttrs = {
+  'uid': '',
   'id': '',
   'class': '',
   'style': '',

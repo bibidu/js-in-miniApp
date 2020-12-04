@@ -22,7 +22,9 @@ function buildTemplateInterface({
 
 function transformTag(tagName) {
     switch(tagName) {
-        case 'div': return 'view'
+        case 'div': 
+        case 'p': 
+            return 'view'
         case 'span': return 'text'
         default: return tagName
     }

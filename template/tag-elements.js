@@ -45,7 +45,7 @@ const getAttr = (tag, id) => {
 const tags = {
     base: `
 <template name="base">
-  <block wx:for="{{root.children}}" wx:key="index">
+  <block wx:for="{{root.children}}" wx:key="{{root.uid}}">
     <template is="{{${autoIncreaseFn}(item.tagName)}}" data="{{node: item}}" />
   </block>  
 </template>`,
